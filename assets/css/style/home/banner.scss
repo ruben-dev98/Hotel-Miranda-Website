@@ -1,29 +1,42 @@
 .banner {
     background-color: #333333;
+    position: relative;
+    z-index: -2;
+    padding: 2em 0.5em;
+
     &__title {
         color: $color-white;
         font-family: $font-standard;
-        font-size: 56px;
+        font-size: 3.5em;
         font-weight: 400;
     }
 
     &__text {
+        width: 50%;
         color: $color-white;
         font-family: $font-archivo;
-        font-size: 13px;
+        font-size: 0.8em;
         font-weight: 700;
     }
 
     &__button {
         display: block;
+        width: 20em;
+        height: 4em;
+        border: 0em;
         color: $color-white;
         font-family: $font-archivo;
-        font-size: 14px;
+        font-size: 0.85em;
         font-weight: 700;
         background-color: #BEAD8E;
+
+        &:not(:last-child) {
+            margin-bottom: 2em;
+        }
+        
         &--transparent {
             background-color: transparent;
-            border: 2px solid #FFFFFF54
+            border: 0.15em solid #FFFFFF54
         }
     }
 }
