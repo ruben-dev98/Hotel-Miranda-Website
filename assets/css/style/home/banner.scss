@@ -1,14 +1,16 @@
 .banner {
     background-color: #333333;
     position: relative;
-    z-index: -2;
-    padding: 2em 0.5em;
+    padding: 0em 0.5em;
+    padding-top: 8em;
+    padding-bottom: 5em;
 
     &__title {
         color: $color-white;
         font-family: $font-standard;
         font-size: 3.5em;
         font-weight: 400;
+        margin-bottom: .5em;
     }
 
     &__text {
@@ -17,6 +19,7 @@
         font-family: $font-archivo;
         font-size: 0.8em;
         font-weight: 700;
+        margin-bottom: 2em;
     }
 
     &__button {
@@ -28,15 +31,15 @@
         font-family: $font-archivo;
         font-size: 0.85em;
         font-weight: 700;
-        background-color: #BEAD8E;
+        background-color: #bead8e;
 
         &:not(:last-child) {
             margin-bottom: 2em;
         }
-        
+
         &--transparent {
             background-color: transparent;
-            border: 0.15em solid #FFFFFF54
+            border: 0.15em solid #ffffff54;
         }
     }
 }

@@ -2,22 +2,24 @@
   padding: 1em 1em;
   width: 100%;
   background-size: contain;
-  position: relative;
+  position: fixed;
+  background-color: #fff;
   box-shadow: 0em 0.25em 0.4em 0em rgba(0, 0, 0, 0.2901960784);
+  z-index: 1;
 }
 .header__nav {
   width: 100%;
   display: none;
   position: absolute;
-  bottom: -12.2em;
+  bottom: -10.5em;
   left: 0;
   background-color: #FFF;
   box-shadow: 0em 0.3em 0.25em 0em rgba(0, 0, 0, 0.2901960784);
+  height: 12.35em;
   z-index: -1;
-  height: 12.4em;
 }
 .header__nav-list {
-  padding: 2em 1.5em;
+  padding: 2.75em 1.5em;
   list-style-type: none;
   padding-bottom: 0em;
 }
@@ -56,7 +58,7 @@
   height: 1.5em;
 }
 .header__icons-icon:not(:last-child) {
-  margin-right: 0.5em;
+  margin-right: 1em;
 }
 .header__menu {
   display: inline-block;
@@ -67,6 +69,66 @@
   display: none;
 }
 
+@media (min-width: 1000px) {
+  .bg-color {
+    background: #222;
+    padding-top: 3em;
+    height: 10vh;
+  }
+  .header {
+    margin: 0 auto;
+    padding: 2em 2em;
+    width: 80%;
+    position: sticky;
+    background-color: #FFF;
+    box-shadow: 0em 0em 0em 0em;
+  }
+  .header__nav {
+    width: 60%;
+    display: inline-block;
+    gap: 1em;
+    position: relative;
+    bottom: 0;
+    box-shadow: 0em 0em 0em 0em;
+    height: fit-content;
+  }
+  .header__nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 0em 0em;
+    padding-bottom: 0em;
+  }
+  .header__logo {
+    display: inline-block;
+    width: 20%;
+    text-align: end;
+  }
+  .header__logo-title {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 0.6em;
+  }
+  .header__icons {
+    width: 15%;
+    vertical-align: bottom;
+  }
+  .header__icons-icon {
+    border: 0.1em #777 solid;
+    padding: 0.5em;
+    width: 3em;
+    height: 3em;
+    vertical-align: middle;
+  }
+  .header__icons-icon:not(:last-child) {
+    margin-right: 1em;
+  }
+  .header__menu {
+    display: none;
+  }
+}
 .footer {
   padding-top: 1.5em;
 }
@@ -200,14 +262,16 @@
 .banner {
   background-color: #333333;
   position: relative;
-  z-index: -2;
-  padding: 2em 0.5em;
+  padding: 0em 0.5em;
+  padding-top: 8em;
+  padding-bottom: 5em;
 }
 .banner__title {
   color: #FFF;
   font-family: "Old Standard TT", serif;
   font-size: 3.5em;
   font-weight: 400;
+  margin-bottom: 0.5em;
 }
 .banner__text {
   width: 50%;
@@ -215,6 +279,7 @@
   font-family: "Archivo", sans-serif;
   font-size: 0.8em;
   font-weight: 700;
+  margin-bottom: 2em;
 }
 .banner__button {
   display: block;
@@ -225,7 +290,7 @@
   font-family: "Archivo", sans-serif;
   font-size: 0.85em;
   font-weight: 700;
-  background-color: #BEAD8E;
+  background-color: #bead8e;
 }
 .banner__button:not(:last-child) {
   margin-bottom: 2em;
