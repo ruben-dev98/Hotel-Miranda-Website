@@ -66,12 +66,16 @@
   width: 60%;
 }
 .footer__logo-img {
-  box-shadow: 0em 0.9em 1.5em 0em rgba(139, 139, 139, 0.2509803922);
+  /*box-shadow: 0em 0.9em 1.5em 0em #8b8b8b40;*/
+  background-color: #BEAD8E;
   width: 2.3em;
   height: 2.3em;
   display: inline-block;
   padding: 0.8em 0.8em;
   margin-right: 0.5em;
+}
+.footer__logo-img img {
+  filter: invert(1);
 }
 .footer__logo-title {
   display: inline-block;
