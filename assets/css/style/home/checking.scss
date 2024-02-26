@@ -1,0 +1,23 @@
+.checking {
+    background-color: #222222;
+
+    &__label {
+        color: $color-white;
+        font-family: $font-roboto;
+        font-weight: 700;
+        size: 1rem;
+    }
+
+    &__input {
+        font-family: $font-roboto;
+        font-size: 14px;
+    }
+
+    &__button {
+        color: $color-white;
+        font-family: $font-archivo;
+        font-weight: 700;
+        font-size: 14px;
+        background-color: $bg-beige;
+    }
+}

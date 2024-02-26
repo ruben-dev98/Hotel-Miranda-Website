@@ -1,0 +1,199 @@
+.header {
+  width: 100%;
+  background-size: contain;
+}
+.banner {
+  background-color: #333333;
+}
+.banner__title {
+  color: #FFF;
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+}
+.banner__text {
+  color: #FFF;
+  font-family: "Archivo", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+.banner__button {
+  display: block;
+  color: #FFF;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #BEAD8E;
+}
+.banner__button--transparent {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3294117647);
+}
+
+.about-us {
+  /*
+      about us archivo 700 13px
+  */
+}
+.about-us__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+}
+.about-us__text {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.about-us__button {
+  color: #FFF;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  background-color: #BEAD8E;
+}
+.about-us__features-img {
+  width: 270px;
+  height: 300px;
+}
+.about-us__features-feature-img {
+  width: 68px;
+  height: 50px;
+}
+.about-us__features-feature-title {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+.about-us__features-feature-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.checking {
+  background-color: #222222;
+}
+.checking__label {
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  size: 1rem;
+}
+.checking__input {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+.checking__button {
+  color: #FFF;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  background-color: #BEAD8E;
+}
+
+.facilities__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+}
+
+.intro-video {
+  background-color: #222;
+}
+.intro-video__title {
+  color: #FFF;
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+}
+.intro-video__text {
+  color: #C2C2C2;
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.intro-video__video {
+  width: 80%;
+  height: 80%;
+}
+.intro-video__button {
+  color: #FFF;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #BEAD8E;
+}
+
+.menu__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+}
+.menu__article {
+  display: flex;
+  gap: 10px;
+}
+.menu__article-img {
+  width: 40px;
+  height: 40px;
+}
+.menu__button {
+  color: #FFF;
+  background-color: #BEAD8E;
+}
+
+.rooms__title {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 56px;
+}
+
+.stats {
+  background-color: #222;
+}
+.stats__article-img {
+  width: 24px;
+  height: 24px;
+}
+.stats__article-title {
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+}
+.stats__article-title-plus {
+  font-size: 14px;
+}
+.stats__article-text {
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #999999;
+}
+
+/*font-family: Archivo;
+font-size: 1rem;
+font-weight: 600;
+color: #111111;
+
+font-family: Archivo;
+font-size: 13px;
+font-weight: 700;*/
+.rooms__swiper, .facilities__swiper, .menu__swiper {
+  width: 80%;
+  height: 100px;
+}
+
+html, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+/*# sourceMappingURL=styles.css.map */

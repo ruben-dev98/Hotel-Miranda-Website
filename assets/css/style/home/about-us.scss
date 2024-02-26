@@ -1,0 +1,52 @@
+.about-us {
+
+    /*
+        about us archivo 700 13px
+    */
+
+    &__title {
+        font-family: $font-standard;
+        font-size: 56px;
+        font-weight: 400;
+    }
+
+    &__text {
+        font-family: $font-archivo;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    &__button {
+        color: $color-white;
+        font-family: $font-archivo;
+        font-weight: 700;
+        font-size: 14px;
+        background-color: $bg-beige;
+    }
+
+    &__features {
+        &-img {
+            width: 270px;
+            height: 300px;
+        }
+
+        &-feature {
+            &-img {
+                width: 68px;
+                height: 50px;
+            }
+
+            &-title {
+                font-family: $font-standard;
+                font-weight: 400;
+                font-size: 30px;
+            }
+
+            &-text {
+                font-family: $font-roboto;
+                font-weight: 400;
+                font-size: 14px;
+            }
+        }
+    }
+}
