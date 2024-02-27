@@ -944,6 +944,74 @@
   font-size: 0.8rem;
 }
 
+@media (min-width: 1000px) {
+  .rooms {
+    text-align: center;
+  }
+  .rooms__informative-text {
+    display: block;
+    margin: 0 auto;
+    color: #777;
+    font-family: "Archivo", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    line-height: 1rem;
+    letter-spacing: 0.15rem;
+    margin-bottom: 2em;
+  }
+  .rooms__title {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-size: 5rem;
+    line-height: 5rem;
+    letter-spacing: -0.15rem;
+    margin-bottom: 1em;
+  }
+  .rooms__menu {
+    height: 2.5em;
+    padding: 0em 1em;
+    position: relative;
+    top: 1.3em;
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #FFF;
+    z-index: 2;
+    /** COLOCAR EN EL MEDIO DEL MENU **/
+  }
+  .rooms__menu-item:not(:last-child) {
+    margin-right: 0.7em;
+  }
+  .rooms__menu-item img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .rooms__swiper {
+    width: 50%;
+    height: 15.25em;
+  }
+  .rooms__swiper-slide-img {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+  }
+  .rooms__details {
+    padding: 1em 0em;
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+  }
+  .rooms__details-info {
+    width: 75%;
+    height: 90%;
+    padding: 1em 2em;
+  }
+  .rooms__details-title {
+    font-size: 2.25rem;
+  }
+}
 .stats {
   background-color: #222;
   padding: 3.5em 0em;
