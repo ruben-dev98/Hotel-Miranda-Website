@@ -506,10 +506,97 @@
   background-color: #BEAD8E;
 }
 
+.rooms {
+  text-align: center;
+}
+.rooms__informative-text {
+  display: block;
+  margin: 0 auto;
+  color: #777;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 0.15rem;
+  margin-bottom: 2em;
+}
 .rooms__title {
   font-family: "Old Standard TT", serif;
   font-weight: 400;
-  font-size: 56px;
+  font-size: 3.5rem;
+  line-height: 3.7rem;
+  letter-spacing: -0.1rem;
+  margin-bottom: 1em;
+}
+.rooms__menu {
+  height: 2.5em;
+  padding: 0em 1em;
+  position: relative;
+  top: 1.3em;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #FFF;
+  z-index: 2;
+  /** COLOCAR EN EL MEDIO DEL MENU **/
+}
+.rooms__menu-item:not(:last-child) {
+  margin-right: 0.7em;
+}
+.rooms__swiper {
+  width: 100%;
+  height: 15.25em;
+}
+.rooms__swiper-slide-img {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+.rooms__details {
+  padding: 1em 0em;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #FFF;
+  position: relative;
+  top: -2em;
+  z-index: 1;
+  text-align: center;
+}
+.rooms__details-title {
+  display: inline-block;
+  font-family: "Old Standard TT", serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 2.25rem;
+  letter-spacing: -0.1rem;
+  margin-bottom: 0.5em;
+}
+.rooms__details-text {
+  width: 80%;
+  display: inline-block;
+  color: #777;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  margin-bottom: 1.5em;
+}
+.rooms__details-price {
+  color: #BEAD8E;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  line-height: 2.7rem;
+  letter-spacing: 0rem;
+}
+.rooms__details-price span:nth-child(1) {
+  font-size: 2rem;
+}
+.rooms__details-price span:nth-child(2) {
+  font-size: 2.5rem;
+}
+.rooms__details-price span:nth-child(3) {
+  font-size: 0.8rem;
 }
 
 .stats {
@@ -544,7 +631,7 @@ color: #111111;
 font-family: Archivo;
 font-size: 13px;
 font-weight: 700;*/
-.rooms__swiper, .facilities__swiper, .menu__swiper {
+.facilities__swiper, .menu__swiper {
   width: 80%;
   height: 100px;
 }

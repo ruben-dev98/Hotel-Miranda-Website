@@ -1,22 +1,12 @@
 const rooms__swiper = new Swiper('.rooms__swiper', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
-
-    // If we need pagination
-    pagination: {
-        el: '.rooms__swiper-pagination',
-    },
+    loop: false,
 
     // Navigation arrows
     navigation: {
         nextEl: '.rooms__swiper-button-next',
         prevEl: '.rooms__swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.rooms__swiper-scrollbar',
     },
 
     mousewheel: {
