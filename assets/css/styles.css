@@ -455,37 +455,77 @@
   border: 0em;
 }
 
+.facilities {
+  text-align: center;
+  padding: 3.5em 0em;
+}
+.facilities__informative-text {
+  color: #777;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 0.15rem;
+  margin-bottom: 1.75em;
+}
 .facilities__title {
   font-family: "Old Standard TT", serif;
-  font-size: 56px;
+  font-size: 3.5rem;
   font-weight: 400;
+  line-height: 3.75rem;
+  letter-spacing: -0.1rem;
+  margin-bottom: 1em;
+}
+.facilities__swiper {
+  width: 100%;
+  height: 23.1em;
 }
 
 .intro-video {
   background-color: #222;
+  padding: 3.5em 1.25em;
+}
+.intro-video__informative-text {
+  color: #BEAD8E;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5em;
 }
 .intro-video__title {
   color: #FFF;
   font-family: "Old Standard TT", serif;
-  font-size: 56px;
+  font-size: 3.5rem;
   font-weight: 400;
+  line-height: 3.75rem;
+  letter-spacing: -0.1rem;
+  margin-bottom: 0.3em;
 }
 .intro-video__text {
+  padding: 0em 0.5em;
   color: #C2C2C2;
   font-family: "Archivo", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.85rem;
+  line-height: 1.5rem;
 }
 .intro-video__video {
   width: 80%;
   height: 80%;
 }
 .intro-video__button {
+  width: 15.8em;
+  height: 4.4em;
+  border: 0em;
   color: #FFF;
-  font-family: "Archivo", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
   background-color: #BEAD8E;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 0.15rem;
 }
 
 .menu__title {
@@ -631,7 +671,7 @@ color: #111111;
 font-family: Archivo;
 font-size: 13px;
 font-weight: 700;*/
-.facilities__swiper, .menu__swiper {
+.menu__swiper {
   width: 80%;
   height: 100px;
 }
