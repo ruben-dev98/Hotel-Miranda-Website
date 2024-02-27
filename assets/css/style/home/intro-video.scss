@@ -55,30 +55,26 @@
 
 @media (min-width: 1000px) {
     .intro-video {
-        background-color: transparent;
         position: relative;
         /*padding: 6em 0em;*/
 
         &__background {
             position: absolute;
-            left: 0;
-            z-index: -1;
-            width: 70%;
-            height: 40em;
-            background-color: $bg-black;
-
-            &--beige {
-                right: 0;
-                left: auto;
-                width: 30%;
-                background-color: $bg-beige;
-            }
+            width: 30%;
+            height: 47.7em;
+            top: 0;
+            right: 0;
+            left: auto;
+            background-color: $bg-beige;
+            z-index: 1;
         }
 
         &__inner {
+            position: relative;
+            z-index: 2;
             padding: 6em 0em;
             display: grid;
-            grid-template-columns: 20% 30% 5% 25% 20%;
+            grid-template-columns: 18.5% 30% 3% 30% 18.5%;
             grid-template-rows: 4rem 12rem 8.7rem 4rem;
             grid-template-areas:
                 ". info . video ."
