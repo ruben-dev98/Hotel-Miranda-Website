@@ -1,51 +1,104 @@
 .about-us {
+    padding: 2em 1.25em;
 
-    /*
-        about us archivo 700 13px
-    */
-
-    &__title {
-        font-family: $font-standard;
-        font-size: 56px;
-        font-weight: 400;
+    &__informative-text {
+        margin-bottom: 1.5em;
+        color: $color-grey;
+        font-family: $font-archivo;
+        font-weight: 700;
+        font-size: 0.8rem;
+        line-break: 1.1rem;
+        letter-spacing: 0.15rem;
     }
 
+    &__title {
+        margin-bottom: .2em;
+        font-family: $font-standard;
+        font-size: 3.5rem;
+        font-weight: 400;
+        line-height: 3.75rem;
+        letter-spacing: -0.1rem;
+    }
+    
     &__text {
+        padding: 0em 0.5em;
+        margin-bottom: 1.5em;
         font-family: $font-archivo;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 0.85rem;
+        line-height: 1.5rem;
+        letter-spacing: 0rem;
+        color: $color-grey;
     }
 
     &__button {
+        margin-bottom: 4em;
+        width: 15.8em;
+        height: 4.4em;
         color: $color-white;
         font-family: $font-archivo;
         font-weight: 700;
-        font-size: 14px;
+        font-size: 0.85rem;
         background-color: $bg-beige;
+        border: 0em;
     }
 
     &__features {
+        margin: 0 auto;
+        display: block;
+        width: 80.5%;
+        
         &-img {
-            width: 270px;
-            height: 300px;
+            width: 100%;
+            /*width: 17.1em;*/
+            height: 18.8em;
         }
 
         &-feature {
+            text-align: center;
+            padding: 3em 0em;
+            margin-bottom: 4em;
+
+            &--dark {
+                background-color: $bg-black;
+            }
+
             &-img {
-                width: 68px;
-                height: 50px;
+                width: fit-content;
+                height: fit-content;
+                margin-bottom: 2em;
+
+                &--padding-right {
+                    padding-right: 0.5em;
+                }
             }
 
             &-title {
+                margin-bottom: .7em;
                 font-family: $font-standard;
                 font-weight: 400;
-                font-size: 30px;
+                font-size: 1.9rem;
+                line-height: 1.9rem;
+                letter-spacing: -0.1rem;
+
+                &--dark {
+                    color: $color-white;
+                }
             }
 
             &-text {
+                margin: 0 auto;
+                width: 77%;
+                color: $color-black;
                 font-family: $font-roboto;
                 font-weight: 400;
-                font-size: 14px;
+                font-size: 0.85rem;
+                line-height: 1.4rem;
+                letter-spacing: 0rem;
+
+                &--dark {
+                    color: $color-white;
+                }
             }
         }
     }
