@@ -1,27 +1,109 @@
 .menu {
-    
+    position: relative;
+
+    > :not(:last-child) {
+        padding-left: 1.25em;
+    }
+
+    &__inner {
+        margin-bottom: 2em;
+    }
+
+    &__display {
+        width: fit-content;
+        height: fit-content;
+        display: block;
+        margin-right: 0;
+        margin-left: auto;
+        position: relative;
+        overflow: hidden;
+
+        &-img {
+            width: 7.15em;
+            height: 7.15em;
+            position: relative;
+            right: -1.6em;
+        }
+    }
+
+    &__informative-text {
+        color: $color-grey;
+        font-family: $font-archivo;
+        font-size: 0.85rem;
+        font-weight: 700;
+        line-height: 1rem;
+        letter-spacing: 0.15rem;
+        margin-bottom: 2em;
+    }
+
     &__title {
         font-family: $font-standard;
-        font-size: 56px;
+        font-size: 3.5rem;
         font-weight: 400;
+        line-height: 3.75rem;
+        letter-spacing: -0.1rem;
+        margin-bottom: 0.5em;
     }
 
     &__article {
         display: flex;
-        gap: 10px;
+        gap: 1.5em;
+        margin-bottom: 1em;
 
         &-img {
-            width: 40px;
-            height: 40px;
+            width: 7.5em;
+            height: 7.5em;
         }
 
         &-text {
+            width: 50%;
+            padding: 0.75em 0em;
+            p {
+                &:nth-child(1) {
+                    font-family: $font-standard;
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    line-height: 1.5rem;
+                    letter-spacing: -0.1rem;
+                }
 
+                &:nth-child(2) {
+                    font-family: $font-roboto;
+                    font-size: 0.85rem;
+                    font-weight: 400;
+                    line-height: 1.5rem;
+                    letter-spacing: 0rem;
+                }
+            }
         }
     }
 
+    &__swiper {
+        width: 90%;
+        height: 23.1em;
+
+        /*&-slide {
+            background-color: blue;
+        }*/
+    }
+
+    &__buttons {
+        width: 24.5%;
+        height: fit-content;
+        display: block;
+        margin-right: 0;
+        margin-left: auto;
+    }
+
     &__button {
-        color: $color-white;
-        background-color: $bg-beige;
+        background: transparent;
+        width: 2.7em;
+        height: 2.7em;
+        border: 0;
+
+        &--active {
+            background-color: $bg-beige;
+            color: $color-white;
+        }
     }
 }

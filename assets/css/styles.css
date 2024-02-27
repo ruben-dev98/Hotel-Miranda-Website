@@ -528,22 +528,97 @@
   letter-spacing: 0.15rem;
 }
 
+.menu {
+  position: relative;
+}
+.menu > :not(:last-child) {
+  padding-left: 1.25em;
+}
+.menu__inner {
+  margin-bottom: 2em;
+}
+.menu__display {
+  width: fit-content;
+  height: fit-content;
+  display: block;
+  margin-right: 0;
+  margin-left: auto;
+  position: relative;
+  overflow: hidden;
+}
+.menu__display-img {
+  width: 7.15em;
+  height: 7.15em;
+  position: relative;
+  right: -1.6em;
+}
+.menu__informative-text {
+  color: #777;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 0.15rem;
+  margin-bottom: 2em;
+}
 .menu__title {
   font-family: "Old Standard TT", serif;
-  font-size: 56px;
+  font-size: 3.5rem;
   font-weight: 400;
+  line-height: 3.75rem;
+  letter-spacing: -0.1rem;
+  margin-bottom: 0.5em;
 }
 .menu__article {
   display: flex;
-  gap: 10px;
+  gap: 1.5em;
+  margin-bottom: 1em;
 }
 .menu__article-img {
-  width: 40px;
-  height: 40px;
+  width: 7.5em;
+  height: 7.5em;
+}
+.menu__article-text {
+  width: 50%;
+  padding: 0.75em 0em;
+}
+.menu__article-text p:nth-child(1) {
+  font-family: "Old Standard TT", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: -0.1rem;
+}
+.menu__article-text p:nth-child(2) {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+}
+.menu__swiper {
+  width: 90%;
+  height: 23.1em;
+  /*&-slide {
+      background-color: blue;
+  }*/
+}
+.menu__buttons {
+  width: 24.5%;
+  height: fit-content;
+  display: block;
+  margin-right: 0;
+  margin-left: auto;
 }
 .menu__button {
-  color: #FFF;
+  background: transparent;
+  width: 2.7em;
+  height: 2.7em;
+  border: 0;
+}
+.menu__button--active {
   background-color: #BEAD8E;
+  color: #FFF;
 }
 
 .rooms {
@@ -671,11 +746,6 @@ color: #111111;
 font-family: Archivo;
 font-size: 13px;
 font-weight: 700;*/
-.menu__swiper {
-  width: 80%;
-  height: 100px;
-}
-
 html, * {
   box-sizing: border-box;
   margin: 0;
