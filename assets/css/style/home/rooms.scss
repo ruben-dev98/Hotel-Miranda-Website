@@ -23,12 +23,13 @@
     }
 
     &__menu {
+        max-width: 27em;
+        width: 70%;
+        margin: 0 auto;
         height: 2.5em;
         padding: 0em 1em;
         position: relative;
         top: 1.3em;
-        width: 70%;
-        margin: 0 auto;
         text-align: center;
         background-color: $color-white;
         z-index: 2;
@@ -42,6 +43,7 @@
     }
 
     &__swiper {
+        max-width: 48.1em;
         width: 100%;
         height: 15.25em;
 
@@ -61,6 +63,7 @@
     }
 
     &__details {
+        max-width: 42.5em;
         padding: 1em 0em;
         width: 90%;
         margin: 0 auto;
@@ -118,23 +121,8 @@
 
 @media (min-width: 1000px) {
     .rooms {
-        text-align: center;
-
-        &__informative-text {
-            display: block;
-            margin: 0 auto;
-            color: $color-grey;
-            font-family: $font-archivo;
-            font-size: 0.85rem;
-            font-weight: 700;
-            line-height: 1rem;
-            letter-spacing: 0.15rem;
-            margin-bottom: 2em;
-        }
-
+        
         &__title {
-            font-family: $font-standard;
-            font-weight: 400;
             font-size: 5rem;
             line-height: 5rem;
             letter-spacing: -0.15rem;
@@ -142,20 +130,15 @@
         }
 
         &__menu {
-            height: 2.5em;
-            padding: 0em 1em;
-            position: relative;
-            top: 1.3em;
-            width: 20%;
-            margin: 0 auto;
-            text-align: center;
-            background-color: $color-white;
-            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
 
             /** COLOCAR EN EL MEDIO DEL MENU **/
             &-item {
                 &:not(:last-child) {
-                    margin-right: 0.7em;
+                    margin-right: 1em;
                 }
 
                 img {
@@ -166,16 +149,8 @@
         }
 
         &__swiper {
-            width: 50%;
+            width: max-content;
             height: 15.25em;
-
-            &-slide {
-                &-img {
-                    background-color: black;
-                    width: 100%;
-                    height: 100%;
-                }
-            }
 
             &-button-prev {
             }
@@ -186,7 +161,7 @@
 
         &__details {
             padding: 1em 0em;
-            width: 45%;
+            width: max-content;
             display: flex;
             justify-content: flex-start;
             align-items: center;
