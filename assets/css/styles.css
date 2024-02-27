@@ -113,7 +113,7 @@
     box-shadow: 0em 0em 0em 0em;
   }
   .header__nav {
-    width: 40%;
+    width: 35%;
     display: inline-block;
     position: relative;
     bottom: 0;
@@ -125,7 +125,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 2em;
+    gap: 4em;
     padding: 0em 0em;
     padding-bottom: 0em;
   }
@@ -137,7 +137,7 @@
     width: 5em;
     height: 5em;
     vertical-align: middle;
-    margin-right: 0.5em;
+    margin-right: 1.5em;
     padding: 1.2em 0em;
   }
   .header__logo-img img {
@@ -155,8 +155,9 @@
     font-size: 1.75rem;
   }
   .header__icons {
-    width: 25%;
+    width: 30%;
     vertical-align: middle;
+    margin-right: 2em;
   }
   .header__icons-icon {
     border: 0.1em #777 solid;
@@ -422,7 +423,7 @@
   font-size: 0.8em;
   font-weight: 700;
   line-height: 1rem;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.18rem;
   margin-bottom: 2em;
 }
 .banner__button {
@@ -454,53 +455,25 @@
     padding-bottom: 7.5em;
   }
   .banner__inner {
-    width: 64%;
+    width: 62%;
     margin: 0 auto;
   }
   .banner__title {
-    width: 60%;
+    width: 100%;
     font-size: 7.5rem;
-    font-weight: 400;
     margin-bottom: 0.5em;
     line-height: 8.1rem;
     letter-spacing: -0.22rem;
   }
   .banner__text {
-    grid-area: info;
-    width: 50%;
-    color: #FFF;
-    font-family: "Archivo", sans-serif;
-    font-size: 0.8em;
-    font-weight: 700;
-    margin-bottom: 2em;
+    width: 100%;
   }
   .banner__button {
     display: inline-block;
-    width: 15.8em;
-    height: 4.4em;
-    border: 0em;
-    color: #FFF;
-    font-family: "Archivo", sans-serif;
-    font-size: 0.85em;
-    font-weight: 700;
-    background-color: #bead8e;
-    font-family: Archivo;
-    line-height: 1rem;
-    letter-spacing: 0.15rem;
   }
   .banner__button:not(:last-child) {
     margin-bottom: 0em;
     margin-right: 2em;
-  }
-  .banner__button:nth-last-of-type(1) {
-    grid-area: tour;
-  }
-  .banner__button:nth-last-of-type(2) {
-    grid-area: more;
-  }
-  .banner__button--transparent {
-    background-color: transparent;
-    border: 0.15em solid rgba(255, 255, 255, 0.3294117647);
   }
 }
 .about-us {
@@ -541,6 +514,8 @@
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   font-size: 0.85rem;
+  line-height: 1rem;
+  letter-spacing: 0.18rem;
   background-color: #BEAD8E;
   border: 0em;
 }
@@ -567,9 +542,6 @@
   height: fit-content;
   margin-bottom: 2em;
 }
-.about-us__features-feature-img--padding-right {
-  padding-right: 0.5em;
-}
 .about-us__features-feature-title {
   margin-bottom: 0.7em;
   font-family: "Old Standard TT", serif;
@@ -595,6 +567,56 @@
   color: #FFF;
 }
 
+@media (min-width: 1000px) {
+  .about-us {
+    padding: 2em 0em;
+    margin-bottom: 4em;
+  }
+  .about-us__inner {
+    width: 62%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5em;
+  }
+  .about-us__info {
+    width: 40%;
+  }
+  .about-us__title {
+    font-size: 5rem;
+    line-height: 5.65rem;
+    letter-spacing: -0.15rem;
+  }
+  .about-us__features {
+    margin: 0em 0em;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "strong_feats strong_img" "luxury_img luxury_feats";
+  }
+  .about-us__features-img:nth-of-type(1) {
+    grid-area: strong_img;
+    padding-left: 1.5em;
+  }
+  .about-us__features-img:nth-of-type(2) {
+    grid-area: luxury_img;
+    padding-right: 1.5em;
+  }
+  .about-us__features-feature {
+    margin-bottom: 0em;
+  }
+  .about-us__features-feature:nth-of-type(1) {
+    grid-area: strong_feats;
+    margin-right: 1.5em;
+  }
+  .about-us__features-feature:nth-of-type(2) {
+    grid-area: luxury_feats;
+    margin-top: 1.5em;
+    margin-left: 1.5em;
+  }
+}
 .checking {
   background-color: #222222;
   padding: 2em 1.25em;
@@ -621,10 +643,9 @@
   border-bottom: 0.1em solid #BEAD8E;
   background-color: transparent;
 }
-.checking__input::-webkit-calendar-picker-indicator:before {
+.checking__input::-webkit-calendar-picker-indicator::after {
   color: #BEAD8E;
   text-align: left;
-  display: none;
 }
 .checking__button {
   width: 17.5em;
@@ -640,6 +661,29 @@
   border: 0em;
 }
 
+@media (min-width: 1000px) {
+  .checking {
+    padding: 2em 0em;
+  }
+  .checking__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    width: 62%;
+    margin: 0 auto;
+  }
+  .checking .form__control {
+    width: 50%;
+  }
+  .checking .form__control-input {
+    width: 45%;
+    display: inline-block;
+  }
+  .checking .form__control-input:last-child {
+    margin-left: 5%;
+  }
+}
 .facilities {
   text-align: center;
   padding: 3.5em 0em;

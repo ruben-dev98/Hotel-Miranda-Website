@@ -130,7 +130,7 @@
         box-shadow: 0em 0em 0em 0em;
 
         &__nav {
-            width: 40%;
+            width: 35%;
             display: inline-block;
             position: relative;
             bottom: 0;
@@ -142,7 +142,7 @@
                 flex-direction: row;
                 justify-content: flex-start;
                 align-items: center;
-                gap: 2em;
+                gap: 4em;
                 padding: 0em 0em;
                 padding-bottom: 0em;
             }
@@ -156,7 +156,7 @@
                 width: 5em;
                 height: 5em;
                 vertical-align: middle;
-                margin-right: 0.5em;
+                margin-right: 1.5em;
                 padding: 1.2em 0em;
 
                 img {
@@ -179,8 +179,9 @@
         }
 
         &__icons {
-            width: 25%;
+            width: 30%;
             vertical-align: middle;
+            margin-right: 2em;
 
             &-icon {
                 border: 0.1em #777 solid;

@@ -55,47 +55,61 @@
     </div>
     <header class="banner">
         <div class="banner__inner">
-        <p class="banner__text upper__case">The Ultimate Luxury Experience</p>
-        <p class="banner__title">The Perfect Base For You</p>
-        <button class="banner__button upper__case">Take a Tour</button>
-        <button class="banner__button banner__button--transparent upper__case">Learn More</button>
+            <p class="banner__text upper__case">The Ultimate Luxury Experience</p>
+            <p class="banner__title">The Perfect<br />Base For You</p>
+            <button class="banner__button upper__case">Take a Tour</button>
+            <button class="banner__button banner__button--transparent upper__case">Learn More</button>
         </div>
     </header>
     <section class="checking">
-        <label class="checking__label" for="">Arrival Date</label>
-        <input class="checking__input" type="date" name="" id="">
-        <label class="checking__label" for="">LeDeparture Date</label>
-        <input class="checking__input" type="date" name="" id="">
-        <button class="checking__button upper__case" type="submit">Check availability</button>
+        <form class="checking__inner form">
+            <div class="form__control">
+                <div class="form__control-input">
+                    <label class="checking__label" for="">Arrival Date</label>
+                    <input class="checking__input" type="date" name="" id="">
+                </div>
+                <div class="form__control-input">
+                    <label class="checking__label" for="">LeDeparture Date</label>
+                    <input class="checking__input" type="date" name="" id="">
+                </div>
+            </div>
+            <button class="checking__button upper__case" type="submit">Check availability</button>
+        </form>
     </section>
     <section class="about-us">
-        <p class="about-us__informative-text upper__case">About Us</p>
-        <p class="about-us__title">Discover Our Underground.</p>
-        <p class="about-us__text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat.
-        </p>
-        <button class="about-us__button upper__case">Book Now</button>
-        <div class="about-us__features">
-            <img class="about-us__features-img" src="" alt="">
-            <div class="about-us__features-feature">
-                <img class="about-us__features-feature-img" src="assets/icon/strong-team.svg"
-                    alt="imagen con la silueta de tres personas">
-                <p class="about-us__features-feature-title">Strong Team</p>
-                <p class="about-us__features-feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor.</p>
-            </div>
-            <img class="about-us__features-img" src="" alt="">
-            <div class="about-us__features-feature about-us__features-feature--dark">
-                <img class="about-us__features-feature-img" src="assets/icon/luxury-room.svg"
-                    alt="imagen de un calendario con una flecha saliendo del mismo a la dirección izquierda">
-                <p class="about-us__features-feature-title about-us__features-feature-title--dark">Luxury Room</p>
-                <p class="about-us__features-feature-text about-us__features-feature-text--dark">Lorem ipsum dolor sit
-                    amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor.</p>
-            </div>
+        <div class="about-us__inner">
+            <section class="about-us__info">
+                <p class="about-us__informative-text upper__case">About Us</p>
+                <p class="about-us__title">Discover Our Underground.</p>
+                <p class="about-us__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat.
+                </p>
+
+                <button class="about-us__button upper__case">Book Now</button>
+            </section>
+            <section class="about-us__features">
+                <img class="about-us__features-img" src="" alt="">
+                <div class="about-us__features-feature">
+                    <img class="about-us__features-feature-img" src="assets/icon/strong-team.svg"
+                        alt="imagen con la silueta de tres personas">
+                    <p class="about-us__features-feature-title">Strong Team</p>
+                    <p class="about-us__features-feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor.</p>
+                </div>
+                <img class="about-us__features-img" src="" alt="">
+                <div class="about-us__features-feature about-us__features-feature--dark">
+                    <img class="about-us__features-feature-img" src="assets/icon/luxury-room.svg"
+                        alt="imagen de un calendario con una flecha saliendo del mismo a la dirección izquierda">
+                    <p class="about-us__features-feature-title about-us__features-feature-title--dark">Luxury Room</p>
+                    <p class="about-us__features-feature-text about-us__features-feature-text--dark">Lorem ipsum dolor
+                        sit
+                        amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor.</p>
+                </div>
+            </section>
         </div>
     </section>
     <section class="rooms">

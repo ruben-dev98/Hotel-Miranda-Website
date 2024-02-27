@@ -25,10 +25,9 @@
         border-bottom: 0.1em solid $bg-beige;
         background-color: transparent;
 
-        &::-webkit-calendar-picker-indicator:before {
+        &::-webkit-calendar-picker-indicator::after {
             color: $bg-beige;
             text-align: left;
-            display: none;
         }
     }
 
@@ -44,5 +43,35 @@
         line-height: 1rem;
         letter-spacing: 0.15rem;
         border: 0em;
+    }
+}
+
+@media (min-width: 1000px) {
+    .checking {
+        padding: 2em 0em;
+
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2em;
+            width: 62%;
+            margin: 0 auto;
+        }
+
+        .form {
+            &__control {
+                width: 50%;
+                
+                &-input {
+                    width: 45%;
+                    display: inline-block;
+
+                    &:last-child {
+                        margin-left: 5%;
+                    }
+                }
+            }
+        }
     }
 }

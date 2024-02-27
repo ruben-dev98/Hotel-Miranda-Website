@@ -39,6 +39,8 @@
         font-family: $font-archivo;
         font-weight: 700;
         font-size: 0.85rem;
+        line-height: 1rem;
+        letter-spacing: 0.18rem;
         background-color: $bg-beige;
         border: 0em;
     }
@@ -67,10 +69,6 @@
                 width: fit-content;
                 height: fit-content;
                 margin-bottom: 2em;
-
-                &--padding-right {
-                    padding-right: 0.5em;
-                }
             }
 
             &-title {
@@ -98,6 +96,72 @@
 
                 &--dark {
                     color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .about-us {
+        padding: 2em 0em;
+        margin-bottom: 4em;
+
+        &__inner {
+            width: 62%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 5em;
+        }
+
+        &__info {
+            width: 40%;
+        }
+    
+        &__title {
+            font-size: 5rem;
+            line-height: 5.65rem;
+            letter-spacing: -0.15rem;
+        }
+    
+        &__features {
+            margin: 0em 0em;
+            width: 50%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-areas: 
+            'strong_feats strong_img'
+            'luxury_img luxury_feats'
+            ;
+            
+            &-img {
+
+                &:nth-of-type(1) {
+                    grid-area: strong_img;
+                    padding-left: 1.5em;
+                }
+
+                &:nth-of-type(2) {
+                    grid-area: luxury_img;
+                    padding-right: 1.5em;
+                }
+            }
+    
+            &-feature {
+                margin-bottom: 0em;
+
+                &:nth-of-type(1) {
+                    grid-area: strong_feats;
+                    margin-right: 1.5em;
+                }
+
+                &:nth-of-type(2) {
+                    grid-area: luxury_feats;
+                    margin-top: 1.5em;
+                    margin-left: 1.5em;
                 }
             }
         }
