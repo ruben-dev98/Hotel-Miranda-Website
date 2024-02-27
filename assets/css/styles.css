@@ -573,7 +573,7 @@
     margin-bottom: 4em;
   }
   .about-us__inner {
-    width: 62%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     flex-direction: row-reverse;
@@ -1042,6 +1042,10 @@ body {
 
 .upper__case {
   text-transform: uppercase;
+}
+
+.--max-width {
+  max-width: 74rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
