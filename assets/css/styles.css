@@ -530,6 +530,7 @@
 
 .menu {
   position: relative;
+  margin-bottom: 4.5em;
 }
 .menu > :not(:last-child) {
   padding-left: 1.25em;
@@ -716,10 +717,19 @@
 
 .stats {
   background-color: #222;
+  padding: 3.5em 0em;
+  margin-bottom: 4em;
+}
+.stats__article {
+  text-align: center;
+}
+.stats__article:not(:last-child) {
+  margin-bottom: 3em;
 }
 .stats__article-img {
-  width: 24px;
-  height: 24px;
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 1em;
 }
 .stats__article-title {
   color: #FFF;

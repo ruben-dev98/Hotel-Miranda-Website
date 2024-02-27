@@ -1,15 +1,23 @@
 .stats {
     background-color: $bg-black;
+    padding: 3.5em 0em;
+    margin-bottom: 4em;
 
     &__inner {
 
     }
 
     &__article {
+        text-align: center;
+
+        &:not(:last-child) {
+            margin-bottom: 3em;
+        }
 
         &-img {
-            width: 24px;
-            height: 24px;
+            width: fit-content;
+            height: fit-content;
+            margin-bottom: 1em;
         }
 
         &-title {
@@ -31,9 +39,6 @@
             color: #999999;
         }
     }
-
-
-
 }
 
 
