@@ -421,6 +421,8 @@
   font-family: "Archivo", sans-serif;
   font-size: 0.8em;
   font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 0.15rem;
   margin-bottom: 2em;
 }
 .banner__button {
@@ -445,6 +447,62 @@
   border: 0.15em solid rgba(255, 255, 255, 0.3294117647);
 }
 
+@media (min-width: 1000px) {
+  .banner {
+    padding: 0em 0em;
+    padding-top: 8em;
+    padding-bottom: 7.5em;
+  }
+  .banner__inner {
+    width: 64%;
+    margin: 0 auto;
+  }
+  .banner__title {
+    width: 60%;
+    font-size: 7.5rem;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+    line-height: 8.1rem;
+    letter-spacing: -0.22rem;
+  }
+  .banner__text {
+    grid-area: info;
+    width: 50%;
+    color: #FFF;
+    font-family: "Archivo", sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-bottom: 2em;
+  }
+  .banner__button {
+    display: inline-block;
+    width: 15.8em;
+    height: 4.4em;
+    border: 0em;
+    color: #FFF;
+    font-family: "Archivo", sans-serif;
+    font-size: 0.85em;
+    font-weight: 700;
+    background-color: #bead8e;
+    font-family: Archivo;
+    line-height: 1rem;
+    letter-spacing: 0.15rem;
+  }
+  .banner__button:not(:last-child) {
+    margin-bottom: 0em;
+    margin-right: 2em;
+  }
+  .banner__button:nth-last-of-type(1) {
+    grid-area: tour;
+  }
+  .banner__button:nth-last-of-type(2) {
+    grid-area: more;
+  }
+  .banner__button--transparent {
+    background-color: transparent;
+    border: 0.15em solid rgba(255, 255, 255, 0.3294117647);
+  }
+}
 .about-us {
   padding: 2em 1.25em;
 }
