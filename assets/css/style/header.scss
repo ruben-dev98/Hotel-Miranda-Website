@@ -54,8 +54,24 @@
 
         &-title {
             display: inline-block;
-            vertical-align: top;
-            padding-top: 0.6em;
+            vertical-align: text-bottom;
+            text-align: left;
+
+            span {
+                display: block;
+                font-family: $font-archivo;
+                line-height: 0.65rem;
+                letter-spacing: 0.08rem;
+                font-size: 0.65rem;
+
+                &:nth-child(1) {
+                    font-weight: 700;
+                }
+
+                &:nth-child(2) {
+                    font-weight: 400;
+                }
+            }
         }
     }
 
@@ -87,14 +103,15 @@
 }
 
 @media (min-width: 1000px) {
-    
     .background__header {
         background: $bg-black;
-        padding-top: 3em;
-        height: 10vh;
+        height: 5.8em;
 
         &-informative-text {
-            display: inline-block;
+            display: block;
+            width: 75%;
+            margin: 0 auto;
+            padding: .5em 0em;
             color: $color-white;
             font-family: $font-roboto;
             font-size: 1rem;
@@ -106,16 +123,15 @@
 
     .header {
         margin: 0 auto;
-        padding: 2em 2em;
-        width: 80%;
-        position: sticky;
+        padding: 1em 1em;
+        width: 75%;
+        position: relative;
         background-color: $color-white;
         box-shadow: 0em 0em 0em 0em;
 
         &__nav {
-            width: 60%;
+            width: 40%;
             display: inline-block;
-            gap: 1em;
             position: relative;
             bottom: 0;
             box-shadow: 0em 0em 0em 0em;
@@ -124,9 +140,9 @@
             &-list {
                 display: flex;
                 flex-direction: row;
-                justify-content: center;
+                justify-content: flex-start;
                 align-items: center;
-                gap: 1em;
+                gap: 2em;
                 padding: 0em 0em;
                 padding-bottom: 0em;
             }
@@ -134,27 +150,41 @@
 
         &__logo {
             display: inline-block;
-            width: 20%;
-            text-align: end;
+            width: 30%;
 
             &-img {
-                
+                width: 5em;
+                height: 5em;
+                vertical-align: middle;
+                margin-right: 0.5em;
+                padding: 1.2em 0em;
+
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    width: 2em;
+                    height: 2.65em;
+                }
             }
 
             &-title {
-                display: inline-block;
-                vertical-align: top;
-                padding-top: 0.6em;
+                vertical-align: middle;
+
+                span {
+                    line-height: 1.75rem;
+                    letter-spacing: 0.15rem;
+                    font-size: 1.75rem;
+                }
             }
         }
 
         &__icons {
-            width: 15%;
-            vertical-align: bottom;
+            width: 25%;
+            vertical-align: middle;
 
             &-icon {
                 border: 0.1em #777 solid;
-                padding: .5em;
+                padding: 0.5em;
                 width: 3em;
                 height: 3em;
                 vertical-align: middle;
