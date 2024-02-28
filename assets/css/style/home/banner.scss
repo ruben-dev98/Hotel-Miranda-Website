@@ -1,8 +1,11 @@
 .banner {
     background-color: #333333;
     padding: 0em 1.25em;
-    padding-top: 8em;
-    padding-bottom: 5em;
+
+    &__inner {
+        padding-top: 8em;
+        padding-bottom: 5em;
+    }
 
     &__title {
         color: $color-white;
@@ -51,12 +54,10 @@
 }
 
 @media (min-width: 1000px) {
-    
     .banner {
-        padding-top: 8em;
-        padding-bottom: 7.5em;
-
         &__inner {
+            padding-top: 8em;
+            padding-bottom: 7.5em;
             width: 100%;
             margin: 0 auto;
         }
