@@ -1311,6 +1311,15 @@
     color: #999999;
   }
 }
+.facilities--dark {
+  color: #FFF;
+  background-color: #222;
+}
+
+.facilities__swiper--dark {
+  background-color: #333;
+}
+
 html, * {
   box-sizing: border-box;
   margin: 0;

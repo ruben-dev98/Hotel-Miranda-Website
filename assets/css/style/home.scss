@@ -7,3 +7,11 @@
 @import './home/rooms.scss';
 @import './home/stats.scss';
 
+.facilities--dark {
+    color: #FFF;
+    background-color: $bg-black;
+}
+
+.facilities__swiper--dark {
+    background-color: $bg-grey;
+}
