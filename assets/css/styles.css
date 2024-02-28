@@ -688,7 +688,7 @@
 }
 .facilities {
   text-align: center;
-  padding: 3.5em 1.25em;
+  padding: 3.5em 0em;
 }
 .facilities__informative-text {
   color: #777;
@@ -712,8 +712,22 @@
   height: 23.1em;
 }
 .facilities__swiper-slide {
-  padding: 2em 2em;
+  padding: 5em 2em;
   text-align: left;
+}
+.facilities__swiper-slide-number {
+  position: absolute;
+  top: 0em;
+  right: 2rem;
+  color: rgba(34, 34, 34, 0.0392156863);
+  font-family: "Archivo", sans-serif;
+  font-size: 7.5rem;
+  font-weight: 700;
+  line-height: 8.1rem;
+  letter-spacing: 0rem;
+}
+.facilities__swiper-slide-number--dark {
+  color: #222;
 }
 .facilities__swiper-slide-img {
   margin-bottom: 4em;
@@ -739,6 +753,8 @@
   .facilities {
     margin: 0 auto;
     text-align: center;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
   }
   .facilities__inner {
     width: 100%;
