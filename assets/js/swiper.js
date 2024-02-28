@@ -10,6 +10,18 @@ const rooms__swiper = new Swiper('.rooms__swiper', {
     }
 });
 
+const rooms__details__swiper = new Swiper('.room-details__swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.room-details__swiper-button-next',
+        prevEl: '.room-details__swiper-button-prev',
+    }
+});
+
 const menus__swiper = new Swiper('.menu__swiper', {
     // Optional parameters
     direction: 'horizontal',

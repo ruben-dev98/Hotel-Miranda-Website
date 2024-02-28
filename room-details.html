@@ -1,11 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/swiper.js" defer></script>
+    <script src="assets/js/header.js" defer></script>
     <title>Room Details</title>
 </head>
+
 <body>
-    
+    <div class="background__header">
+        <span class="background__header-informative-text">We Make Your Feel Comfortable</span>
+        <header class="header">
+            <img class="header__menu" src="assets/icon/menu.svg" alt="icono para desplegar el menu de la página">
+            <img class="header__menu header__menu-x" src="assets/icon/menu-x.svg"
+                alt="icono para cerrar el menu de la página">
+            <div class="header__logo">
+                <span class="header__logo-img">
+                    <img src="assets/img/logo-H.svg" alt="logo con la letra H">
+                </span>
+                <h2 class="header__logo-title upper__case">
+                    <span>Hotel</span>
+                    <span>Miranda</span>
+                </h2>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-list-item">About Us</li>
+                    <li class="header__nav-list-item">Rooms</li>
+                    <li class="header__nav-list-item">Offers</li>
+                    <li class="header__nav-list-item">Contact</li>
+                </ul>
+            </nav>
+            <div class="header__icons">
+                <img class="header__icons-icon" src="assets/icon/user.svg">
+                <img class="header__icons-icon" src="assets/icon/search.svg">
+            </div>
+        </header>
+    </div>
+    <header class="banner">
+        <div class="banner__inner banner__inner--rooms --max-width">
+            <p class="banner__text upper__case">The Ultimate Luxury</p>
+            <p class="banner__title">Ultimate<br> Room</p>
+        </div>
+        <div class="banner__pagination banner__pagination--room-details">
+            <div class="banner__pagination-inner">
+                <span>Home</span><span>|</span><span>Room Details</span>
+            </div>
+        </div>
+    </header>
+    <section class="room-details__details">
+        <p class="room-details__details-informative-text">Double Bed</p>
+        <p class="room-details__details-title">Luxury Double Bed</p>
+        <p class="room-details__details">$345/night</p>
+        <img src="" alt="">
+        <form class="room-details__form">
+            <div class="room-details__form-control">
+                <label for=""></label>
+                <input type="text">
+            </div>
+            <div class="room-details__form-control">
+                <label for=""></label>
+                <input type="text">
+            </div>
+            <div class="room-details__form-control">
+                <label for=""></label>
+                <input type="text">
+            </div>
+            <div class="room-details__form-control">
+                <label for=""></label>
+                <input type="text">
+            </div>
+            <div class="room-details__form-control">
+                <label for=""></label>
+                <input type="text">
+            </div>
+            <div class="room-details__form-control">
+                <label for=""></label>
+                <input type="text">
+            </div>
+        </form>
+        <p class="room-details__text"></p>
+    </section>
+    <section class="room-details__amenities">
+        <p class="room-details__amenities-title">Amenities</p>
+        <ul class="room-details__amenities-list">
+            <li class="room-details__amenities-list-item">
+                <img class="room-details__amenities-list-item-img" src="assets/icon/amenities-air-conditioner.svg"
+                    alt="">
+                <span class="room-details__amenities-list-item-text"></span>
+            </li>
+            <li class="room-details__amenities-list-item">
+                <img class="room-details__amenities-list-item-img" src="assets/icon/amenities-breakfast.svg" alt="">
+                <span class="room-details__amenities-list-item-text"></span>
+            </li>
+            <li class="room-details__amenities-list-item">
+                <img class="room-details__amenities-list-item-img" src="assets/icon/amenities-cleaning.svg" alt="">
+                <span class="room-details__amenities-list-item-text"></span>
+            </li>
+            <li class="room-details__amenities-list-item">
+                <img class="room-details__amenities-list-item-img" src="assets/icon/amenities-grocery.svg" alt="">
+                <span class="room-details__amenities-list-item-text"></span>
+            </li>
+            <li class="room-details__amenities-list-item">
+                <img class="room-details__amenities-list-item-img" src="assets/icon/amenities-shop.svg" alt="">
+                <span class="room-details__amenities-list-item-text"></span>
+            </li>
+            <li class="room-details__amenities-list-item">
+                <img class="room-details__amenities-list-item-img" src="assets/icon/amenities-online-support.svg"
+                    alt="">
+                <span class="room-details__amenities-list-item-text"></span>
+            </li>
+            <li class="room-details__amenities-list-item">
+                <img class="room-details__amenities-list-item-img" src="assets/icon/amenities-smart-security.svg"
+                    alt="">
+                <span class="room-details__amenities-list-item-text"></span>
+            </li>
+        </ul>
+        <ul class="room-details__amenities-list">
+            <li class="room-details__amenities-list-item">
+                <img class="room-details__amenities-list-item-img" src="assets/icon/amenities-wifi.svg" alt="">
+                <span class="room-details__amenities-list-item-text"></span>
+            </li>
+            <li class="room-details__amenities-list-item">
+                <img class="room-details__amenities-list-item-img" src="assets/icon/amenities-kitchen.svg" alt="">
+                <span class="room-details__amenities-list-item-text"></span>
+            </li>
+            <li class="room-details__amenities-list-item">
+                <img class="room-details__amenities-list-item-img" src="assets/icon/amenities-shower.svg" alt="">
+                <span class="room-details__amenities-list-item-text"></span>
+            </li>
+            <li class="room-details__amenities-list-item">
+                <img class="room-details__amenities-list-item-img" src="assets/icon/amenities-single-bed.svg" alt="">
+                <span class="room-details__amenities-list-item-text"></span>
+            </li>
+            <li class="room-details__amenities-list-item">
+                <img class="room-details__amenities-list-item-img" src="assets/icon/amenities-towels.svg" alt="">
+                <span class="room-details__amenities-list-item-text"></span>
+            </li>
+            <li class="room-details__amenities-list-item">
+                <img class="room-details__amenities-list-item-img" src="assets/icon/amenities-strong-locker.svg" alt="">
+                <span class="room-details__amenities-list-item-text"></span>
+            </li>
+            <li class="room-details__amenities-list-item">
+                <img class="room-details__amenities-list-item-img" src="assets/icon/amenities-expert.svg" alt="">
+                <span class="room-details__amenities-list-item-text"></span>
+            </li>
+        </ul>
+    </section>
+    <section class="room-details__founder">
+        <img class="room-details__founder-img" src="" alt="">
+        <p class="room-details__founder-title">Rosalina D. William</p>
+        <p class="room-details__founder-subtitle">Founder, Qux Co.</p>
+        <p class="room-details__founder-text">
+            Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore.
+        </p>
+    </section>
+    <section class="room-details__cancellation">
+        <p class="room-details__cancellation-title">Cancellation</p>
+        <p class="room-details__cancellation-text">
+            Phasellus volutpat neque a tellus venenatis,
+            a euismod augue facilisis. Fusce ut metus
+            mattis, consequat metus nec, luctus lectus.
+            Pellentesque orci quis hendrerit sed eu dolor.
+            Cancel up to 14 days to get a full refund.
+        </p>
+    </section>
+    <section class="room-details__related-rooms">
+        <p class="room-details__related-rooms-title">Related Rooms</p>
+        <div class="room-details__swiper swiper --max-width">
+            <!-- Additional required wrapper -->
+            <div class="room-details__swiper-wrapper swiper-wrapper">
+                <!-- Slides -->
+                <div class="room-details__swiper-slide rooms__list-item swiper-slide">
+                    <img class="rooms__list-item-img" src="" alt="">
+                    <menu class="rooms__list-item-menu rooms__menu">
+                        <span class="rooms__menu-item">
+                            <img src="assets/icon/bed.svg" alt="icono de una cama">
+                        </span>
+                        <span class="rooms__menu-item">
+                            <img src="assets/icon/wifi.svg" alt="icono de conexión wifi">
+                        </span>
+                        <span class="rooms__menu-item">
+                            <img src="assets/icon/car.svg" alt="icono de un coche">
+                        </span>
+                        <span class="rooms__menu-item">
+                            <img src="assets/icon/snowflake.svg" alt="icono de un copo de nieve">
+                        </span>
+                        <span class="rooms__menu-item">
+                            <img src="assets/icon/gym.svg" alt="icono de una mancuerna">
+                        </span>
+                        <span class="rooms__menu-item">
+                            <img src="assets/icon/no-smoking.svg" alt="icono de prohibido fumar">
+                        </span>
+                        <span class="rooms__menu-item">
+                            <img src="assets/icon/cocktail.svg" alt="icono de un coctel">
+                        </span>
+                    </menu>
+                    <div class="rooms__list-item-details">
+                        <p class="rooms__list-item-details-title">Minimal Duplex Room</p>
+                        <p class="rooms__list-item-details-text">
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipi sicing elit, sed do eiusmod tempor.
+                        </p>
+                        <p class="rooms__list-item-details-price">
+                            <span>$345/Night</span><span>Booking Now</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="room-details__swiper-slide rooms__list-item swiper-slide">
+                    <img class="rooms__list-item-img" src="" alt="">
+                    <menu class="rooms__list-item-menu rooms__menu">
+                        <span class="rooms__menu-item">
+                            <img src="assets/icon/bed.svg" alt="icono de una cama">
+                        </span>
+                        <span class="rooms__menu-item">
+                            <img src="assets/icon/wifi.svg" alt="icono de conexión wifi">
+                        </span>
+                        <span class="rooms__menu-item">
+                            <img src="assets/icon/car.svg" alt="icono de un coche">
+                        </span>
+                        <span class="rooms__menu-item">
+                            <img src="assets/icon/snowflake.svg" alt="icono de un copo de nieve">
+                        </span>
+                        <span class="rooms__menu-item">
+                            <img src="assets/icon/gym.svg" alt="icono de una mancuerna">
+                        </span>
+                        <span class="rooms__menu-item">
+                            <img src="assets/icon/no-smoking.svg" alt="icono de prohibido fumar">
+                        </span>
+                        <span class="rooms__menu-item">
+                            <img src="assets/icon/cocktail.svg" alt="icono de un coctel">
+                        </span>
+                    </menu>
+                    <div class="rooms__list-item-details">
+                        <p class="rooms__list-item-details-title">Minimal Duplex Room</p>
+                        <p class="rooms__list-item-details-text">
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipi sicing elit, sed do eiusmod tempor.
+                        </p>
+                        <p class="rooms__list-item-details-price">
+                            <span>$345/Night</span><span>Booking Now</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="room-details__swiper-slide rooms__list-item swiper-slide">
+                    <img class="rooms__list-item-img" src="" alt="">
+                    <menu class="rooms__list-item-menu rooms__menu">
+                        <span class="rooms__menu-item">
+                            <img src="assets/icon/bed.svg" alt="icono de una cama">
+                        </span>
+                        <span class="rooms__menu-item">
+                            <img src="assets/icon/wifi.svg" alt="icono de conexión wifi">
+                        </span>
+                        <span class="rooms__menu-item">
+                            <img src="assets/icon/car.svg" alt="icono de un coche">
+                        </span>
+                        <span class="rooms__menu-item">
+                            <img src="assets/icon/snowflake.svg" alt="icono de un copo de nieve">
+                        </span>
+                        <span class="rooms__menu-item">
+                            <img src="assets/icon/gym.svg" alt="icono de una mancuerna">
+                        </span>
+                        <span class="rooms__menu-item">
+                            <img src="assets/icon/no-smoking.svg" alt="icono de prohibido fumar">
+                        </span>
+                        <span class="rooms__menu-item">
+                            <img src="assets/icon/cocktail.svg" alt="icono de un coctel">
+                        </span>
+                    </menu>
+                    <div class="rooms__list-item-details">
+                        <p class="rooms__list-item-details-title">Minimal Duplex Room</p>
+                        <p class="rooms__list-item-details-text">
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipi sicing elit, sed do eiusmod tempor.
+                        </p>
+                        <p class="rooms__list-item-details-price">
+                            <span>$345/Night</span><span>Booking Now</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="room-details__swiper-button-prev swiper-button-prev"></div>
+            <div class="room-details__swiper-button-next swiper-button-next"></div>
+        </div>
+        <!-- Pagina home swiper mas card de rooms -->
+    </section>
+    <footer class="footer" style="background-image: url(./assets/img/bg-footer.png);">
+        <div class="footer__background">
+            <div class="footer__inner --max-width">
+                <header class="footer__header">
+                    <span class="footer__header-logo">
+                        <img src="assets/img/logo-H.svg" alt="logo con la letra H">
+                    </span>
+                    <h2 class="footer__header-title upper__case">
+                        <span>Hotel</span>
+                        <span>Miranda</span>
+                    </h2>
+                    <p class="footer__header-text">
+                        Lorem ipsum dolor sit amet, consect etur adipisicing elit,
+                        sed doing eius mod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
+                    </p>
+                    <div class="footer__header-icons">
+                        <div class="footer__header-icons-icon">
+                            <img src="assets/icon/fb.svg" alt="icono facebook">
+                        </div>
+                        <div class="footer__header-icons-icon footer__header-icons-icon--bg-beige">
+                            <img src="assets/icon/twitter.svg" alt="icono twitter">
+                        </div>
+                        <div class="footer__header-icons-icon">
+                            <img src="assets/icon/behanche.svg" alt="icono behanche">
+                        </div>
+                        <div class="footer__header-icons-icon">
+                            <img src="assets/icon/linkedin.svg" alt="icono linkedin">
+                        </div>
+                        <div class="footer__header-icons-icon">
+                            <img src="assets/icon/youtube.svg" alt="icono video de youtube">
+                        </div>
+                    </div>
+                </header>
+                <section class="footer__services">
+                    <h2 class="footer__services-title">Services.</h2>
+                    <ul class="footer__services-list">
+                        <li>Resturent & Bar</li>
+                        <li>Swimming Pool</li>
+                        <li>Wellness & Spa</li>
+                        <li>Restaurant</li>
+                        <li>Conference Room</li>
+                        <li>Coctail Party House</li>
+                    </ul>
+                    <ul class="footer__services-list">
+                        <li>Gaming Zone</li>
+                        <li>Marrige Party</li>
+                        <li>Party Planning</li>
+                        <li>Tour Consultancy</li>
+                    </ul>
+                </section>
+                <section class="footer__contact">
+                    <h2 class="footer__contact-title">Contact Us.</h2>
+                    <div class="footer__contact-info">
+                        <section>
+                            <img class="footer__contact-info-icon" src="assets/img/call.svg"
+                                alt="icono de un telefono recibinedo una llamada">
+                            <div class="footer__contact-info-text">
+                                <p>Phone Number</p>
+                                <p>5555555555</p>
+                            </div>
+                        </section>
+                        <section>
+                            <img class="footer__contact-info-icon" src="assets/img/email.svg"
+                                alt="icono de un sobre con un numero 1 en un bocadillo indicando que se tiene un mensaje sin leer">
+                            <div class="footer__contact-info-text">
+                                <p>Email</p>
+                                <p>algo@gmail.com</p>
+                            </div>
+                        </section>
+                        <section>
+                            <img class="footer__contact-info-icon" src="assets/img/ubi.svg"
+                                alt="icono para representar una ubicación en un mapa">
+                            <div class="footer__contact-info-text">
+                                <p>Location</p>
+                                <p>Alguna calle, A Coruña, España</p>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+            <footer class="footer__directives">
+                <div class="footer__directives-inner --max-width">
+                    <p class="footer__directives-text">Copyright By@Example - 2024</p>
+                    <p class="footer__directives-text">Terms of Use | Privacy Enviroment Policy</p>
+                </div>
+            </footer>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
+
 </html>
