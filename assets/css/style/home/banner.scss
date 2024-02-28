@@ -1,11 +1,15 @@
 .banner {
     background-color: #333333;
     padding: 0em 1.25em;
-
+    
     &__inner {
         width: 100%;
-        padding-top: 6em;
+        padding-top: 9em;
         padding-bottom: 5em;
+
+        &--about {
+            padding-bottom: 1em;
+        }
     }
 
     &__title {
@@ -51,6 +55,37 @@
             border: 0.15em solid #ffffff54;
         }
     }
+
+    &__pagination {
+        max-width: 12.5rem;
+        width: 9.75em;
+        background-color: $color-white;
+        margin-right: 0;
+        margin-left: auto;
+        padding: 1em 1em;
+    
+        &-inner {
+            text-align: center;
+        }
+    
+        span {
+            font-family: $font-archivo;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1rem;
+            letter-spacing: -.1rem;
+            color: $color-black;
+    
+            &:nth-child(3) {
+                color: $bg-beige;
+            }
+    
+            &:not(:last-child) {
+                margin-right: 0.5em;
+            }
+        }
+    }
+
 }
 
 @media (min-width: 1000px) {
@@ -81,6 +116,10 @@
                 margin-bottom: 0em;
                 margin-right: 2em;
             }
+        }
+
+        &__pagination {
+            width: 100%;
         }
     }
 }

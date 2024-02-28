@@ -414,8 +414,11 @@
 }
 .banner__inner {
   width: 100%;
-  padding-top: 6em;
+  padding-top: 9em;
   padding-bottom: 5em;
+}
+.banner__inner--about {
+  padding-bottom: 1em;
 }
 .banner__title {
   color: #FFF;
@@ -456,6 +459,31 @@
   background-color: transparent;
   border: 0.15em solid rgba(255, 255, 255, 0.3294117647);
 }
+.banner__pagination {
+  max-width: 12.5rem;
+  width: 9.75em;
+  background-color: #FFF;
+  margin-right: 0;
+  margin-left: auto;
+  padding: 1em 1em;
+}
+.banner__pagination-inner {
+  text-align: center;
+}
+.banner__pagination span {
+  font-family: "Archivo", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: -0.1rem;
+  color: #111;
+}
+.banner__pagination span:nth-child(3) {
+  color: #BEAD8E;
+}
+.banner__pagination span:not(:last-child) {
+  margin-right: 0.5em;
+}
 
 @media (min-width: 1000px) {
   .banner__inner {
@@ -480,6 +508,9 @@
   .banner__button:not(:last-child) {
     margin-bottom: 0em;
     margin-right: 2em;
+  }
+  .banner__pagination {
+    width: 100%;
   }
 }
 .about-us {
@@ -1333,34 +1364,6 @@
 
 .facilities__swiper--dark {
   background-color: #333;
-}
-
-.banner__pagination {
-  max-width: 12.5rem;
-  width: 100%;
-  background-color: #FFF;
-  margin-right: 0;
-  margin-left: auto;
-  padding: 1em 1em;
-}
-.banner__pagination-inner {
-  text-align: center;
-  margin: 0 auto;
-  width: 80%;
-}
-.banner__pagination span {
-  font-family: "Archivo", sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1rem;
-  letter-spacing: -0.1rem;
-  color: #111;
-}
-.banner__pagination span:nth-child(3) {
-  color: #BEAD8E;
-}
-.banner__pagination span:not(:last-child) {
-  margin-right: 1em;
 }
 
 .about__video {
