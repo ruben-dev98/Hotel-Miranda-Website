@@ -423,14 +423,14 @@
   font-size: 3.5rem;
   font-weight: 400;
   margin-bottom: 0.5em;
-  line-height: 1.4em;
+  line-height: 1.4rem;
   letter-spacing: -0.1rem;
 }
 .banner__text {
   width: 50%;
   color: #FFF;
   font-family: "Archivo", sans-serif;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-weight: 700;
   line-height: 1rem;
   letter-spacing: 0.18rem;
@@ -445,10 +445,9 @@
   font-family: "Archivo", sans-serif;
   font-size: 0.85em;
   font-weight: 700;
-  background-color: #bead8e;
-  font-family: Archivo;
   line-height: 1rem;
   letter-spacing: 0.15rem;
+  background-color: #bead8e;
 }
 .banner__button:not(:last-child) {
   margin-bottom: 2em;
@@ -1364,6 +1363,59 @@
   line-height: 2.5rem;
   letter-spacing: -0.1rem;
   text-align: center;
+}
+
+.about__restaurant {
+  padding: 0em 1.25em;
+  margin-bottom: 5em;
+}
+.about__restaurant-inner {
+  padding: 0.5em 1.3em;
+}
+.about__restaurant-img {
+  width: 100%;
+  height: 14.5em;
+  margin-bottom: 1.5em;
+}
+.about__restaurant-informative-text {
+  color: #777;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 0.15rem;
+  margin-bottom: 1.75em;
+}
+.about__restaurant-title {
+  font-family: "Old Standard TT", serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3.1rem;
+  letter-spacing: -0.1rem;
+  margin-bottom: 0.75em;
+}
+.about__restaurant-text {
+  padding-right: 0.5em;
+  color: #777;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  margin-bottom: 1em;
+}
+.about__restaurant-button {
+  display: block;
+  width: 15.8em;
+  height: 4.4em;
+  border: 0em;
+  color: #FFF;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.85em;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 0.15rem;
+  background-color: #bead8e;
 }
 
 .about__cards {

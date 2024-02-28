@@ -13,7 +13,7 @@
         font-size: 3.5rem;
         font-weight: 400;
         margin-bottom: 0.5em;
-        line-height: 1.4em;
+        line-height: 1.4rem;
         letter-spacing: -0.1rem;
     }
 
@@ -21,7 +21,7 @@
         width: 50%;
         color: $color-white;
         font-family: $font-archivo;
-        font-size: 0.8em;
+        font-size: 0.8rem;
         font-weight: 700;
         line-height: 1rem;
         letter-spacing: 0.18rem;
@@ -37,10 +37,9 @@
         font-family: $font-archivo;
         font-size: 0.85em;
         font-weight: 700;
-        background-color: #bead8e;
-        font-family: Archivo;
         line-height: 1rem;
         letter-spacing: 0.15rem;
+        background-color: #bead8e;
 
         &:not(:last-child) {
             margin-bottom: 2em;
