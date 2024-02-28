@@ -65,37 +65,59 @@
         </div>
     </header>
     <section class="room-details__details">
-        <p class="room-details__details-informative-text">Double Bed</p>
+        <p class="room-details__details-informative-text upper__case">Double Bed</p>
         <p class="room-details__details-title">Luxury Double Bed</p>
-        <p class="room-details__details">$345/night</p>
+        <p class="room-details__details-price">
+            <span>$</span>
+            <span>345</span>
+            <span>/Night</span>
+        </p>
         <img src="" alt="">
         <form class="room-details__form">
+            <div class="room-details__form-title">
+                <span>Check Availability</span>
+            </div>
             <div class="room-details__form-control">
-                <label for=""></label>
+                <label for="chek-in">Check In</label>
+                <input type="date">
+            </div>
+            <div class="room-details__form-control">
+                <label for="check-out">Check Out</label>
+                <input type="date">
+            </div>
+            <div class="room-details__form-control">
+                <label for="">Full Name</label>
                 <input type="text">
             </div>
             <div class="room-details__form-control">
-                <label for=""></label>
-                <input type="text">
+                <label for="">Email</label>
+                <input type="email">
             </div>
             <div class="room-details__form-control">
-                <label for=""></label>
+                <label for="">Phone</label>
                 <input type="text">
             </div>
-            <div class="room-details__form-control">
+            <!--<div class="room-details__form-control">
                 <label for=""></label>
                 <input type="text">
-            </div>
-            <div class="room-details__form-control">
-                <label for=""></label>
-                <input type="text">
-            </div>
-            <div class="room-details__form-control">
-                <label for=""></label>
-                <input type="text">
-            </div>
+            </div>-->
+            <button class="room-details__form-button">Check Availability</button>
         </form>
-        <p class="room-details__text"></p>
+        <p class="room-details__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
+            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas 
+            sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
+            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+            consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore 
+            et dolore magnam aliquam quaerat voluptatem.
+        </p>
     </section>
     <section class="room-details__amenities">
         <p class="room-details__amenities-title">Amenities</p>
@@ -164,7 +186,12 @@
         </ul>
     </section>
     <section class="room-details__founder">
-        <img class="room-details__founder-img" src="" alt="">
+        
+        <div class="room-details__founder-img" style="background-image: url(assets/img/bg-footer.png);">
+            <div class="room-details__founder-elipsis">
+                <img class="room-details__founder-check" src="assets/icon/check.svg" alt="">
+            </div>
+        </div>
         <p class="room-details__founder-title">Rosalina D. William</p>
         <p class="room-details__founder-subtitle">Founder, Qux Co.</p>
         <p class="room-details__founder-text">
