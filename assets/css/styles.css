@@ -1366,6 +1366,38 @@
   text-align: center;
 }
 
+.about__cards {
+  padding: 0em 1.25em;
+}
+.about__cards .about__card {
+  display: inline-block;
+  width: 9.9rem;
+  height: 9.9rem;
+  text-align: center;
+  padding: 2.5em 0em;
+  margin-bottom: 1em;
+}
+.about__cards .about__card:not(:nth-child(2), :nth-child(4)) {
+  margin-right: 0.5rem;
+}
+.about__cards .about__card-img {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 1em;
+}
+.about__cards .about__card-text {
+  font-family: Archivo;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 0.85rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+}
+.about__cards .about__card--beige {
+  background-color: #BEAD8E;
+  color: #FFF;
+}
+
 html, * {
   box-sizing: border-box;
   margin: 0;
