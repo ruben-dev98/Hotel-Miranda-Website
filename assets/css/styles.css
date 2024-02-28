@@ -420,6 +420,9 @@
 .banner__inner--about {
   padding-bottom: 1em;
 }
+.banner__inner--rooms {
+  padding-bottom: 0em;
+}
 .banner__title {
   color: #FFF;
   font-family: "Old Standard TT", serif;
