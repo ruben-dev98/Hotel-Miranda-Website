@@ -12,15 +12,18 @@ $bg-beige: #BEAD8E;
 @import 'style/footer.scss';
 @import 'style/home.scss';
 @import 'style/about.scss';
+@import 'style/rooms.scss';
+
 
 html, * { 
     box-sizing: border-box; 
     margin: 0;
-    padding: 0
+    padding: 0;
 }
     
 body {
-    min-width: 320px
+    min-width: 320px;
+    color: #222;
 }
 
 .upper__case {
