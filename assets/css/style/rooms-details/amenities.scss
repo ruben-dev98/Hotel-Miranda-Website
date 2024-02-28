@@ -1,6 +1,6 @@
 .room-details__amenities {
-
-
+    padding: 0em 1.25em;
+    margin-bottom: 3em;
     &-title {
         font-family: $font-standard;
         font-size: 1.85rem;
@@ -12,9 +12,14 @@
 
     &-list {
         list-style-type: none;
+        display: inline-block;
+        &:nth-of-type(1) {
+            margin-right: 1em;
+        }
         &-item {
 
             &-img {
+                margin-right: 0.25rem;
             }
 
             &-text {
@@ -24,8 +29,10 @@
                 font-weight: 500;
                 line-height: 1.1rem;
                 letter-spacing: 0rem;
+                vertical-align: top;
             }
         }
     }
 
 }
+
