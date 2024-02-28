@@ -131,7 +131,7 @@
 
 @media (min-width: 1000px) {
     .menu {
-    
+        margin: 0 auto;
         padding-left: 0em;
     
         &__inner {
@@ -208,9 +208,29 @@
                 }
             }
         }
+
+        &-foods__swiper {
+            width: 100%;
+            height: 35em;
+    
+            &-wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
+            }
+    
+            &-slide {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 33%;
+            }
+            
+            
+        }
     
         &__swiper {
-            width: 90%;
+            width: max-content;
             height: 23.1em;
     
             /*&-slide {

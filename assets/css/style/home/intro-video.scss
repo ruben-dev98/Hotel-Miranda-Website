@@ -56,12 +56,12 @@
 @media (min-width: 1000px) {
     .intro-video {
         position: relative;
-        /*padding: 6em 0em;*/
+        padding: 1.5em 0em;
 
         &__background {
             position: absolute;
             width: 30%;
-            height: 47.7em;
+            height: 43.7em;
             top: 0;
             right: 0;
             left: auto;
@@ -70,17 +70,19 @@
         }
 
         &__inner {
+            width: 100%;
+            margin: 0 auto;
             position: relative;
             z-index: 2;
             padding: 6em 0em;
             display: grid;
-            grid-template-columns: 18.5% 30% 3% 30% 18.5%;
+            grid-template-columns: 48.5% 3% 48.5%;
             grid-template-rows: 4rem 12rem 8.7rem 4rem;
             grid-template-areas:
-                ". info . video ."
-                ". title . video ."
-                ". text . video ."
-                ". button . video .";
+                "info . video"
+                "title . video"
+                "text . video"
+                "button . video";
         }
 
         &__informative-text {

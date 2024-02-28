@@ -1,6 +1,6 @@
 .facilities {
     text-align: center;
-    padding: 3.5em 0em;
+    padding: 3.5em 1.25em;
 
     &__informative-text {
         color: $color-grey;
@@ -56,12 +56,13 @@
 
 @media (min-width: 1000px) {
     .facilities {
+        margin: 0 auto;
         text-align: center;
         padding: 3.5em 0em;
 
         &__inner {
-            width: 62%;
-            margin: 0 auto;
+            width: 100%;
+            
         }
 
         &__informative-text {
@@ -84,17 +85,10 @@
         }
 
         &__swiper {
+            width: 100%;
             height: 40em;
 
             &-wrapper {
-                margin: 0 auto;
-                width: 70%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-wrap: wrap;
-                gap: 3em;
-                
                 /*display: grid;
                 grid-template-columns: 33% 33% 33%;
                 grid-template-rows: 50% 50%;*/
@@ -102,7 +96,7 @@
 
             &-slide {
                 padding: 0em;
-                width: 100%;
+                width: 33%;
                 height: 50%;
                 &-img {
                     margin-bottom: 2em;

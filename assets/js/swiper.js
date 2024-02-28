@@ -25,6 +25,20 @@ const menus__foods__swiper = new Swiper('.menu-foods__swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+    slidesPerView: 3,
+    slidesPerColumn: 1,
+    slidesPerGroup: 3,
+    grid: {
+        rows: 3,
+        fill: 'row',
+        columns: 1
+    },
+
+    breakpoint: {
+        1000: {
+
+        }
+    }
 
     // If we need pagination
     /*navigation: {
@@ -32,7 +46,7 @@ const menus__foods__swiper = new Swiper('.menu-foods__swiper', {
         prevEl: '.menu-foods__swiper-button-prev',
     },*/
 
-    on: {
+    /*on: {
         init: function () {},
         orientationchange: function () {},
         beforeResize: function () {
@@ -40,15 +54,15 @@ const menus__foods__swiper = new Swiper('.menu-foods__swiper', {
             if (vw > 1000) {
                 menus__foods__swiper.params.slidesPerView = 6;
                 menus__foods__swiper.params.slidesPerColumn = 1;
-                menus__foods__swiper.params.slidesPerGroup = 3;
+                menus__foods__swiper.params.slidesPerGroup = 6;
             } else {
                 menus__foods__swiper.params.slidesPerView = 3;
-                menus__foods__swiper.params.slidesPerColumn = 3;
+                menus__foods__swiper.params.slidesPerColumn = 1;
                 menus__foods__swiper.params.slidesPerGroup = 3;
             }
             menus__foods__swiper.init();
         },
-    },
+    },*/
 });
 
 
@@ -69,27 +83,14 @@ const facilities__swiper = new Swiper('.facilities__swiper', {
         1000: {
             slidesPerView: 6,
             slidesPerColumn: 1,
-            slidesPerGroup: 3
-        }
-    },
+            slidesPerGroup: 3,
 
-    on: {
-        init: function () {},
-        orientationchange: function () {},
-        beforeResize: function () {
-            let vw = window.innerWidth;
-            if (vw > 1000) {
-                facilities__swiper.params.slidesPerView = 6;
-                facilities__swiper.params.spaceBetween= 30;
-                
-            } else {
-                facilities__swiper.params.slidesPerView = 1;
-                facilities__swiper.params.slidesPerColumn = 1;
-                facilities__swiper.params.slidesPerGroup = 1;
+            grid: {
+                rows: 6,
+                fill: 'row'
             }
-            facilities__swiper.init();
-        },
-    },
+        }
+    }
 });
 
 /*const mySwiper = new Swiper('.swiper-container', {

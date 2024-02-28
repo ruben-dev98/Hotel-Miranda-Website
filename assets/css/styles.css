@@ -4,6 +4,7 @@
 
 .header {
   padding: 1em 1em;
+  max-width: 88.75rem;
   width: 100%;
   background-size: contain;
   position: fixed;
@@ -94,7 +95,8 @@
   }
   .background__header-informative-text {
     display: block;
-    width: 75%;
+    max-width: 88.75rem;
+    width: 100%;
     margin: 0 auto;
     padding: 0.5em 0em;
     color: #FFF;
@@ -107,7 +109,7 @@
   .header {
     margin: 0 auto;
     padding: 1em 1em;
-    width: 75%;
+    width: 100%;
     position: relative;
     background-color: #FFF;
     box-shadow: 0em 0em 0em 0em;
@@ -155,7 +157,7 @@
     font-size: 1.75rem;
   }
   .header__icons {
-    width: 30%;
+    width: 27%;
     vertical-align: middle;
     margin-right: 2em;
   }
@@ -174,7 +176,6 @@
   }
 }
 .footer {
-  background-image: url("../../../assets/img/bg-footer.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -326,12 +327,21 @@
 @media (min-width: 1000px) {
   .footer__background {
     padding: 0em 0em;
-    display: grid;
-    grid-template-columns: 20% 20% 25% 15% 20%;
-    grid-template-areas: ". header services contact ." "footer footer footer footer footer";
+  }
+  .footer__background > :not(:last-child) {
+    padding: 5em 0em;
+  }
+  .footer__inner {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 2em;
   }
   .footer__header {
-    grid-area: header;
+    margin-bottom: 0em;
+    padding: 0em;
+    width: 22%;
   }
   .footer__header-logo {
     margin-right: 1.5em;
@@ -343,15 +353,15 @@
     width: 100%;
   }
   .footer__services {
-    grid-area: services;
     margin-bottom: 0em;
+    width: 48%;
+    margin-left: 2em;
   }
   .footer__services-list:not(:last-child) {
-    margin-right: 5em;
+    margin-right: 9em;
   }
   .footer__contact {
-    grid-area: contact;
-    margin-bottom: 1em;
+    margin-bottom: 0em;
   }
   .footer__contact-title {
     color: #222;
@@ -388,17 +398,14 @@
   .footer__directives {
     width: 100%;
     grid-area: footer;
-    display: grid;
-    grid-template-columns: 15% 20% 30% 20% 15%;
-    grid-template-areas: ". cpr . terms .";
-    padding: 1em 0em;
+  }
+  .footer__directives-inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
   }
   .footer__directives-text:nth-child(1) {
-    grid-area: cpr;
     margin-bottom: 0em;
-  }
-  .footer__directives-text:nth-child(2) {
-    grid-area: terms;
   }
 }
 .banner {
@@ -455,7 +462,7 @@
     padding-bottom: 7.5em;
   }
   .banner__inner {
-    width: 62%;
+    width: 100%;
     margin: 0 auto;
   }
   .banner__title {
@@ -573,7 +580,7 @@
     margin-bottom: 4em;
   }
   .about-us__inner {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: row-reverse;
@@ -670,7 +677,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 2em;
-    width: 62%;
+    width: 100%;
     margin: 0 auto;
   }
   .checking .form__control {
@@ -686,7 +693,7 @@
 }
 .facilities {
   text-align: center;
-  padding: 3.5em 0em;
+  padding: 3.5em 1.25em;
 }
 .facilities__informative-text {
   color: #777;
@@ -735,12 +742,12 @@
 
 @media (min-width: 1000px) {
   .facilities {
+    margin: 0 auto;
     text-align: center;
     padding: 3.5em 0em;
   }
   .facilities__inner {
-    width: 62%;
-    margin: 0 auto;
+    width: 100%;
   }
   .facilities__informative-text {
     color: #777;
@@ -760,23 +767,17 @@
     margin-bottom: 1em;
   }
   .facilities__swiper {
+    width: 100%;
     height: 40em;
   }
   .facilities__swiper-wrapper {
-    margin: 0 auto;
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 3em;
     /*display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 50% 50%;*/
   }
   .facilities__swiper-slide {
     padding: 0em;
-    width: 100%;
+    width: 33%;
     height: 50%;
   }
   .facilities__swiper-slide-img {
@@ -842,12 +843,12 @@
 @media (min-width: 1000px) {
   .intro-video {
     position: relative;
-    /*padding: 6em 0em;*/
+    padding: 1.5em 0em;
   }
   .intro-video__background {
     position: absolute;
     width: 30%;
-    height: 47.7em;
+    height: 43.7em;
     top: 0;
     right: 0;
     left: auto;
@@ -855,13 +856,15 @@
     z-index: 1;
   }
   .intro-video__inner {
+    width: 100%;
+    margin: 0 auto;
     position: relative;
     z-index: 2;
     padding: 6em 0em;
     display: grid;
-    grid-template-columns: 18.5% 30% 3% 30% 18.5%;
+    grid-template-columns: 48.5% 3% 48.5%;
     grid-template-rows: 4rem 12rem 8.7rem 4rem;
-    grid-template-areas: ". info . video ." ". title . video ." ". text . video ." ". button . video .";
+    grid-template-areas: "info . video" "title . video" "text . video" "button . video";
   }
   .intro-video__informative-text {
     grid-area: info;
@@ -997,6 +1000,7 @@
 
 @media (min-width: 1000px) {
   .menu {
+    margin: 0 auto;
     padding-left: 0em;
   }
   .menu__inner {
@@ -1063,8 +1067,23 @@
     line-height: 1.5rem;
     letter-spacing: 0rem;
   }
+  .menu-foods__swiper {
+    width: 100%;
+    height: 35em;
+  }
+  .menu-foods__swiper-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  .menu-foods__swiper-slide {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 33%;
+  }
   .menu__swiper {
-    width: 90%;
+    width: max-content;
     height: 23.1em;
     /*&-slide {
         background-color: blue;
@@ -1246,25 +1265,27 @@
   color: #FFF;
   font-family: "Roboto", sans-serif;
   font-size: 60px;
+  line-height: 81px;
   font-weight: 700;
 }
 .stats__article-title-plus {
   font-size: 14px;
+  line-height: 19px;
 }
 .stats__article-text {
   color: #FFF;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 700;
+  line-height: 21px;
   color: #999999;
 }
 
 @media (min-width: 1000px) {
   .stats {
+    width: 100%;
     margin: 0 auto;
-    background-color: #222;
-    padding: 3.5em 0em;
-    margin-bottom: 4em;
+    margin-bottom: 10em;
   }
   .stats__inner {
     display: flex;
@@ -1272,15 +1293,10 @@
     align-items: center;
   }
   .stats__article {
-    text-align: center;
+    text-align: left;
   }
   .stats__article:not(:last-child) {
-    margin-bottom: 3em;
-  }
-  .stats__article-img {
-    width: fit-content;
-    height: fit-content;
-    margin-bottom: 1em;
+    margin-bottom: 0em;
   }
   .stats__article-title {
     color: #FFF;

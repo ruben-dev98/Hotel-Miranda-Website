@@ -1,5 +1,4 @@
 .footer {
-    background-image: url("../../../assets/img/bg-footer.png");
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -8,7 +7,7 @@
         height: fit-content;
         background-color: rgb(255, 255, 255, 0.98);
         padding-top: 1.5em;
-        
+
         > :not(:last-child) {
             padding: 0em 1.25em;
         }
@@ -179,16 +178,23 @@
         
         &__background {
             padding: 0em 0em;
-            display: grid;
-            grid-template-columns: 20% 20% 25% 15% 20%;
-            grid-template-areas:
-                ". header services contact ."
-                "footer footer footer footer footer";
+            > :not(:last-child) {
+                padding: 5em 0em;
+            }
+        }
+
+        &__inner {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: flex-start;
+            gap: 2em;
         }
 
         &__header {
-            grid-area: header;
-
+            margin-bottom: 0em;
+            padding: 0em;
+            width: 22%;
             &-logo {
                 margin-right: 1.5em;
             }
@@ -203,19 +209,19 @@
         }
 
         &__services {
-            grid-area: services;
             margin-bottom: 0em;
+            width: 48%;
+            margin-left: 2em;
 
             &-list {
                 &:not(:last-child) {
-                    margin-right: 5em;
+                    margin-right: 9em;
                 }
             }
         }
 
         &__contact {
-            grid-area: contact;
-            margin-bottom: 1em;
+            margin-bottom: 0em;
 
             &-title {
                 color: $bg-black;
@@ -259,19 +265,16 @@
         &__directives {
             width: 100%;
             grid-area: footer;
-            display: grid;
-            grid-template-columns: 15% 20% 30% 20% 15%;
-            grid-template-areas: ". cpr . terms .";
-            padding: 1em 0em;
+
+            &-inner {
+                display: flex;
+                justify-content: space-between;
+                margin: 0 auto;
+            }
 
             &-text {
                 &:nth-child(1) {
-                    grid-area: cpr;
                     margin-bottom: 0em;
-                }
-
-                &:nth-child(2) {
-                    grid-area: terms;
                 }
             }
         }

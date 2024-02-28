@@ -6,6 +6,7 @@
 
 .header {
     padding: 1em 1em;
+    max-width: 88.75rem;
     width: 100%;
     background-size: contain;
     position: fixed;
@@ -109,7 +110,8 @@
 
         &-informative-text {
             display: block;
-            width: 75%;
+            max-width: 88.75rem;
+            width: 100%;
             margin: 0 auto;
             padding: .5em 0em;
             color: $color-white;
@@ -124,7 +126,7 @@
     .header {
         margin: 0 auto;
         padding: 1em 1em;
-        width: 75%;
+        width: 100%;
         position: relative;
         background-color: $color-white;
         box-shadow: 0em 0em 0em 0em;
@@ -179,7 +181,7 @@
         }
 
         &__icons {
-            width: 30%;
+            width: 27%;
             vertical-align: middle;
             margin-right: 2em;
 

@@ -173,7 +173,7 @@
     </section>
     <section class="intro-video">
         <div class="intro-video__background"></div>
-        <div class="intro-video__inner">
+        <div class="intro-video__inner --max-width">
             <p class="intro-video__informative-text upper__case">Intro Video</p>
             <p class="intro-video__title">Meet With Our Luxury Place.</p>
             <p class="intro-video__text">
@@ -187,8 +187,8 @@
         </div>
 
     </section>
-    <section class="facilities">
-        <div class="facilities__inner">
+    <section class="facilities --max-width">
+        <div class="facilities__inner ">
             <p class="facilities__informative-text upper__case">Facilities</p>
             <p class="facilities__title">Core Features</p>
             <div class="facilities__swiper swiper">
@@ -255,7 +255,7 @@
             </div>
         </div>
     </section>
-    <section class="menu">
+    <section class="menu --max-width">
         <div class="menu__display">
             <img class="menu__display-img" src="assets/img/donut.svg" alt="donut">
         </div>
@@ -363,88 +363,92 @@
         <!--<img src="assets/img/logo-hotel-miranda.svg" alt="">
         <img src="assets/img/Hotel-Miranda.png" alt="">-->
     </section>
-    <footer class="footer">
-        <div class="footer__background">
-            <header class="footer__header">
-                <span class="footer__header-logo">
-                    <img src="assets/img/logo-H.svg" alt="logo con la letra H">
-                </span>
-                <h2 class="footer__header-title upper__case">
-                    <span>Hotel</span>
-                    <span>Miranda</span>
-                </h2>
-                <p class="footer__header-text">
-                    Lorem ipsum dolor sit amet, consect etur adipisicing elit,
-                    sed doing eius mod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
-                </p>
-                <div class="footer__header-icons">
-                    <div class="footer__header-icons-icon">
-                        <img src="assets/icon/fb.svg" alt="icono facebook">
-                    </div>
-                    <div class="footer__header-icons-icon footer__header-icons-icon--bg-beige">
-                        <img src="assets/icon/twitter.svg" alt="icono twitter">
-                    </div>
-                    <div class="footer__header-icons-icon">
-                        <img src="assets/icon/behanche.svg" alt="icono behanche">
-                    </div>
-                    <div class="footer__header-icons-icon">
-                        <img src="assets/icon/linkedin.svg" alt="icono linkedin">
-                    </div>
-                    <div class="footer__header-icons-icon">
-                        <img src="assets/icon/youtube.svg" alt="icono video de youtube">
-                    </div>
-                </div>
-            </header>
-            <section class="footer__services">
-                <h2 class="footer__services-title">Services.</h2>
-                <ul class="footer__services-list">
-                    <li>Resturent & Bar</li>
-                    <li>Swimming Pool</li>
-                    <li>Wellness & Spa</li>
-                    <li>Restaurant</li>
-                    <li>Conference Room</li>
-                    <li>Coctail Party House</li>
-                </ul>
-                <ul class="footer__services-list">
-                    <li>Gaming Zone</li>
-                    <li>Marrige Party</li>
-                    <li>Party Planning</li>
-                    <li>Tour Consultancy</li>
-                </ul>
-            </section>
-            <section class="footer__contact">
-                <h2 class="footer__contact-title">Contact Us.</h2>
-                <div class="footer__contact-info">
-                    <section>
-                        <img class="footer__contact-info-icon" src="assets/img/call.svg"
-                            alt="icono de un telefono recibinedo una llamada">
-                        <div class="footer__contact-info-text">
-                            <p>Phone Number</p>
-                            <p>5555555555</p>
+    <footer class="footer" style="background-image: url(./assets/img/bg-footer.png);">
+        <div class="footer__background" >
+            <div class="footer__inner --max-width">
+                <header class="footer__header">
+                    <span class="footer__header-logo">
+                        <img src="assets/img/logo-H.svg" alt="logo con la letra H">
+                    </span>
+                    <h2 class="footer__header-title upper__case">
+                        <span>Hotel</span>
+                        <span>Miranda</span>
+                    </h2>
+                    <p class="footer__header-text">
+                        Lorem ipsum dolor sit amet, consect etur adipisicing elit,
+                        sed doing eius mod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
+                    </p>
+                    <div class="footer__header-icons">
+                        <div class="footer__header-icons-icon">
+                            <img src="assets/icon/fb.svg" alt="icono facebook">
                         </div>
-                    </section>
-                    <section>
-                        <img class="footer__contact-info-icon" src="assets/img/email.svg"
-                            alt="icono de un sobre con un numero 1 en un bocadillo indicando que se tiene un mensaje sin leer">
-                        <div class="footer__contact-info-text">
-                            <p>Email</p>
-                            <p>algo@gmail.com</p>
+                        <div class="footer__header-icons-icon footer__header-icons-icon--bg-beige">
+                            <img src="assets/icon/twitter.svg" alt="icono twitter">
                         </div>
-                    </section>
-                    <section>
-                        <img class="footer__contact-info-icon" src="assets/img/ubi.svg"
-                            alt="icono para representar una ubicación en un mapa">
-                        <div class="footer__contact-info-text">
-                            <p>Location</p>
-                            <p>Alguna calle, A Coruña, España</p>
+                        <div class="footer__header-icons-icon">
+                            <img src="assets/icon/behanche.svg" alt="icono behanche">
                         </div>
-                    </section>
-                </div>
-            </section>
+                        <div class="footer__header-icons-icon">
+                            <img src="assets/icon/linkedin.svg" alt="icono linkedin">
+                        </div>
+                        <div class="footer__header-icons-icon">
+                            <img src="assets/icon/youtube.svg" alt="icono video de youtube">
+                        </div>
+                    </div>
+                </header>
+                <section class="footer__services">
+                    <h2 class="footer__services-title">Services.</h2>
+                    <ul class="footer__services-list">
+                        <li>Resturent & Bar</li>
+                        <li>Swimming Pool</li>
+                        <li>Wellness & Spa</li>
+                        <li>Restaurant</li>
+                        <li>Conference Room</li>
+                        <li>Coctail Party House</li>
+                    </ul>
+                    <ul class="footer__services-list">
+                        <li>Gaming Zone</li>
+                        <li>Marrige Party</li>
+                        <li>Party Planning</li>
+                        <li>Tour Consultancy</li>
+                    </ul>
+                </section>
+                <section class="footer__contact">
+                    <h2 class="footer__contact-title">Contact Us.</h2>
+                    <div class="footer__contact-info">
+                        <section>
+                            <img class="footer__contact-info-icon" src="assets/img/call.svg"
+                                alt="icono de un telefono recibinedo una llamada">
+                            <div class="footer__contact-info-text">
+                                <p>Phone Number</p>
+                                <p>5555555555</p>
+                            </div>
+                        </section>
+                        <section>
+                            <img class="footer__contact-info-icon" src="assets/img/email.svg"
+                                alt="icono de un sobre con un numero 1 en un bocadillo indicando que se tiene un mensaje sin leer">
+                            <div class="footer__contact-info-text">
+                                <p>Email</p>
+                                <p>algo@gmail.com</p>
+                            </div>
+                        </section>
+                        <section>
+                            <img class="footer__contact-info-icon" src="assets/img/ubi.svg"
+                                alt="icono para representar una ubicación en un mapa">
+                            <div class="footer__contact-info-text">
+                                <p>Location</p>
+                                <p>Alguna calle, A Coruña, España</p>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
             <footer class="footer__directives">
-                <p class="footer__directives-text">Copyright By@Example - 2024</p>
-                <p class="footer__directives-text">Terms of Use | Privacy Enviroment Policy</p>
+                <div class="footer__directives-inner --max-width">
+                    <p class="footer__directives-text">Copyright By@Example - 2024</p>
+                    <p class="footer__directives-text">Terms of Use | Privacy Enviroment Policy</p>
+                </div>
             </footer>
         </div>
     </footer>
