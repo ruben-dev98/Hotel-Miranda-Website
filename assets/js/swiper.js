@@ -21,6 +21,36 @@ const menus__swiper = new Swiper('.menu__swiper', {
     }
 });
 
+const menus__foods__swiper = new Swiper('.menu-foods__swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    /*navigation: {
+        nextEl: '.menu-foods__swiper-button-next',
+        prevEl: '.menu-foods__swiper-button-prev',
+    },*/
+
+    on: {
+        init: function () {},
+        orientationchange: function () {},
+        beforeResize: function () {
+            let vw = window.innerWidth;
+            if (vw > 1000) {
+                menus__foods__swiper.params.slidesPerView = 6;
+                menus__foods__swiper.params.slidesPerColumn = 1;
+                menus__foods__swiper.params.slidesPerGroup = 3;
+            } else {
+                menus__foods__swiper.params.slidesPerView = 3;
+                menus__foods__swiper.params.slidesPerColumn = 3;
+                menus__foods__swiper.params.slidesPerGroup = 3;
+            }
+            menus__foods__swiper.init();
+        },
+    },
+});
+
 
 const facilities__swiper = new Swiper('.facilities__swiper', {
     // Optional parameters

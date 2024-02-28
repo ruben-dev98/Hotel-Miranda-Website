@@ -46,6 +46,26 @@
         margin-bottom: 0.5em;
     }
 
+    &-foods__swiper {
+        width: 100%;
+        height: 35em;
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+        }
+
+        &-slide {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 33%;
+        }
+        
+        
+    }
+
     &__article {
         display: flex;
         gap: 1.5em;
@@ -105,6 +125,117 @@
         &--active {
             background-color: $bg-beige;
             color: $color-white;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .menu {
+    
+        padding-left: 0em;
+    
+        &__inner {
+            width: 62%;
+            margin: 0 auto;
+            margin-bottom: 2em;
+        }
+    
+        &__display {
+            width: fit-content;
+            height: fit-content;
+            display: block;
+            margin-right: auto;
+            margin-left: 0;
+            position: relative;
+            overflow: hidden;
+    
+            &-img {
+                width: fit-content;
+                height: fit-content;
+                position: relative;
+                right: 0;
+            }
+        }
+    
+        &__informative-text {
+            color: $color-grey;
+            font-family: $font-archivo;
+            font-size: 0.85rem;
+            font-weight: 700;
+            line-height: 1rem;
+            letter-spacing: 0.15rem;
+            margin-bottom: 2em;
+        }
+    
+        &__title {
+            font-family: $font-standard;
+            font-size: 3.5rem;
+            font-weight: 400;
+            line-height: 3.75rem;
+            letter-spacing: -0.1rem;
+            margin-bottom: 0.5em;
+        }
+    
+        &__article {
+            display: flex;
+            gap: 1.5em;
+            margin-bottom: 1em;
+    
+            &-img {
+                width: 7.5em;
+                height: 7.5em;
+            }
+    
+            &-text {
+                width: 50%;
+                padding: 0.75em 0em;
+                p {
+                    &:nth-child(1) {
+                        font-family: $font-standard;
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        line-height: 1.5rem;
+                        letter-spacing: -0.1rem;
+                    }
+    
+                    &:nth-child(2) {
+                        font-family: $font-roboto;
+                        font-size: 0.85rem;
+                        font-weight: 400;
+                        line-height: 1.5rem;
+                        letter-spacing: 0rem;
+                    }
+                }
+            }
+        }
+    
+        &__swiper {
+            width: 90%;
+            height: 23.1em;
+    
+            /*&-slide {
+                background-color: blue;
+            }*/
+        }
+    
+        &__buttons {
+            width: 24.5%;
+            height: fit-content;
+            display: block;
+            margin-right: 0;
+            margin-left: auto;
+        }
+    
+        &__button {
+            background: transparent;
+            width: 2.7em;
+            height: 2.7em;
+            border: 0;
+    
+            &--active {
+                background-color: $bg-beige;
+                color: $color-white;
+            }
         }
     }
 }
