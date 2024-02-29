@@ -62,8 +62,6 @@
             width: 100%;
             height: 33%;
         }
-        
-        
     }
 
     &__article {
@@ -134,13 +132,13 @@
         margin: 0 auto;
         margin-bottom: 4em;
         /*padding-right: 1.25em;*/
-    
+
         &__inner {
             width: 62%;
             margin: 0 auto;
             margin-bottom: 2em;
         }
-    
+
         &__display {
             width: fit-content;
             height: fit-content;
@@ -149,7 +147,7 @@
             margin-left: 0;
             position: relative;
             overflow: hidden;
-    
+
             &-img {
                 width: fit-content;
                 height: fit-content;
@@ -157,7 +155,7 @@
                 right: 0;
             }
         }
-    
+
         &__informative-text {
             color: $color-grey;
             font-family: $font-archivo;
@@ -167,7 +165,7 @@
             letter-spacing: 0.15rem;
             margin-bottom: 2em;
         }
-    
+
         &__title {
             font-family: $font-standard;
             font-size: 3.5rem;
@@ -176,17 +174,17 @@
             letter-spacing: -0.1rem;
             margin-bottom: 0.5em;
         }
-    
+
         &__article {
             display: flex;
             gap: 1.5em;
             margin-bottom: 1em;
-    
+
             &-img {
                 width: 7.5em;
                 height: 7.5em;
             }
-    
+
             &-text {
                 width: 50%;
                 padding: 0.75em 0em;
@@ -198,7 +196,7 @@
                         line-height: 1.5rem;
                         letter-spacing: -0.1rem;
                     }
-    
+
                     &:nth-child(2) {
                         font-family: $font-roboto;
                         font-size: 0.85rem;
@@ -213,32 +211,30 @@
         &-foods__swiper {
             width: 100%;
             height: 35em;
-    
+
             &-wrapper {
                 display: flex;
                 flex-direction: column;
                 gap: 2em;
             }
-    
+
             &-slide {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
                 height: 33%;
             }
-            
-            
         }
-    
+
         &__swiper {
             width: 100%;
             height: 23.1em;
-    
+
             &-slide {
                 background-color: blue;
             }
         }
-    
+
         &__buttons {
             width: 24.5%;
             height: fit-content;
@@ -246,13 +242,13 @@
             margin-right: 0;
             margin-left: auto;
         }
-    
+
         &__button {
             background: transparent;
             width: 2.7em;
             height: 2.7em;
             border: 0;
-    
+
             &--active {
                 background-color: $bg-beige;
                 color: $color-white;

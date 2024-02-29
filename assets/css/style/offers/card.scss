@@ -21,7 +21,7 @@
         font-weight: 400;
         line-height: 3rem;
         letter-spacing: -0.1rem;
-        margin-bottom: 1em;
+        margin-bottom: .5em;
 
         a {
             color: $bg-black;
@@ -36,6 +36,7 @@
         font-weight: 400;
         line-height: 1.5rem;
         letter-spacing: 0rem;
+        margin-bottom: 1.5em;
     }
 
     &__price {
@@ -111,5 +112,9 @@
             color: $color-white;
             text-decoration: none;
         }
+    }
+
+    &__amenities {
+        margin-bottom: 2em;
     }
 }

@@ -48,7 +48,6 @@
 
 @media (min-width: 1000px) {
     .checking {
-
         &__inner {
             display: flex;
             justify-content: space-between;
@@ -61,7 +60,7 @@
         .form {
             &__control {
                 width: 50%;
-                
+
                 &-input {
                     width: 45%;
                     display: inline-block;

@@ -18,7 +18,7 @@
   position: absolute;
   bottom: -10.5em;
   left: 0;
-  background-color: #FFF;
+  background-color: #fff;
   box-shadow: 0em 0.3em 0.25em 0em rgba(0, 0, 0, 0.2901960784);
   height: 12.35em;
   z-index: 1;
@@ -105,7 +105,7 @@
     width: 100%;
     margin: 0 auto;
     padding: 0.5em 0em;
-    color: #FFF;
+    color: #fff;
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -117,7 +117,7 @@
     padding: 1em 1em;
     width: 100%;
     position: relative;
-    background-color: #FFF;
+    background-color: #fff;
     box-shadow: 0em 0em 0em 0em;
   }
   .header__nav {
@@ -200,7 +200,7 @@
   margin-bottom: 2em;
 }
 .footer__header-logo {
-  background-color: #BEAD8E;
+  background-color: #bead8e;
   width: 5em;
   height: 5em;
   display: inline-block;
@@ -252,7 +252,7 @@
   vertical-align: middle;
 }
 .footer__header-icons-icon--bg-beige {
-  background-color: #BEAD8E;
+  background-color: #bead8e;
 }
 .footer__header-icons-icon img {
   padding: 0.5em 0em;
@@ -430,7 +430,7 @@
   padding-bottom: 0em;
 }
 .banner__title {
-  color: #FFF;
+  color: #fff;
   font-family: "Old Standard TT", serif;
   font-size: 3.5rem;
   font-weight: 400;
@@ -440,7 +440,7 @@
 }
 .banner__text {
   width: 95%;
-  color: #FFF;
+  color: #fff;
   font-family: "Archivo", sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
@@ -453,7 +453,7 @@
   width: 15.8em;
   height: 4.4em;
   border: 0em;
-  color: #FFF;
+  color: #fff;
   font-family: "Archivo", sans-serif;
   font-size: 0.85em;
   font-weight: 700;
@@ -471,7 +471,7 @@
 .banner__pagination {
   max-width: 12.5rem;
   width: 9.75em;
-  background-color: #FFF;
+  background-color: #fff;
   margin-right: 0;
   margin-left: auto;
   padding: 1em 1em;
@@ -491,7 +491,7 @@
   color: #111;
 }
 .banner__pagination span:nth-child(3) {
-  color: #BEAD8E;
+  color: #bead8e;
 }
 .banner__pagination span:not(:last-child) {
   margin-right: 0.5em;
@@ -559,13 +559,13 @@
   margin-bottom: 4em;
   width: 15.8em;
   height: 4.4em;
-  color: #FFF;
+  color: #fff;
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   font-size: 0.85rem;
   line-height: 1rem;
   letter-spacing: 0.18rem;
-  background-color: #BEAD8E;
+  background-color: #bead8e;
   border: 0em;
 }
 .about-us__features {
@@ -600,7 +600,7 @@
   letter-spacing: -0.1rem;
 }
 .about-us__features-feature-title--dark {
-  color: #FFF;
+  color: #fff;
 }
 .about-us__features-feature-text {
   margin: 0 auto;
@@ -613,7 +613,7 @@
   letter-spacing: 0rem;
 }
 .about-us__features-feature-text--dark {
-  color: #FFF;
+  color: #fff;
 }
 
 @media (min-width: 1000px) {
@@ -694,7 +694,7 @@
 }
 .checking__label {
   margin-bottom: 1.5em;
-  color: #FFF;
+  color: #fff;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1rem;
@@ -710,21 +710,21 @@
   font-size: 0.85rem;
   display: block;
   border: 0em;
-  border-bottom: 0.1em solid #BEAD8E;
+  border-bottom: 0.1em solid #bead8e;
   background-color: transparent;
 }
 .checking__input::-webkit-calendar-picker-indicator::after {
-  color: #BEAD8E;
+  color: #bead8e;
   text-align: left;
 }
 .checking__button {
   width: 17.5em;
   height: 4.4em;
-  color: #FFF;
+  color: #fff;
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   font-size: 0.85rem;
-  background-color: #BEAD8E;
+  background-color: #bead8e;
   display: block;
   line-height: 1rem;
   letter-spacing: 0.15rem;
@@ -870,7 +870,7 @@
   padding: 3.5em 1.25em;
 }
 .intro-video__informative-text {
-  color: #BEAD8E;
+  color: #bead8e;
   font-family: "Archivo", sans-serif;
   font-size: 0.85rem;
   font-weight: 700;
@@ -879,7 +879,7 @@
   margin-bottom: 1.5em;
 }
 .intro-video__title {
-  color: #FFF;
+  color: #fff;
   font-family: "Old Standard TT", serif;
   font-size: 3.5rem;
   font-weight: 400;
@@ -906,8 +906,8 @@
   width: 15.8em;
   height: 4.4em;
   border: 0em;
-  color: #FFF;
-  background-color: #BEAD8E;
+  color: #fff;
+  background-color: #bead8e;
   font-family: "Archivo", sans-serif;
   font-size: 0.85rem;
   font-weight: 400;
@@ -927,7 +927,7 @@
     top: 0;
     right: 0;
     left: auto;
-    background-color: #BEAD8E;
+    background-color: #bead8e;
     z-index: 1;
   }
   .intro-video__inner {
@@ -1069,8 +1069,8 @@
   border: 0;
 }
 .menu__button--active {
-  background-color: #BEAD8E;
-  color: #FFF;
+  background-color: #bead8e;
+  color: #fff;
 }
 
 @media (min-width: 1000px) {
@@ -1179,8 +1179,8 @@
     border: 0;
   }
   .menu__button--active {
-    background-color: #BEAD8E;
-    color: #FFF;
+    background-color: #bead8e;
+    color: #fff;
   }
 }
 .rooms {
@@ -1214,7 +1214,7 @@
   position: relative;
   top: 1.3em;
   text-align: center;
-  background-color: #FFF;
+  background-color: #fff;
   z-index: 2;
   /** COLOCAR EN EL MEDIO DEL MENU **/
 }
@@ -1236,7 +1236,7 @@
   padding: 1em 0em;
   width: 90%;
   margin: 0 auto;
-  background-color: #FFF;
+  background-color: #fff;
   position: relative;
   top: -2em;
   z-index: 1;
@@ -1263,7 +1263,7 @@
   margin-bottom: 1.5em;
 }
 .rooms__details-price {
-  color: #BEAD8E;
+  color: #bead8e;
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   line-height: 2.7rem;
@@ -1338,7 +1338,7 @@
   margin-bottom: 1em;
 }
 .stats__article-title {
-  color: #FFF;
+  color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 60px;
   line-height: 81px;
@@ -1349,7 +1349,7 @@
   line-height: 19px;
 }
 .stats__article-text {
-  color: #FFF;
+  color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -1376,7 +1376,7 @@
     margin-bottom: 0em;
   }
   .stats__article-title {
-    color: #FFF;
+    color: #fff;
     font-family: "Roboto", sans-serif;
     font-size: 60px;
     font-weight: 700;
@@ -1385,7 +1385,7 @@
     font-size: 14px;
   }
   .stats__article-text {
-    color: #FFF;
+    color: #fff;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -1393,7 +1393,7 @@
   }
 }
 .facilities--dark {
-  color: #FFF;
+  color: #fff;
   background-color: #222;
 }
 
@@ -1405,7 +1405,7 @@
   padding: 3em 1.25em;
 }
 .about__video-video {
-  background-color: #C2C2C2;
+  background-color: #c2c2c2;
   width: 100%;
   height: 10rem;
   margin-bottom: 2em;
@@ -1463,7 +1463,7 @@
   width: 15.8em;
   height: 4.4em;
   border: 0em;
-  color: #FFF;
+  color: #fff;
   font-family: "Archivo", sans-serif;
   font-size: 0.85em;
   font-weight: 700;
@@ -1562,8 +1562,8 @@
   text-transform: uppercase;
 }
 .about__cards .about__card--beige {
-  background-color: #BEAD8E;
-  color: #FFF;
+  background-color: #bead8e;
+  color: #fff;
 }
 
 .about__facilities {
@@ -1596,7 +1596,7 @@
   margin: 0 auto;
   max-width: 21rem;
   text-align: center;
-  background-color: #FFF;
+  background-color: #fff;
 }
 .rooms__list-item-details-title {
   font-family: "Old Standard TT", serif;
@@ -1624,7 +1624,7 @@
   letter-spacing: 0rem;
 }
 .rooms__list-item-details-price span:nth-child(1) {
-  color: #BEAD8E;
+  color: #bead8e;
   margin-right: 1em;
   margin-left: 1.5em;
 }
@@ -1654,8 +1654,8 @@
   padding: 0.7em 0em;
 }
 .rooms__list-pagination-item--beige {
-  color: #FFF;
-  background-color: #BEAD8E;
+  color: #fff;
+  background-color: #bead8e;
 }
 
 .room-details__amenities {
@@ -1676,6 +1676,9 @@
 }
 .room-details__amenities-list:nth-of-type(1) {
   margin-right: 1em;
+}
+.room-details__amenities-list-item:not(:last-child) {
+  margin-bottom: 1rem;
 }
 .room-details__amenities-list-item-img {
   margin-right: 0.25rem;
@@ -1712,7 +1715,7 @@
   margin-bottom: 1em;
 }
 .room-details__details-price {
-  color: #BEAD8E;
+  color: #bead8e;
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   letter-spacing: 0rem;
@@ -1765,7 +1768,7 @@
   width: 15.8em;
   height: 4.4em;
   border: 0em;
-  color: #FFF;
+  color: #fff;
   font-family: "Archivo", sans-serif;
   font-size: 0.85em;
   font-weight: 400;
@@ -1838,8 +1841,8 @@
 .room-details__founder-elipsis {
   right: -7.25rem;
   position: relative;
-  border: 0.25rem solid #FFF;
-  background-color: #BEAD8E;
+  border: 0.25rem solid #fff;
+  background-color: #bead8e;
   width: 2.85rem;
   height: 2.85rem;
   border-radius: 20rem;
@@ -1856,7 +1859,7 @@
   margin-bottom: 0.5em;
 }
 .room-details__founder-subtitle {
-  color: #BEAD8E;
+  color: #bead8e;
   font-family: "Archivo", sans-serif;
   font-size: 0.85rem;
   font-weight: 700;
@@ -1894,7 +1897,7 @@
   font-weight: 400;
   line-height: 3rem;
   letter-spacing: -0.1rem;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 .offers__title a {
   color: #222;
@@ -1907,9 +1910,10 @@
   font-weight: 400;
   line-height: 1.5rem;
   letter-spacing: 0rem;
+  margin-bottom: 1.5em;
 }
 .offers__price {
-  color: #BEAD8E;
+  color: #bead8e;
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   color: #de5777;
@@ -1925,7 +1929,7 @@
   letter-spacing: 0px;
 }
 .offers__price--crossed {
-  color: #BEAD8E;
+  color: #bead8e;
   text-align: end;
   text-decoration: line-through;
 }
@@ -1966,8 +1970,11 @@
   background-color: #bead8e;
 }
 .offers__button a {
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
+}
+.offers__amenities {
+  margin-bottom: 2em;
 }
 
 .offers__popular-rooms {
@@ -1975,7 +1982,7 @@
   background-color: #222;
 }
 .offers__popular-rooms-informative-text {
-  color: #BEAD8E;
+  color: #bead8e;
   font-family: "Archivo", sans-serif;
   font-size: 0.85rem;
   font-weight: 700;
@@ -1996,7 +2003,8 @@
   margin-bottom: 0em;
 }
 
-html, * {
+html,
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;

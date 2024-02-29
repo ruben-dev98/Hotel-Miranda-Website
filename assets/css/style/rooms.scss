@@ -25,7 +25,7 @@
             margin: 0 auto;
             max-width: 21rem;
             text-align: center;
-            
+
             background-color: $color-white;
 
             &-title {
@@ -67,8 +67,6 @@
                             color: #bdbdbd;
                             text-decoration: none;
                         }
-
-                        
                     }
                 }
             }
@@ -94,7 +92,7 @@
         &-item {
             width: 2.5rem;
             height: 2.5rem;
-            padding: .7em 0em;
+            padding: 0.7em 0em;
 
             &--beige {
                 color: $color-white;

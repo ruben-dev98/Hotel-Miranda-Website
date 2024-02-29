@@ -1,28 +1,28 @@
 $font-standard: "Old Standard TT", serif;
 $font-archivo: "Archivo", sans-serif;
 $font-roboto: "Roboto", sans-serif;
-$color-white: #FFF;
+$color-white: #fff;
 $color-black: #111;
 $color-grey: #777;
 $bg-black: #222;
 $bg-grey: #333;
-$bg-beige: #BEAD8E;
+$bg-beige: #bead8e;
 
-@import 'style/header.scss';
-@import 'style/footer.scss';
-@import 'style/home.scss';
-@import 'style/about.scss';
-@import 'style/rooms.scss';
-@import 'style/rooms-details.scss';
-@import 'style/offers.scss';
+@import "style/header.scss";
+@import "style/footer.scss";
+@import "style/home.scss";
+@import "style/about.scss";
+@import "style/rooms.scss";
+@import "style/rooms-details.scss";
+@import "style/offers.scss";
 
-
-html, * { 
-    box-sizing: border-box; 
+html,
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-    
+
 body {
     min-width: 320px;
     color: #222;
