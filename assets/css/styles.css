@@ -1027,6 +1027,9 @@
   width: 7.5em;
   height: 7.5em;
 }
+.menu__article-arrow {
+  opacity: 0;
+}
 .menu__article-text {
   width: 55%;
 }
@@ -1068,6 +1071,18 @@
 .menu__button--active {
   background-color: #bead8e;
   color: #fff;
+}
+.menu .swiper-button-next {
+  left: auto;
+  right: 1.25rem;
+  top: auto;
+  bottom: 0;
+}
+.menu .swiper-button-prev {
+  left: auto;
+  right: 4.25rem;
+  top: auto;
+  bottom: 0;
 }
 
 @media (min-width: 1000px) {
@@ -1142,6 +1157,13 @@
     line-height: 1.5rem;
     letter-spacing: 0rem;
   }
+  .menu__article:hover {
+    background-color: #222;
+    color: #fff;
+  }
+  .menu__article:hover .menu__article-arrow {
+    opacity: 1;
+  }
   .menu-foods__swiper {
     width: 100%;
     height: 35em;
@@ -1166,6 +1188,18 @@
   .menu__button--active {
     background-color: #bead8e;
     color: #fff;
+  }
+  .menu .swiper-button-prev {
+    left: auto;
+    right: 6.5rem;
+    top: 0;
+    bottom: auto;
+  }
+  .menu .swiper-button-next {
+    left: auto;
+    right: 0;
+    top: 0;
+    bottom: auto;
   }
 }
 .rooms {
@@ -2122,28 +2156,14 @@
 .swiper-button-next,
 .swiper-button-prev {
   background-color: #bead8e;
-  width: 36px;
-  height: 36px;
+  width: 2.25rem;
+  height: 2.25rem;
   color: #fff;
-}
-
-.swiper-button-next {
-  left: auto;
-  right: 1.25rem;
-  top: auto;
-  bottom: 0;
 }
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
   font-size: 0.8rem;
-}
-
-.swiper-button-prev {
-  left: auto;
-  right: 4.25rem;
-  top: auto;
-  bottom: 0;
 }
 
 .swiper-pagination-bullet-active {
@@ -2161,18 +2181,6 @@
     width: 4.4rem;
     height: 4.4rem;
     color: #fff;
-  }
-  .swiper-button-prev {
-    left: auto;
-    right: 6.5rem;
-    top: 0;
-    bottom: auto;
-  }
-  .swiper-button-next {
-    left: auto;
-    right: 0;
-    top: 0;
-    bottom: auto;
   }
 }
 html,
