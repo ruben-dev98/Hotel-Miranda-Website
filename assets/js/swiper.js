@@ -22,6 +22,18 @@ const rooms__details__swiper = new Swiper('.room-details__swiper', {
     }
 });
 
+const offers__swiper = new Swiper('.offers__swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.offers__swiper-button-next',
+        prevEl: '.offers__swiper-button-prev',
+    }
+});
+
 const menus__swiper = new Swiper('.menu__swiper', {
     // Optional parameters
     direction: 'horizontal',

@@ -132,7 +132,8 @@
 @media (min-width: 1000px) {
     .menu {
         margin: 0 auto;
-        padding-right: 1.25em;
+        margin-bottom: 4em;
+        /*padding-right: 1.25em;*/
     
         &__inner {
             width: 62%;
@@ -230,12 +231,12 @@
         }
     
         &__swiper {
-            width: max-content;
+            width: 100%;
             height: 23.1em;
     
-            /*&-slide {
+            &-slide {
                 background-color: blue;
-            }*/
+            }
         }
     
         &__buttons {

@@ -2,6 +2,7 @@
     padding: 2.5em 1.25em;
 
     &-item {
+        margin-bottom: 3em;
         &-img {
             display: block;
             margin: 0 auto;
@@ -17,8 +18,15 @@
         }
 
         &-details {
+            position: relative;
+            top: -2.5rem;
+            padding-top: 2.5rem;
+            padding-bottom: 2rem;
+            margin: 0 auto;
+            max-width: 21rem;
             text-align: center;
-            margin-bottom: 3em;
+            
+            background-color: $color-white;
 
             &-title {
                 font-family: $font-standard;
@@ -51,11 +59,16 @@
                     &:nth-child(1) {
                         color: $bg-beige;
                         margin-right: 1em;
-                        margin-left: 2em;
+                        margin-left: 1.5em;
                     }
 
                     &:nth-child(2) {
-                        color: #bdbdbd;
+                        a {
+                            color: #bdbdbd;
+                            text-decoration: none;
+                        }
+
+                        
                     }
                 }
             }

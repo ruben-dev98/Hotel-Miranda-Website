@@ -23,7 +23,7 @@
         background-color: $color-white;
         box-shadow: 0em 0.3em 0.25em 0em #0000004a;
         height: 12.35em;
-        z-index: -1;
+        z-index: 1;
 
         &-list {
             padding: 2.75em 1.5em;
@@ -36,6 +36,12 @@
                 font-size: 1rem;
                 font-weight: 600;
                 line-height: 1.2rem;
+                text-decoration: none;
+
+                a {
+                    text-decoration: none;
+                    color: #111;
+                }
             }
         }
     }

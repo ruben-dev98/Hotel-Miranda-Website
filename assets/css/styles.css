@@ -21,7 +21,7 @@
   background-color: #FFF;
   box-shadow: 0em 0.3em 0.25em 0em rgba(0, 0, 0, 0.2901960784);
   height: 12.35em;
-  z-index: -1;
+  z-index: 1;
 }
 .header__nav-list {
   padding: 2.75em 1.5em;
@@ -34,6 +34,11 @@
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.2rem;
+  text-decoration: none;
+}
+.header__nav-list-item a {
+  text-decoration: none;
+  color: #111;
 }
 .header__logo {
   display: inline-block;
@@ -529,7 +534,7 @@
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   font-size: 0.8rem;
-  line-break: 1.1rem;
+  line-height: 1.1rem;
   letter-spacing: 0.15rem;
 }
 .about-us__title {
@@ -613,24 +618,46 @@
 
 @media (min-width: 1000px) {
   .about-us {
-    margin-bottom: 4em;
+    position: relative;
+    margin-bottom: 12em;
+    max-width: 96.5rem;
+    margin-right: 0;
+    margin-left: auto;
+    padding: 0em 0em;
   }
   .about-us__inner {
+    padding: 0em 0em;
     width: 100%;
-    margin: 0 auto;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: flex-end;
     gap: 5em;
   }
+  .about-us__informative-text {
+    margin-bottom: 2.5rem;
+  }
   .about-us__info {
     width: 40%;
+  }
+  .about-us__background {
+    width: 70%;
+    max-width: 65rem;
+    right: 0;
+    left: auto;
+    position: absolute;
+    top: 8.5em;
+    height: 38rem;
+    background-color: #f9f9f9;
+    z-index: -1;
   }
   .about-us__title {
     font-size: 5rem;
     line-height: 5.65rem;
     letter-spacing: -0.15rem;
+  }
+  .about-us__text {
+    width: 85%;
   }
   .about-us__features {
     margin: 0em 0em;
@@ -1049,7 +1076,8 @@
 @media (min-width: 1000px) {
   .menu {
     margin: 0 auto;
-    padding-right: 1.25em;
+    margin-bottom: 4em;
+    /*padding-right: 1.25em;*/
   }
   .menu__inner {
     width: 62%;
@@ -1131,11 +1159,11 @@
     height: 33%;
   }
   .menu__swiper {
-    width: max-content;
+    width: 100%;
     height: 23.1em;
-    /*&-slide {
-        background-color: blue;
-    }*/
+  }
+  .menu__swiper-slide {
+    background-color: blue;
   }
   .menu__buttons {
     width: 24.5%;
@@ -1545,6 +1573,9 @@
 .rooms__list {
   padding: 2.5em 1.25em;
 }
+.rooms__list-item {
+  margin-bottom: 3em;
+}
 .rooms__list-item-img {
   display: block;
   margin: 0 auto;
@@ -1558,8 +1589,14 @@
   width: 16rem;
 }
 .rooms__list-item-details {
+  position: relative;
+  top: -2.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+  margin: 0 auto;
+  max-width: 21rem;
   text-align: center;
-  margin-bottom: 3em;
+  background-color: #FFF;
 }
 .rooms__list-item-details-title {
   font-family: "Old Standard TT", serif;
@@ -1589,10 +1626,11 @@
 .rooms__list-item-details-price span:nth-child(1) {
   color: #BEAD8E;
   margin-right: 1em;
-  margin-left: 2em;
+  margin-left: 1.5em;
 }
-.rooms__list-item-details-price span:nth-child(2) {
+.rooms__list-item-details-price span:nth-child(2) a {
   color: #bdbdbd;
+  text-decoration: none;
 }
 .rooms__list-pagination {
   margin-bottom: 2em;
@@ -1835,6 +1873,34 @@
   letter-spacing: 0rem;
 }
 
+.offers {
+  padding: 0em 1.25em;
+}
+.offers__informative-text {
+  color: #777;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 0.15rem;
+  margin-bottom: 1em;
+}
+.offers__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: -0.1rem;
+  margin-bottom: 1em;
+}
+.offers__text {
+  color: #777;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+}
 .offers__price {
   color: #BEAD8E;
   font-family: "Archivo", sans-serif;
@@ -1896,10 +1962,36 @@
   color: #FFF;
   font-family: "Archivo", sans-serif;
   font-size: 0.85em;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1rem;
   letter-spacing: 0.15rem;
   background-color: #bead8e;
+}
+
+.offers__popular-rooms {
+  padding: 0em 1.25em;
+  background-color: #222;
+}
+.offers__popular-rooms-informative-text {
+  color: #BEAD8E;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 0.15rem;
+  margin-bottom: 1em;
+}
+.offers__popular-rooms-title {
+  font-family: "Old Standard TT", serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: -0.1rem;
+  margin-bottom: 1em;
+}
+.offers__popular-rooms .offers__swiper-slide {
+  width: 100%;
+  margin-bottom: 0em;
 }
 
 html, * {
