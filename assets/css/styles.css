@@ -2011,6 +2011,69 @@
   margin-bottom: 0em;
 }
 
+.contact__form {
+  padding: 0em 1.25em;
+}
+.contact__form-control {
+  color: #777;
+  background-color: #f8f8f8;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  height: 67px;
+  margin-bottom: 1.5em;
+  padding: 0em 1.5em;
+}
+.contact__form-control--area {
+  height: fit-content;
+  padding: 1.5em;
+}
+.contact__form-control-img {
+  vertical-align: middle;
+  margin-right: 1em;
+}
+.contact__form-control-img--area {
+  vertical-align: top;
+}
+.contact__form-button {
+  margin: 0 auto;
+  width: fit-content;
+  height: fit-content;
+}
+.contact__input {
+  border: 0em;
+  background-color: transparent;
+  width: 90%;
+  height: 100%;
+}
+.contact__input:focus {
+  border: 0em;
+}
+.contact__input:focus-visible {
+  outline: 0em;
+}
+.contact__area {
+  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+  border: 0em;
+  width: 90%;
+}
+.contact__button {
+  border: 0rem;
+  background-color: #bead8e;
+  color: #fff;
+  width: 16.1rem;
+  height: 3.75rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
 html,
 * {
   box-sizing: border-box;
