@@ -46,6 +46,11 @@
         }
     }
 
+    &__link {
+        text-decoration: none;
+        color: #111;
+    }
+
     &__logo {
         display: inline-block;
         width: 58%;

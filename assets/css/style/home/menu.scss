@@ -73,7 +73,7 @@
 
         &-text {
             width: 55%;
-            
+
             p {
                 &:nth-child(1) {
                     font-family: $font-standard;
@@ -129,7 +129,10 @@
     .menu {
         margin: 0 auto;
         margin-bottom: 4em;
-        /*padding-right: 1.25em;*/
+
+        > :not(:last-child) {
+            padding-left: 0em;
+        }
 
         &__inner {
             width: 100%;
@@ -144,13 +147,13 @@
             margin-right: auto;
             margin-left: 0;
             position: relative;
-            overflow: hidden;
+            overflow: visible;
 
             &-img {
                 width: fit-content;
                 height: fit-content;
                 position: relative;
-                right: 0;
+                right: 12.5rem;
             }
         }
 

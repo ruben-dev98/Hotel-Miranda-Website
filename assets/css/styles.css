@@ -40,6 +40,10 @@
   text-decoration: none;
   color: #111;
 }
+.header__link {
+  text-decoration: none;
+  color: #111;
+}
 .header__logo {
   display: inline-block;
   width: 58%;
@@ -1070,7 +1074,9 @@
   .menu {
     margin: 0 auto;
     margin-bottom: 4em;
-    /*padding-right: 1.25em;*/
+  }
+  .menu > :not(:last-child) {
+    padding-left: 0em;
   }
   .menu__inner {
     width: 100%;
@@ -1084,13 +1090,13 @@
     margin-right: auto;
     margin-left: 0;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
   }
   .menu__display-img {
     width: fit-content;
     height: fit-content;
     position: relative;
-    right: 0;
+    right: 12.5rem;
   }
   .menu__informative-text {
     color: #777;
