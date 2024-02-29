@@ -6,3 +6,13 @@
         height: 12.5rem;
     }
 }
+
+@media (min-width: 1000px) {
+    .contact__map {
+        margin: 0 auto;
+        margin-bottom: 6em;
+        &-map {
+            height: 43.75rem;
+        }
+    }
+}

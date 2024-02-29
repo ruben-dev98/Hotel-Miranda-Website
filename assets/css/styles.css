@@ -2205,6 +2205,12 @@
   border: 0em;
   width: 90%;
 }
+.contact__area:focus {
+  outline: 0rem;
+}
+.contact__area:focus-visible {
+  outline: 0rem;
+}
 .contact__button {
   border: 0rem;
   background-color: #bead8e;
@@ -2219,6 +2225,23 @@
   text-align: center;
 }
 
+@media (min-width: 1000px) {
+  .contact__form {
+    margin: 0 auto;
+    padding: 0rem 6.7rem;
+    margin-bottom: 6em;
+  }
+  .contact__form-control {
+    display: inline-block;
+    width: 48.5%;
+  }
+  .contact__form-control:nth-of-type(1), .contact__form-control:nth-of-type(3) {
+    margin-right: 1.5rem;
+  }
+  .contact__form-control--area {
+    width: 100%;
+  }
+}
 .contact__info {
   padding: 2em 0em;
   margin-bottom: 2.5em;
@@ -2257,6 +2280,30 @@
   right: 2rem;
 }
 
+@media (min-width: 1000px) {
+  .contact__info {
+    display: flex;
+    align-items: flex-end;
+    padding: 4rem 1.25rem;
+    padding-bottom: 1.5rem;
+    margin: 0 auto;
+  }
+  .contact__info .contact__card-inner {
+    padding: 3rem 2rem;
+  }
+  .contact__info .contact__card-icon {
+    vertical-align: sub;
+  }
+  .contact__info .contact__card-text {
+    vertical-align: middle;
+  }
+  .contact__info .contact__card-number {
+    right: 1rem;
+  }
+  .contact__info .contact__card-number--position {
+    right: 2.8rem;
+  }
+}
 .contact__map {
   padding: 0rem 1.25rem;
   margin-bottom: 3em;
@@ -2266,6 +2313,15 @@
   height: 12.5rem;
 }
 
+@media (min-width: 1000px) {
+  .contact__map {
+    margin: 0 auto;
+    margin-bottom: 6em;
+  }
+  .contact__map-map {
+    height: 43.75rem;
+  }
+}
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
   background-color: #f8f8f8;
