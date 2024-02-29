@@ -527,6 +527,7 @@
   }
   .banner__pagination {
     width: 100%;
+    margin-right: 21.3rem;
   }
 }
 .about-us {
@@ -646,7 +647,7 @@
   }
   .about-us__background {
     width: 70%;
-    max-width: 65rem;
+    max-width: 67.75rem;
     right: 0;
     left: auto;
     position: absolute;
@@ -1028,7 +1029,7 @@
   height: 7.5em;
 }
 .menu__article-arrow {
-  opacity: 0;
+  display: none;
 }
 .menu__article-text {
   width: 55%;
@@ -1162,7 +1163,8 @@
     color: #fff;
   }
   .menu__article:hover .menu__article-arrow {
-    opacity: 1;
+    display: block;
+    margin: 0 2rem 0 auto;
   }
   .menu-foods__swiper {
     width: 100%;
@@ -1650,6 +1652,12 @@
 .rooms__list-item-details-price span:nth-child(2) a {
   color: #bdbdbd;
   text-decoration: none;
+}
+.rooms__list-item-details-price span:nth-child(2) a::after {
+  content: "Booking Now";
+}
+.rooms__list-item-details-price span:nth-child(2) a:hover::after {
+  content: "Book Now";
 }
 .rooms__list-pagination {
   margin-bottom: 2em;

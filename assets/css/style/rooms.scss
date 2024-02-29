@@ -67,6 +67,14 @@
                             color: #bdbdbd;
                             text-decoration: none;
                         }
+
+                        a::after {
+                            content: 'Booking Now';
+                        }
+
+                        a:hover::after {
+                            content: 'Book Now';
+                        }
                     }
                 }
             }

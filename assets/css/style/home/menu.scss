@@ -72,7 +72,7 @@
         }
 
         &-arrow {
-            opacity: 0;
+            display: none;
         }
 
         &-text {
@@ -232,7 +232,8 @@
             }
 
             &:hover &-arrow {
-                opacity: 1;
+                display: block;
+                margin: 0 2rem 0 auto;
             }
         }
 
