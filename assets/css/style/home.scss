@@ -6,12 +6,3 @@
 @import "./home/menu.scss";
 @import "./home/rooms.scss";
 @import "./home/stats.scss";
-
-.facilities--dark {
-    color: $color-white;
-    background-color: $bg-black;
-}
-
-.facilities__swiper-slide--dark {
-    background-color: $bg-grey;
-}

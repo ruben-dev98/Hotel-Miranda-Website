@@ -1,5 +1,5 @@
 .offers {
-    padding: 2.5em 1.25em;
+    padding: 3em 1.25em;
 
     &__card {
         margin-bottom: 2em;
@@ -67,8 +67,19 @@
         &--crossed {
             color: $bg-beige;
             text-align: end;
-            text-decoration: line-through;
+
             span {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    width: 100%;
+                    position: absolute;
+                    right: 0;
+                    top: 0.98rem;
+                    border-bottom: 0.12rem solid $bg-beige;
+                }
+
                 &:nth-child(1) {
                     font-size: 23px;
                     line-height: 25px;
@@ -76,6 +87,10 @@
                 }
 
                 &:nth-child(2) {
+
+                    &::before {
+                        top: 0.45rem;
+                    }
                     font-size: 11px;
                     line-height: 11px;
                     letter-spacing: 0px;

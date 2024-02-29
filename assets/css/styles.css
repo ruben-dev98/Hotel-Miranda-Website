@@ -10,7 +10,7 @@
   position: fixed;
   background-color: #fff;
   box-shadow: 0em 0.25em 0.4em 0em rgba(0, 0, 0, 0.2901960784);
-  z-index: 2;
+  z-index: 11;
 }
 .header__nav {
   width: 100%;
@@ -21,7 +21,7 @@
   background-color: #fff;
   box-shadow: 0em 0.3em 0.25em 0em rgba(0, 0, 0, 0.2901960784);
   height: 12.35em;
-  z-index: 1;
+  z-index: -1;
 }
 .header__nav-list {
   padding: 2.75em 1.5em;
@@ -131,6 +131,7 @@
     bottom: 0;
     box-shadow: 0em 0em 0em 0em;
     height: fit-content;
+    z-index: 1;
   }
   .header__nav-list {
     display: flex;
@@ -797,7 +798,7 @@
   text-align: left;
 }
 .facilities__swiper-slide--dark {
-  background-color: #333;
+  background-color: #292929;
 }
 .facilities__swiper-slide-number {
   position: absolute;
@@ -814,7 +815,7 @@
   color: #222;
 }
 .facilities__swiper-slide-img {
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 .facilities__swiper-slide-title {
   font-family: "Old Standard TT", serif;
@@ -825,12 +826,15 @@
   margin-bottom: 1em;
 }
 .facilities__swiper-slide-text {
-  width: 80%;
+  width: 100%;
   color: #777;
   font-family: "Archivo", sans-serif;
   font-size: 0.85rem;
   font-weight: 400;
   line-height: 1.5rem;
+}
+.facilities__swiper-slide-text--dark {
+  color: #fff;
 }
 
 @media (min-width: 1000px) {
@@ -1418,22 +1422,14 @@
     color: #999999;
   }
 }
-.facilities--dark {
-  color: #fff;
-  background-color: #222;
-}
-
-.facilities__swiper-slide--dark {
-  background-color: #333;
-}
-
 .about__video {
-  padding: 3em 1.25em;
+  padding: 2.5em 1.25em;
+  margin-bottom: 2rem;
 }
 .about__video-video {
   background-color: #c2c2c2;
   width: 100%;
-  height: 10rem;
+  height: 11.5rem;
   margin-bottom: 2em;
 }
 .about__video-text {
@@ -1539,7 +1535,7 @@
 }
 .about__counter {
   padding: 0em 1.25em;
-  margin-bottom: 2em;
+  margin-bottom: 6em;
   position: relative;
 }
 .about__counter-informative-text {
@@ -1605,7 +1601,7 @@
   .about__counter {
     padding: 0em 1.25em;
     margin: 0 auto;
-    margin-bottom: 4em;
+    margin-bottom: 6em;
   }
   .about__counter-title {
     font-size: 5rem;
@@ -1626,6 +1622,7 @@
 }
 .about__cards {
   padding: 0em 1.25em;
+  margin-bottom: 3rem;
 }
 .about__cards .about__card {
   display: inline-block;
@@ -1681,17 +1678,18 @@
 }
 .about__facilities {
   width: 100%;
-  margin-bottom: 3em;
+  padding-bottom: 5rem;
+  margin-bottom: 3.5em;
 }
 .about__facilities-inner {
   margin: 0 auto;
   position: relative;
+  padding: 0rem 1rem;
 }
 
 .about__info {
   padding: 2rem 0rem;
   margin: 0 auto;
-  margin-bottom: 8rem;
 }
 
 .about__swiper {
@@ -2018,7 +2016,7 @@
 }
 
 .offers {
-  padding: 2.5em 1.25em;
+  padding: 3em 1.25em;
 }
 .offers__card {
   margin-bottom: 2em;
@@ -2076,7 +2074,17 @@
 .offers__price--crossed {
   color: #bead8e;
   text-align: end;
-  text-decoration: line-through;
+}
+.offers__price--crossed span {
+  position: relative;
+}
+.offers__price--crossed span::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0.98rem;
+  border-bottom: 0.12rem solid #bead8e;
 }
 .offers__price--crossed span:nth-child(1) {
   font-size: 23px;
@@ -2087,6 +2095,9 @@
   font-size: 11px;
   line-height: 11px;
   letter-spacing: 0px;
+}
+.offers__price--crossed span:nth-child(2)::before {
+  top: 0.45rem;
 }
 .offers__content-img {
   position: relative;
@@ -2146,6 +2157,9 @@
   line-height: 3rem;
   letter-spacing: -0.1rem;
   margin-bottom: 1.5em;
+}
+.offers__popular-rooms .offers__swiper {
+  height: 13.6rem;
 }
 .offers__popular-rooms .offers__swiper-slide {
   width: 100%;
@@ -2344,13 +2358,16 @@
   font-size: 0.8rem;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
   bottom: -2rem;
   top: auto;
 }
 
 .swiper-pagination-bullet {
-  background: #EDEDED;
+  background: #ededed;
 }
 .swiper-pagination-bullet--dark {
   background: #333333;
@@ -2358,6 +2375,12 @@
 
 .swiper-pagination-bullet-active {
   background: #bead8e;
+}
+
+.swiper-slide {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (min-width: 1000px) {
