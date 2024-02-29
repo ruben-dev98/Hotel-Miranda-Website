@@ -17,7 +17,6 @@
         rel="stylesheet">
     <!-- Fonts -->
     <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="assets/js/swiper.js" defer></script>
     <script src="assets/js/header.js" defer></script>
     <title>Contact</title>
 </head>
@@ -64,18 +63,39 @@
         </div>
     </header>
     <section class="contact__info">
-        <div class="contact__card">
-            <p class="contact__card-title"></p>
-            <p class="contact__card-text"></p>
-        </div>
-        <div class="contact__card">
-            <p class="contact__card-title"></p>
-            <p class="contact__card-text"></p>
-        </div>
-        <div class="contact__card">
-            <p class="contact__card-title"></p>
-            <p class="contact__card-text"></p>
-        </div>
+        <section class="contact__card">
+            <div class="contact__card-inner">
+                <img class="contact__card-icon footer__contact-info-icon" src="assets/img/ubi.svg"
+                    alt="icono para representar una ubicación en un mapa">
+                <div class="contact__card-text footer__contact-info-text">
+                    <p>Hotel Address</p>
+                    <p>Alguna calle, A Coruña, España</p>
+                </div>
+            </div>
+            <p class="contact__card-number">01</p>
+        </section>
+        <section class="contact__card">
+            <div class="contact__card-inner">
+                <img class="contact__card-icon footer__contact-info-icon" src="assets/img/call.svg"
+                    alt="icono de un telefono recibinedo una llamada">
+                <div class="contact__card-text footer__contact-info-text">
+                    <p>Phone Number</p>
+                    <p>5555555555</p>
+                </div>
+            </div>
+            <p class="contact__card-number contact__card-number--position">02</p>
+        </section>
+        <section class="contact__card">
+            <div class="contact__card-inner">
+                <img class="contact__card-icon footer__contact-info-icon" src="assets/img/email.svg"
+                    alt="icono de un sobre con un numero 1 en un bocadillo indicando que se tiene un mensaje sin leer">
+                <div class="contact__card-text footer__contact-info-text">
+                    <p>Email</p>
+                    <p>algo@gmail.com</p>
+                </div>
+            </div>
+            <p class="contact__card-number contact__card-number--position">03</p>
+        </section>
     </section>
     <section class="contact__map">
         <img class="contact__map-map" src="" alt="">
@@ -83,11 +103,11 @@
     <section class="contact__form">
         <form action="">
             <div class="contact__form-control">
-                <img class="contact__form-control-img" src="assets/icon/contact-full-name.svg" alt="">
+                <img class="contact__form-control-img contact__form-control-img--full-name" src="assets/icon/contact-full-name.svg" alt="">
                 <input class="contact__input" placeholder="Your full name" type="text">
             </div>
             <div class="contact__form-control">
-                <img class="contact__form-control-img"  src="assets/icon/contact-phone.svg" alt="">
+                <img class="contact__form-control-img" src="assets/icon/contact-phone.svg" alt="">
                 <input class="contact__input" placeholder="Add phone number" type="text">
             </div>
             <div class="contact__form-control">
@@ -99,8 +119,10 @@
                 <input class="contact__input" placeholder="Enter subject" type="text">
             </div>
             <div class="contact__form-control contact__form-control--area">
-                <img class="contact__form-control-img contact__form-control-img--area" src="assets/icon/contact-message.svg" alt="">
-                <textarea class="contact__area" name="" placeholder="Enter message" id="" cols="30" rows="10"></textarea>
+                <img class="contact__form-control-img contact__form-control-img--area"
+                    src="assets/icon/contact-message.svg" alt="">
+                <textarea class="contact__area" name="" placeholder="Enter message" id="" cols="30"
+                    rows="10"></textarea>
             </div>
             <div class="contact__form-button">
                 <button class="contact__button upper__case">Send</button>

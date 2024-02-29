@@ -313,7 +313,7 @@
 }
 .footer__contact-info-text p:nth-child(2) {
   font-family: "Roboto", sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1rem;
 }
 .footer__directives {
@@ -2013,6 +2013,7 @@
 
 .contact__form {
   padding: 0em 1.25em;
+  margin-bottom: 3em;
 }
 .contact__form-control {
   color: #777;
@@ -2032,10 +2033,13 @@
 }
 .contact__form-control-img {
   vertical-align: middle;
-  margin-right: 1em;
+  margin-right: 0.5em;
 }
 .contact__form-control-img--area {
   vertical-align: top;
+}
+.contact__form-control-img--full-name {
+  vertical-align: text-top;
 }
 .contact__form-button {
   margin: 0 auto;
@@ -2072,6 +2076,53 @@
   line-height: 1.2rem;
   letter-spacing: 0.2rem;
   text-align: center;
+}
+
+.contact__info {
+  padding: 2em 0em;
+  margin-bottom: 2.5em;
+}
+.contact__info .contact__card {
+  width: 100%;
+  height: 11.2rem;
+  position: relative;
+  max-width: 25rem;
+}
+.contact__info .contact__card-inner {
+  padding: 2rem 2rem;
+}
+.contact__info .contact__card-icon {
+  vertical-align: sub;
+}
+.contact__info .contact__card-text {
+  vertical-align: middle;
+}
+.contact__info .contact__card-text p:nth-child(1) {
+  margin-bottom: 1em;
+}
+.contact__info .contact__card-number {
+  color: #f8f8f8;
+  position: absolute;
+  right: 0.5rem;
+  top: -1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 12.5rem;
+  font-weight: 700;
+  line-height: 15.6rem;
+  letter-spacing: -0.3rem;
+  z-index: -1;
+}
+.contact__info .contact__card-number--position {
+  right: 2rem;
+}
+
+.contact__map {
+  padding: 0rem 1.25rem;
+  margin-bottom: 3em;
+}
+.contact__map-map {
+  width: 100%;
+  height: 12.5rem;
 }
 
 html,
