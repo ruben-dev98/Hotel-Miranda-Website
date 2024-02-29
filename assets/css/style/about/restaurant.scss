@@ -59,4 +59,34 @@
 
 @media (min-width: 1000px) {
     
+    .about__restaurant {
+        &-inner {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+    
+        &-img {
+            width: 97.5%;
+            height: 26.25em;
+            margin-bottom: 0rem;
+        }
+
+        &-info {
+            width: 91.5%;
+        }
+    
+        &-title {
+            font-size: 3rem;
+            line-height: 3.7rem;
+            letter-spacing: -.1rem;
+        }
+    
+        &-text {
+            width: 91%;
+            margin-bottom: 1rem;
+        }
+    }
+
+
 }

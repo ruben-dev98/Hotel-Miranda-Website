@@ -98,3 +98,21 @@ const facilities__swiper = new Swiper('.facilities__swiper', {
     }
 });
 
+const about__swiper = new Swiper('.about__swiper', {
+    // Optional parameters
+    slidesPerView: 1,
+    direction: 'horizontal',
+    loop: true,
+
+    pagination: {
+        el: '.about__swiper-pagination',
+    },
+
+    breakpoints: {
+        1000: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        }
+    }
+});
+

@@ -1446,6 +1446,9 @@
 }
 
 @media (min-width: 1000px) {
+  .about__video {
+    padding: 3rem 0rem;
+  }
   .about__video-video {
     height: 41.1rem;
     margin-bottom: 2em;
@@ -1510,9 +1513,34 @@
   background-color: #bead8e;
 }
 
+@media (min-width: 1000px) {
+  .about__restaurant-inner {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  .about__restaurant-img {
+    width: 97.5%;
+    height: 26.25em;
+    margin-bottom: 0rem;
+  }
+  .about__restaurant-info {
+    width: 91.5%;
+  }
+  .about__restaurant-title {
+    font-size: 3rem;
+    line-height: 3.7rem;
+    letter-spacing: -0.1rem;
+  }
+  .about__restaurant-text {
+    width: 91%;
+    margin-bottom: 1rem;
+  }
+}
 .about__counter {
   padding: 0em 1.25em;
   margin-bottom: 2em;
+  position: relative;
 }
 .about__counter-informative-text {
   color: #777;
@@ -1532,6 +1560,7 @@
   margin-bottom: 0.75em;
 }
 .about__counter-card {
+  max-width: 23.1rem;
   height: 8.25rem;
   padding: 1rem 1.5rem;
   padding-right: 0em;
@@ -1572,6 +1601,29 @@
   text-align: end;
 }
 
+@media (min-width: 1000px) {
+  .about__counter {
+    padding: 0em 1.25em;
+    margin: 0 auto;
+    margin-bottom: 4em;
+  }
+  .about__counter-title {
+    font-size: 5rem;
+    line-height: 6.25rem;
+    letter-spacing: -0.15rem;
+    text-align: left;
+  }
+  .about__counter-title br {
+    display: none;
+  }
+  .about__counter-cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about__counter-card {
+    width: 100%;
+  }
+}
 .about__cards {
   padding: 0em 1.25em;
 }
@@ -1586,7 +1638,7 @@
 .about__cards .about__card--display {
   display: none;
 }
-.about__cards .about__card:not(:nth-child(2), :nth-child(4)) {
+.about__cards .about__card:not(:nth-child(2), :nth-child(5)) {
   margin-right: 0.5rem;
 }
 .about__cards .about__card-img {
@@ -1637,9 +1689,22 @@
 }
 
 .about__info {
+  padding: 2rem 0rem;
   margin: 0 auto;
+  margin-bottom: 8rem;
 }
 
+.about__swiper {
+  max-width: 74rem;
+  width: 100%;
+  height: 14.4rem;
+}
+
+@media (min-width: 1000px) {
+  .about__swiper {
+    height: 25rem;
+  }
+}
 .rooms__list {
   padding: 2.5em 1.25em;
 }
