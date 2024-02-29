@@ -1874,7 +1874,7 @@
 }
 
 .offers {
-  padding: 0em 1.25em;
+  padding: 2.5em 1.25em;
 }
 .offers__informative-text {
   color: #777;
@@ -1885,6 +1885,9 @@
   letter-spacing: 0.15rem;
   margin-bottom: 1em;
 }
+.offers__inner {
+  padding: 1em 1em;
+}
 .offers__title {
   font-family: "Old Standard TT", serif;
   font-size: 2.5rem;
@@ -1892,6 +1895,10 @@
   line-height: 3rem;
   letter-spacing: -0.1rem;
   margin-bottom: 1em;
+}
+.offers__title a {
+  color: #222;
+  text-decoration: none;
 }
 .offers__text {
   color: #777;
@@ -1908,34 +1915,26 @@
   color: #de5777;
 }
 .offers__price span:nth-child(1) {
-  font-size: 16px;
-  line-height: 17px;
-  letter-spacing: 0px;
-}
-.offers__price span:nth-child(2) {
   font-size: 30px;
   line-height: 32px;
   letter-spacing: 0px;
 }
-.offers__price span:nth-child(3) {
+.offers__price span:nth-child(2) {
   font-size: 12px;
   line-height: 13px;
   letter-spacing: 0px;
 }
 .offers__price--crossed {
   color: #BEAD8E;
+  text-align: end;
+  text-decoration: line-through;
 }
 .offers__price--crossed span:nth-child(1) {
-  font-size: 16px;
-  line-height: 17px;
-  letter-spacing: 0px;
-}
-.offers__price--crossed span:nth-child(2) {
   font-size: 23px;
   line-height: 25px;
   letter-spacing: 0px;
 }
-.offers__price--crossed span:nth-child(3) {
+.offers__price--crossed span:nth-child(2) {
   font-size: 11px;
   line-height: 11px;
   letter-spacing: 0px;
@@ -1946,26 +1945,29 @@
   height: fit-content;
 }
 .offers__img {
-  width: 335px;
-  height: 162px;
+  width: 21rem;
+  height: 10.1rem;
 }
 .offers__prices {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 1rem;
+  right: 1rem;
 }
 .offers__button {
   display: block;
   width: 15.8em;
   height: 4.4em;
   border: 0em;
-  color: #FFF;
   font-family: "Archivo", sans-serif;
   font-size: 0.85em;
   font-weight: 700;
   line-height: 1rem;
   letter-spacing: 0.15rem;
   background-color: #bead8e;
+}
+.offers__button a {
+  color: #FFF;
+  text-decoration: none;
 }
 
 .offers__popular-rooms {
