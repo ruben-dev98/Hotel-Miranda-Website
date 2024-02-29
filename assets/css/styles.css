@@ -759,6 +759,14 @@
 .facilities {
   text-align: center;
   padding: 3.5em 0em;
+  margin-bottom: 4em;
+}
+.facilities--dark {
+  color: #fff;
+  background-color: #222;
+}
+.facilities__inner {
+  position: relative;
 }
 .facilities__informative-text {
   color: #777;
@@ -768,6 +776,9 @@
   line-height: 1rem;
   letter-spacing: 0.15rem;
   margin-bottom: 1.75em;
+}
+.facilities__informative-text--ligth {
+  color: #c2c2c2;
 }
 .facilities__title {
   font-family: "Old Standard TT", serif;
@@ -784,6 +795,9 @@
 .facilities__swiper-slide {
   padding: 5em 2em;
   text-align: left;
+}
+.facilities__swiper-slide--dark {
+  background-color: #333;
 }
 .facilities__swiper-slide-number {
   position: absolute;
@@ -822,6 +836,7 @@
 @media (min-width: 1000px) {
   .facilities {
     margin: 0 auto;
+    margin-bottom: 2em;
     text-align: center;
     padding-left: 1.25em;
     padding-right: 1.25em;
@@ -848,17 +863,7 @@
   }
   .facilities__swiper {
     width: 100%;
-    height: 40em;
-  }
-  .facilities__swiper-wrapper {
-    /*display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 50% 50%;*/
-  }
-  .facilities__swiper-slide {
-    padding: 0em;
-    width: 33%;
-    height: 50%;
+    height: 44em;
   }
   .facilities__swiper-slide-img {
     margin-bottom: 2em;
@@ -1418,7 +1423,7 @@
   background-color: #222;
 }
 
-.facilities__swiper--dark {
+.facilities__swiper-slide--dark {
   background-color: #333;
 }
 
@@ -1440,6 +1445,18 @@
   text-align: center;
 }
 
+@media (min-width: 1000px) {
+  .about__video-video {
+    height: 41.1rem;
+    margin-bottom: 2em;
+  }
+  .about__video-text {
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+    letter-spacing: -0.15rem;
+    padding: 0rem 3rem;
+  }
+}
 .about__restaurant {
   padding: 0em 1.25em;
   margin-bottom: 5em;
@@ -1566,6 +1583,9 @@
   padding: 2.5em 0em;
   margin-bottom: 1em;
 }
+.about__cards .about__card--display {
+  display: none;
+}
 .about__cards .about__card:not(:nth-child(2), :nth-child(4)) {
   margin-right: 0.5rem;
 }
@@ -1587,8 +1607,37 @@
   color: #fff;
 }
 
+@media (min-width: 1000px) {
+  .about__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+  .about__cards .about__card {
+    width: 12.5rem;
+    height: 12.5rem;
+    padding: 3.5rem 0rem;
+  }
+  .about__cards .about__card--display {
+    display: inline-block;
+  }
+  .about__cards .about__card-img {
+    width: 4.25rem;
+    height: 4.25rem;
+  }
+}
 .about__facilities {
+  width: 100%;
   margin-bottom: 3em;
+}
+.about__facilities-inner {
+  margin: 0 auto;
+  position: relative;
+}
+
+.about__info {
+  margin: 0 auto;
 }
 
 .rooms__list {
@@ -2172,6 +2221,18 @@
 .swiper-button-next:after,
 .swiper-button-prev:after {
   font-size: 0.8rem;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: -2rem;
+  top: auto;
+}
+
+.swiper-pagination-bullet {
+  background: #EDEDED;
+}
+.swiper-pagination-bullet--dark {
+  background: #333333;
 }
 
 .swiper-pagination-bullet-active {

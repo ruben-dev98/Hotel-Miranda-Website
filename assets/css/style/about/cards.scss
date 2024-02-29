@@ -9,6 +9,10 @@
         padding: 2.5em 0em;
         margin-bottom: 1em;
 
+        &--display {
+            display: none;
+        }
+
         &:not(:nth-child(2), :nth-child(4)) {
             margin-right: 0.5rem;
         }
@@ -31,6 +35,31 @@
         &--beige {
             background-color: $bg-beige;
             color: $color-white;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .about__cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+        
+        .about__card {
+            width: 12.5rem;
+            height: 12.5rem;
+            padding: 3.5rem 0rem;
+
+
+            &--display {
+                display: inline-block;
+            }
+
+            &-img {
+                width: 4.25rem;
+                height: 4.25rem;
+            }
         }
     }
 }

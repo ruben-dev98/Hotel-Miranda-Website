@@ -20,11 +20,23 @@
     font-size: 0.8rem;
 }
 
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -2rem;
+    top: auto;
+}
 
+.swiper-pagination-bullet {
+    background: #EDEDED;
+
+    &--dark {
+        background: #333333;
+    }
+}
 
 .swiper-pagination-bullet-active {
     background: $bg-beige;
 }
+
 
 @media (min-width: 1000px) {
     .swiper-button-next:after,

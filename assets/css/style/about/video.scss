@@ -17,3 +17,20 @@
         text-align: center;
     }
 }
+
+@media (min-width: 1000px) {
+    
+    .about__video {
+        &-video {
+            height: 41.1rem;
+            margin-bottom: 2em;
+        }
+
+        &-text {
+            font-size: 4.5rem;
+            line-height: 5.5rem;
+            letter-spacing: -0.15rem;
+            padding: 0rem 3rem;
+        }
+    }
+}

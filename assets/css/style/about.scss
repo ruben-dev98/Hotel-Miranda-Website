@@ -4,5 +4,15 @@
 @import "./about/cards.scss";
 
 .about__facilities {
+    width: 100%;
     margin-bottom: 3em;
+
+    &-inner {
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+.about__info {
+    margin: 0 auto;
 }
