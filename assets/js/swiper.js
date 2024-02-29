@@ -48,45 +48,19 @@ const menus__swiper = new Swiper('.menu__swiper', {
 const menus__foods__swiper = new Swiper('.menu-foods__swiper', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
-    slidesPerView: 3,
-    slidesPerColumn: 1,
-    slidesPerGroup: 3,
-    grid: {
-        rows: 3,
-        fill: 'row',
-        columns: 1
-    },
+    loop: false,
+    slidesPerView: 1,
 
-    breakpoint: {
-        1000: {
-
-        }
-    }
-
-    // If we need pagination
-    /*navigation: {
+    navigation: {
         nextEl: '.menu-foods__swiper-button-next',
         prevEl: '.menu-foods__swiper-button-prev',
-    },*/
+    },
 
-    /*on: {
-        init: function () {},
-        orientationchange: function () {},
-        beforeResize: function () {
-            let vw = window.innerWidth;
-            if (vw > 1000) {
-                menus__foods__swiper.params.slidesPerView = 6;
-                menus__foods__swiper.params.slidesPerColumn = 1;
-                menus__foods__swiper.params.slidesPerGroup = 6;
-            } else {
-                menus__foods__swiper.params.slidesPerView = 3;
-                menus__foods__swiper.params.slidesPerColumn = 1;
-                menus__foods__swiper.params.slidesPerGroup = 3;
-            }
-            menus__foods__swiper.init();
-        },
-    },*/
+    breakpoints: {
+        1000: {
+            slidesPerView: 2,
+        }
+    }
 });
 
 
@@ -103,14 +77,13 @@ const facilities__swiper = new Swiper('.facilities__swiper', {
         el: '.facilities__swiper-pagination',
     },
 
-    breakpoint: {
+    breakpoints: {
         1000: {
-            slidesPerView: 6,
-            slidesPerColumn: 1,
-            slidesPerGroup: 3,
+            slidesPerView: 3,
+            spaceBetween: 50,
 
             grid: {
-                rows: 6,
+                rows: 2,
                 fill: 'row'
             }
         }
