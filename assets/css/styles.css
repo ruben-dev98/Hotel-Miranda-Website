@@ -191,7 +191,7 @@
   background-color: rgba(255, 255, 255, 0.98);
 }
 .footer__background > :not(:last-child) {
-  padding: 3em 1.25em;
+  padding: 2.5em 1.25em;
   padding-bottom: 0em;
 }
 .footer__header {
@@ -1879,6 +1879,9 @@
 .offers {
   padding: 2.5em 1.25em;
 }
+.offers__card {
+  margin-bottom: 2em;
+}
 .offers__informative-text {
   color: #777;
   font-family: "Archivo", sans-serif;
@@ -1890,6 +1893,7 @@
 }
 .offers__inner {
   padding: 1em 1em;
+  padding-bottom: 2em;
 }
 .offers__title {
   font-family: "Old Standard TT", serif;
@@ -1945,11 +1949,11 @@
 }
 .offers__content-img {
   position: relative;
-  width: fit-content;
-  height: fit-content;
+  width: 100%;
+  max-width: 21rem;
 }
 .offers__img {
-  width: 21rem;
+  width: 100%;
   height: 10.1rem;
 }
 .offers__prices {
@@ -1978,25 +1982,29 @@
 }
 
 .offers__popular-rooms {
-  padding: 0em 1.25em;
+  padding: 0.5em 1.25em;
+  padding-top: 3em;
+  margin-bottom: 4em;
   background-color: #222;
+  text-align: center;
 }
 .offers__popular-rooms-informative-text {
   color: #bead8e;
   font-family: "Archivo", sans-serif;
   font-size: 0.85rem;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1rem;
   letter-spacing: 0.15rem;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 .offers__popular-rooms-title {
+  color: #fff;
   font-family: "Old Standard TT", serif;
   font-size: 2.5rem;
   font-weight: 400;
   line-height: 3rem;
   letter-spacing: -0.1rem;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 .offers__popular-rooms .offers__swiper-slide {
   width: 100%;
