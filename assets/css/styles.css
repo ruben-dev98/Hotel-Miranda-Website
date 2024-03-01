@@ -258,15 +258,13 @@
   display: inline-block;
   width: 2.5em;
   height: 2.5em;
-  vertical-align: middle;
+  padding: 0.5rem;
 }
-.footer__header-icons-icon--bg-beige {
+.footer__header-icons-icon:hover {
   background-color: #bead8e;
 }
-.footer__header-icons-icon--bg-beige img {
-  padding: 0.5em 0em;
-  margin: 0 auto;
-  display: block;
+.footer__header-icons-icon:hover path {
+  fill: #fff;
 }
 .footer__services {
   margin-bottom: 2em;
@@ -1501,7 +1499,7 @@
 .about__cards .about__card:not(:nth-child(2), :nth-child(5)) {
   margin-right: 0.5rem;
 }
-.about__cards .about__card-img {
+.about__cards .about__card-svg {
   width: 3.5rem;
   height: 3.5rem;
   margin-bottom: 1em;

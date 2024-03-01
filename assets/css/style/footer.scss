@@ -74,15 +74,13 @@
                 display: inline-block;
                 width: 2.5em;
                 height: 2.5em;
-                vertical-align: middle;
+                padding: 0.5rem;
 
-                &--bg-beige {
+                &:hover {
                     background-color: $color-secondary;
 
-                    img {
-                        padding: 0.5em 0em;
-                        margin: 0 auto;
-                        display: block;
+                    path {
+                        fill: $color-light;
                     }
                 }
             }
