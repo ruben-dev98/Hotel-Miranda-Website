@@ -1332,7 +1332,7 @@
     height: 1.5rem;
   }
   .rooms__swiper {
-    height: 15.25em;
+    height: 31.25em;
   }
   .rooms__details {
     padding: 1em 0em;
@@ -1705,6 +1705,7 @@
 }
 .rooms__list {
   padding: 2.5em 1.25em;
+  position: relative;
 }
 .rooms__list-item {
   margin-bottom: 3em;

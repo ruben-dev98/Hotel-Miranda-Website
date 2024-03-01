@@ -116,3 +116,25 @@ const about__swiper = new Swiper('.about__swiper', {
     }
 });
 
+const rooms__list__swiper = new Swiper('.rooms-list__swiper', {
+    // Optional parameters
+    slidesPerView: 1,
+    direction: 'horizontal',
+    loop: false,
+
+    /*pagination: {
+        el: '.rooms-list__swiper-pagination',
+    },*/
+
+    breakpoints: {
+        1000: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+
+            grid: {
+                rows: 4,
+                fill: 'row'
+            }
+        }
+    }
+});
