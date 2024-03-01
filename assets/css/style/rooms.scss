@@ -27,7 +27,7 @@
             max-width: 21rem;
             text-align: center;
 
-            background-color: $color-white;
+            background-color: $color-light;
 
             &-title {
                 font-family: $font-standard;
@@ -40,7 +40,7 @@
             &-text {
                 width: 90%;
                 margin: 0 auto;
-                color: $color-grey;
+                color: $text-color-secondary;
                 font-family: $font-roboto;
                 font-size: 0.85rem;
                 font-weight: 400;
@@ -58,7 +58,7 @@
                     letter-spacing: 0rem;
 
                     &:nth-child(1) {
-                        color: $bg-beige;
+                        color: $color-secondary;
                         margin-right: 1em;
                         margin-left: 1.5em;
                     }
@@ -104,8 +104,8 @@
             padding: 0.7em 0em;
 
             &--beige {
-                color: $color-white;
-                background-color: $bg-beige;
+                color: $color-light;
+                background-color: $color-secondary;
             }
         }
     }

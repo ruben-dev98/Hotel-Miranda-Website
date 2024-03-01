@@ -1,12 +1,12 @@
 $font-standard: "Old Standard TT", serif;
 $font-archivo: "Archivo", sans-serif;
 $font-roboto: "Roboto", sans-serif;
-$color-white: #fff;
-$color-black: #111;
-$color-grey: #777;
-$bg-black: #222;
-$bg-grey: #333;
-$bg-beige: #bead8e;
+$color-light: #fff;
+$color-main: #111;
+$color-main-alternative: #222;
+$color-secondary: #bead8e;
+$color-terciary: #333;
+$text-color-secondary: #777;
 
 @import "style/header.scss";
 @import "style/footer.scss";
@@ -16,7 +16,10 @@ $bg-beige: #bead8e;
 @import "style/rooms-details.scss";
 @import "style/offers.scss";
 @import "style/contact.scss";
-@import "style/swiper.scss";
+@import "style/swiper";
+@import "style/button";
+@import "style/font-title";
+@import "style/banner";
 
 html,
 * {
@@ -27,7 +30,7 @@ html,
 
 body {
     min-width: 320px;
-    color: #222;
+    color: $color-main-alternative;
 }
 
 .upper__case {

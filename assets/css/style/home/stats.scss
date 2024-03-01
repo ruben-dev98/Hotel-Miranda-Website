@@ -1,5 +1,5 @@
 .stats {
-    background-color: $bg-black;
+    background-color: $color-main-alternative;
     padding: 3.5em 0em;
     margin-bottom: 4em;
 
@@ -17,7 +17,7 @@
         }
 
         &-title {
-            color: $color-white;
+            color: $color-light;
             font-family: $font-roboto;
             font-size: 60px;
             line-height: 81px;
@@ -30,7 +30,7 @@
         }
 
         &-text {
-            color: $color-white;
+            color: $color-light;
             font-family: $font-roboto;
             font-size: 16px;
             font-weight: 700;
@@ -61,7 +61,7 @@
             }
 
             &-title {
-                color: $color-white;
+                color: $color-light;
                 font-family: $font-roboto;
                 font-size: 60px;
                 font-weight: 700;
@@ -72,7 +72,7 @@
             }
 
             &-text {
-                color: $color-white;
+                color: $color-light;
                 font-family: $font-roboto;
                 font-size: 16px;
                 font-weight: 700;

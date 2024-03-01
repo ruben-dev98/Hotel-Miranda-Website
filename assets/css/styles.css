@@ -95,12 +95,14 @@
 }
 .header__menu-x {
   margin-right: 1.55em;
+}
+.header__menu--hidden {
   display: none;
 }
 
 @media (min-width: 1000px) {
   .background__header {
-    background: #222;
+    background: #111;
     height: 5.8em;
     padding: 0em 1.25em;
   }
@@ -240,7 +242,7 @@
 }
 .footer__header-text {
   width: 90%;
-  color: #777777;
+  color: #777;
   font-family: "Archivo", sans-serif;
   font-weight: 400;
   font-size: 1rem;
@@ -260,7 +262,7 @@
 .footer__header-icons-icon--bg-beige {
   background-color: #bead8e;
 }
-.footer__header-icons-icon img {
+.footer__header-icons-icon--bg-beige img {
   padding: 0.5em 0em;
   margin: 0 auto;
   display: block;
@@ -420,118 +422,6 @@
     margin-bottom: 0em;
   }
 }
-.banner {
-  background-color: #333333;
-  padding: 0em 1.25em;
-}
-.banner__inner {
-  width: 100%;
-  padding-top: 9em;
-  padding-bottom: 5em;
-}
-.banner__inner--about {
-  padding-bottom: 1em;
-}
-.banner__inner--rooms {
-  padding-bottom: 0em;
-}
-.banner__title {
-  color: #fff;
-  font-family: "Old Standard TT", serif;
-  font-size: 3.5rem;
-  font-weight: 400;
-  margin-bottom: 0.5em;
-  line-height: 3.75rem;
-  letter-spacing: -0.1rem;
-}
-.banner__text {
-  width: 95%;
-  color: #fff;
-  font-family: "Archivo", sans-serif;
-  font-size: 0.8rem;
-  font-weight: 700;
-  line-height: 1rem;
-  letter-spacing: 0.18rem;
-  margin-bottom: 2em;
-}
-.banner__button {
-  display: block;
-  width: 15.8em;
-  height: 4.4em;
-  border: 0em;
-  color: #fff;
-  font-family: "Archivo", sans-serif;
-  font-size: 0.85em;
-  font-weight: 700;
-  line-height: 1rem;
-  letter-spacing: 0.15rem;
-  background-color: #bead8e;
-}
-.banner__button:not(:last-child) {
-  margin-bottom: 2em;
-}
-.banner__button--transparent {
-  background-color: transparent;
-  border: 0.15em solid rgba(255, 255, 255, 0.3294117647);
-}
-.banner__pagination {
-  max-width: 12.5rem;
-  width: 9.75em;
-  background-color: #fff;
-  margin-right: 0;
-  margin-left: auto;
-  padding: 1em 1em;
-}
-.banner__pagination-inner {
-  text-align: center;
-}
-.banner__pagination--room-details {
-  width: 100%;
-}
-.banner__pagination span {
-  font-family: "Archivo", sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1rem;
-  letter-spacing: -0.1rem;
-  color: #111;
-}
-.banner__pagination span:nth-child(3) {
-  color: #bead8e;
-}
-.banner__pagination span:not(:last-child) {
-  margin-right: 0.5em;
-}
-
-@media (min-width: 1000px) {
-  .banner__inner {
-    padding-top: 10em;
-    padding-bottom: 7.5em;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .banner__title {
-    width: 100%;
-    font-size: 7.5rem;
-    margin-bottom: 0.5em;
-    line-height: 8.1rem;
-    letter-spacing: -0.22rem;
-  }
-  .banner__text {
-    width: 100%;
-  }
-  .banner__button {
-    display: inline-block;
-  }
-  .banner__button:not(:last-child) {
-    margin-bottom: 0em;
-    margin-right: 2em;
-  }
-  .banner__pagination {
-    width: 100%;
-    margin-right: 21.3rem;
-  }
-}
 .about-us {
   padding: 2em 1.25em;
 }
@@ -612,7 +502,7 @@
 .about-us__features-feature-text {
   margin: 0 auto;
   width: 77%;
-  color: #111;
+  color: #333;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 0.85rem;
@@ -2399,6 +2289,156 @@
     width: 4.4rem;
     height: 4.4rem;
     color: #fff;
+  }
+}
+.button {
+  display: block;
+  width: 15.8em;
+  height: 4.4em;
+  border: 0em;
+  color: #fff;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.85em;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 0.15rem;
+  background-color: #bead8e;
+}
+.button--transparent {
+  background-color: transparent;
+  border: 0.15em solid rgba(255, 255, 255, 0.3294117647);
+}
+
+.font__title {
+  color: #777;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1rem;
+  letter-spacing: 0.15rem;
+}
+.font__title--dark {
+  color: #fff;
+}
+.font__subtitle {
+  color: #111;
+  font-family: "Old Standard TT", serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 3.7rem;
+  letter-spacing: -0.1rem;
+}
+.font__subtitle--small {
+  font-size: 2.5rem;
+  line-height: 3.1rem;
+}
+.font__subtitle--dark {
+  color: #fff;
+}
+.font__text {
+  color: #777;
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+}
+
+@media (min-width: 1000px) {
+  .font__subtitle {
+    font-size: 5rem;
+    line-height: 5rem;
+    letter-spacing: -0.15rem;
+    margin-bottom: 1em;
+  }
+  .font__subtitle--banner {
+    font-size: 7.5rem;
+    line-height: 8.1rem;
+    letter-spacing: -0.2rem;
+  }
+}
+.banner {
+  background-color: #333;
+  padding: 0em 1.25em;
+}
+.banner__inner {
+  width: 100%;
+  padding-top: 9em;
+  padding-bottom: 5em;
+}
+.banner__inner--about {
+  padding-bottom: 1em;
+}
+.banner__inner--rooms {
+  padding-bottom: 0em;
+}
+.banner h2 {
+  margin-bottom: 0.5em;
+}
+.banner p {
+  width: 95%;
+  margin-bottom: 2em;
+}
+.banner button:not(:last-child) {
+  margin-bottom: 2em;
+}
+.banner__pagination {
+  max-width: 12.5rem;
+  width: 9.75em;
+  background-color: #fff;
+  margin-right: 0;
+  margin-left: auto;
+  padding: 1em 1em;
+  text-align: center;
+}
+.banner__pagination--room-details {
+  width: 100%;
+}
+.banner__pagination span {
+  font-family: "Archivo", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: -0.1rem;
+  color: #333;
+}
+.banner__pagination span:nth-child(3) {
+  color: #bead8e;
+}
+.banner__pagination span:not(:last-child) {
+  margin-right: 0.5em;
+}
+
+@media (min-width: 1000px) {
+  .banner__inner {
+    padding-top: 10em;
+    padding-bottom: 7.5em;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .banner__inner--about {
+    padding-bottom: 1em;
+  }
+  .banner__inner--rooms {
+    padding-bottom: 0em;
+  }
+  .banner h2 {
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
+  .banner p {
+    width: 100%;
+  }
+  .banner button {
+    display: inline-block;
+  }
+  .banner button:not(:last-child) {
+    margin-bottom: 0em;
+    margin-right: 2em;
+  }
+  .banner__pagination {
+    width: 100%;
+    margin-right: 21.3rem;
   }
 }
 html,

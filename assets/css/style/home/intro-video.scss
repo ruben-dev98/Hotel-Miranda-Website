@@ -1,9 +1,9 @@
 .intro-video {
-    background-color: $bg-black;
+    background-color: $color-main-alternative;
     padding: 3.5em 1.25em;
 
     &__informative-text {
-        color: $bg-beige;
+        color: $color-secondary;
         font-family: $font-archivo;
         font-size: 0.85rem;
         font-weight: 700;
@@ -13,7 +13,7 @@
     }
 
     &__title {
-        color: $color-white;
+        color: $color-light;
         font-family: $font-standard;
         font-size: 3.5rem;
         font-weight: 400;
@@ -43,8 +43,8 @@
         width: 15.8em;
         height: 4.4em;
         border: 0em;
-        color: $color-white;
-        background-color: $bg-beige;
+        color: $color-light;
+        background-color: $color-secondary;
         font-family: $font-archivo;
         font-size: 0.85rem;
         font-weight: 400;
@@ -65,7 +65,7 @@
             top: 0;
             right: 0;
             left: auto;
-            background-color: $bg-beige;
+            background-color: $color-secondary;
             z-index: 1;
         }
 

@@ -4,7 +4,7 @@
         margin-bottom: 4em;
         
         &-control {
-            color: $color-grey;
+            color: $text-color-secondary;
             background-color: #f8f8f8;
             font-family: $font-roboto;
             font-size: 1rem;
@@ -73,8 +73,8 @@
 
     &__button {
         border: 0rem;
-        background-color: $bg-beige;
-        color: $color-white;
+        background-color: $color-secondary;
+        color: $color-light;
         width: 16.1rem;
         height: 3.75rem;
         font-family: $font-roboto;

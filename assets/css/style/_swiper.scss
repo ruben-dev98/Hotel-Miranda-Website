@@ -1,7 +1,7 @@
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
     background-color: #f8f8f8;
-    color: #111;
+    color: $color-main;
     cursor: auto;
     pointer-events: none;
     opacity: 1;
@@ -9,10 +9,10 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-    background-color: $bg-beige;
+    background-color: $color-secondary;
     width: 2.25rem;
     height: 2.25rem;
-    color: $color-white;
+    color: $color-light;
 }
 
 .swiper-button-next:after,
@@ -37,7 +37,7 @@
 }
 
 .swiper-pagination-bullet-active {
-    background: $bg-beige;
+    background: $color-secondary;
 }
 
 .swiper-slide {
@@ -54,9 +54,9 @@
 
     .swiper-button-next,
     .swiper-button-prev {
-        background-color: $bg-beige;
+        background-color: $color-secondary;
         width: 4.4rem;
         height: 4.4rem;
-        color: $color-white;
+        color: $color-light;
     }
 }

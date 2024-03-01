@@ -19,7 +19,7 @@
         margin-bottom: 2em;
 
         &-logo {
-            background-color: $bg-beige;
+            background-color: $color-secondary;
             width: 5em;
             height: 5em;
             display: inline-block;
@@ -59,7 +59,7 @@
 
         &-text {
             width: 90%;
-            color: #777777;
+            color: $text-color-secondary;
             font-family: $font-archivo;
             font-weight: 400;
             font-size: 1rem;
@@ -77,13 +77,13 @@
                 vertical-align: middle;
 
                 &--bg-beige {
-                    background-color: $bg-beige;
-                }
+                    background-color: $color-secondary;
 
-                img {
-                    padding: 0.5em 0em;
-                    margin: 0 auto;
-                    display: block;
+                    img {
+                        padding: 0.5em 0em;
+                        margin: 0 auto;
+                        display: block;
+                    }
                 }
             }
         }
@@ -93,7 +93,7 @@
         margin-bottom: 2em;
 
         &-title {
-            color: $bg-black;
+            color: $color-main-alternative;
             font-family: $font-standard;
             font-weight: 400;
             font-size: 1.5rem;
@@ -110,7 +110,7 @@
             font-size: 1rem;
             font-weight: 400;
             line-height: 3rem;
-            color: #777;
+            color: $text-color-secondary;
         }
     }
 
@@ -118,7 +118,7 @@
         margin-bottom: 1em;
 
         &-title {
-            color: $bg-black;
+            color: $color-main-alternative;
             font-family: $font-standard;
             font-size: 1.5rem;
             font-weight: 400;
@@ -223,7 +223,7 @@
             margin-bottom: 0em;
 
             &-title {
-                color: $bg-black;
+                color: $color-main-alternative;
                 font-family: $font-standard;
                 font-size: 1.5rem;
                 font-weight: 400;

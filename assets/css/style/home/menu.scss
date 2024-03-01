@@ -31,7 +31,7 @@
     }
 
     &__informative-text {
-        color: $color-grey;
+        color: $text-color-secondary;
         font-family: $font-archivo;
         font-size: 0.85rem;
         font-weight: 700;
@@ -123,8 +123,8 @@
         border: 0;
 
         &--active {
-            background-color: $bg-beige;
-            color: $color-white;
+            background-color: $color-secondary;
+            color: $color-light;
         }
     }
 
@@ -176,7 +176,7 @@
         }
 
         &__informative-text {
-            color: $color-grey;
+            color: $text-color-secondary;
             font-family: $font-archivo;
             font-size: 0.85rem;
             font-weight: 700;
@@ -227,7 +227,7 @@
             }
 
             &:hover {
-                background-color: $bg-black;
+                background-color: $color-main-alternative;
                 color: #fff;
             }
 
@@ -268,8 +268,8 @@
             border: 0;
 
             &--active {
-                background-color: $bg-beige;
-                color: $color-white;
+                background-color: $color-secondary;
+                color: $color-light;
             }
         }
 

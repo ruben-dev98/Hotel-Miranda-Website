@@ -4,7 +4,7 @@
         margin-bottom: 2em;
 
         &-informative-text {
-            color: $color-grey;
+            color: $text-color-secondary;
             font-family: $font-archivo;
             font-size: 0.85rem;
             font-weight: 700;
@@ -23,7 +23,7 @@
         }
 
         &-price {
-            color: $bg-beige;
+            color: $color-secondary;
             font-family: $font-archivo;
             font-weight: 700;
             letter-spacing: 0rem;
@@ -86,7 +86,7 @@
             width: 15.8em;
             height: 4.4em;
             border: 0em;
-            color: $color-white;
+            color: $color-light;
             font-family: $font-archivo;
             font-size: 0.85em;
             font-weight: 400;
@@ -97,7 +97,7 @@
     }
 
     &__text {
-        color: $color-grey;
+        color: $text-color-secondary;
         font-family: $font-roboto;
         font-size: 0.85rem;
         font-weight: 400;

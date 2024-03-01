@@ -19,8 +19,8 @@
     &-elipsis {
         right: -7.25rem;
         position: relative;
-        border: 0.25rem solid $color-white;
-        background-color: $bg-beige;
+        border: 0.25rem solid $color-light;
+        background-color: $color-secondary;
         width: 2.85rem;
         height: 2.85rem;
         border-radius: 20rem;
@@ -40,7 +40,7 @@
     }
 
     &-subtitle {
-        color: $bg-beige;
+        color: $color-secondary;
         font-family: $font-archivo;
         font-size: 0.85rem;
         font-weight: 700;
@@ -50,7 +50,7 @@
     }
 
     &-text {
-        color: $color-grey;
+        color: $text-color-secondary;
         font-family: $font-archivo;
         font-size: 1rem;
         font-weight: 400;

@@ -5,7 +5,7 @@
 
     &__label {
         margin-bottom: 1.5em;
-        color: $color-white;
+        color: $color-light;
         font-family: $font-roboto;
         font-weight: 700;
         font-size: 1rem;
@@ -22,11 +22,11 @@
         font-size: 0.85rem;
         display: block;
         border: 0em;
-        border-bottom: 0.1em solid $bg-beige;
+        border-bottom: 0.1em solid $color-secondary;
         background-color: transparent;
 
         &::-webkit-calendar-picker-indicator::after {
-            color: $bg-beige;
+            color: $color-secondary;
             text-align: left;
         }
     }
@@ -34,11 +34,11 @@
     &__button {
         width: 17.5em;
         height: 4.4em;
-        color: $color-white;
+        color: $color-light;
         font-family: $font-archivo;
         font-weight: 700;
         font-size: 0.85rem;
-        background-color: $bg-beige;
+        background-color: $color-secondary;
         display: block;
         line-height: 1rem;
         letter-spacing: 0.15rem;

@@ -4,7 +4,7 @@
     &__informative-text {
         display: block;
         margin: 0 auto;
-        color: $color-grey;
+        color: $text-color-secondary;
         font-family: $font-archivo;
         font-size: 0.85rem;
         font-weight: 700;
@@ -31,7 +31,7 @@
         position: relative;
         top: 1.3em;
         text-align: center;
-        background-color: $color-white;
+        background-color: $color-light;
         z-index: 2;
 
         /** COLOCAR EN EL MEDIO DEL MENU **/
@@ -67,7 +67,7 @@
         padding: 1em 0em;
         width: 90%;
         margin: 0 auto;
-        background-color: $color-white;
+        background-color: $color-light;
         position: relative;
         top: -2em;
         z-index: 1;
@@ -86,7 +86,7 @@
         &-text {
             width: 80%;
             display: inline-block;
-            color: $color-grey;
+            color: $text-color-secondary;
             font-family: $font-roboto;
             font-size: 0.85rem;
             font-weight: 400;
@@ -96,7 +96,7 @@
         }
 
         &-price {
-            color: $bg-beige;
+            color: $color-secondary;
             font-family: $font-archivo;
             font-weight: 700;
             line-height: 2.7rem;
