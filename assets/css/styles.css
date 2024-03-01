@@ -94,6 +94,12 @@
   width: 1.5rem;
   height: 1.5rem;
 }
+.header__menu img {
+  display: none;
+}
+.header__menu img.--visible {
+  display: inline-block;
+}
 
 @media (min-width: 1000px) {
   .background__header {

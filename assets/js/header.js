@@ -1,15 +1,14 @@
-displayMenu = (list, icon_to_hide, icon_to_show, isHiding) => {
-    let display = 'none';
-    if(isHiding) {
-        display = 'block'
-    }
-    list.setAttribute('style', `display: ${display}`);
-    icon_to_hide.setAttribute('style', `display: none`);
-    icon_to_show.setAttribute('style', `display: inline-block`);
+const list = document.querySelector('.header__nav');
+const icon = document.querySelectorAll('.header__menu-icon');
+const className = '--visible';
+
+displayMenu = (list, icon, icon__toggle, className) => {
+    list.classList.toggle(`${className}`);
+    icon.classList.toggle(`${className}`);
+    icon__toggle.classList.toggle(`${className}`);
 
 }
 
 document.querySelector('.header__menu').addEventListener('click', (event) => {
-    event.target.classList.toggle('--visible');
-    document.querySelector('.header__nav').classList.toggle('--visible');
+    displayMenu(list, icon[0], icon[1], className);
 });
