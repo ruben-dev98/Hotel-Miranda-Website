@@ -18,7 +18,7 @@ $text-color-secondary: #777;
 @import "style/contact.scss";
 @import "style/swiper";
 @import "style/button";
-@import "style/font-title";
+@import "style/font";
 @import "style/banner";
 
 html,
@@ -39,4 +39,8 @@ body {
 
 .--max-width {
     max-width: 74rem;
+}
+
+.--visible {
+    display: inline-block;
 }

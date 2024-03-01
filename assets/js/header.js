@@ -10,9 +10,6 @@ displayMenu = (list, icon_to_hide, icon_to_show, isHiding) => {
 }
 
 document.querySelector('.header__menu').addEventListener('click', (event) => {
-    displayMenu(document.querySelector('.header__nav'), event.target, document.querySelector('.header__menu-x'), true);
-});
-
-document.querySelector('.header__menu-x').addEventListener('click', (event) => {
-    displayMenu(document.querySelector('.header__nav'), event.target, document.querySelector('.header__menu'))
+    event.target.classList.toggle('--visible');
+    document.querySelector('.header__nav').classList.toggle('--visible');
 });

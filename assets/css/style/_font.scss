@@ -10,6 +10,10 @@
         &--dark {
             color: $color-light;
         }
+
+        &--weight-700 {
+            font-weight: 700;
+        }
     }
 
     &__subtitle {
@@ -54,9 +58,13 @@
                 line-height: 8.1rem;
                 letter-spacing: -0.2rem;
             }
-
-            &--height {
-
+            
+            &--line-height-90 {
+                line-height: 80.7rem;
+            }
+    
+            &--line-height-100 {
+                line-height: 81.25rem;
             }
         }
     }

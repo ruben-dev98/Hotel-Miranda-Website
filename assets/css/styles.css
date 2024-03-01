@@ -6,7 +6,6 @@
   padding: 1em 1em;
   max-width: 88.75rem;
   width: 100%;
-  background-size: contain;
   position: fixed;
   background-color: #fff;
   box-shadow: 0em 0.25em 0.4em 0em rgba(0, 0, 0, 0.2901960784);
@@ -23,20 +22,20 @@
   height: 12.35em;
   z-index: -1;
 }
-.header__nav-list {
+.header__nav ul {
   padding: 2.75em 1.5em;
   list-style-type: none;
   padding-bottom: 0em;
 }
-.header__nav-list-item {
-  padding: 0.5em 0em;
+.header__nav ul li {
   font-family: "Archivo", sans-serif;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.2rem;
   text-decoration: none;
 }
-.header__nav-list-item a {
+.header__nav ul li a {
+  padding: 0.5em 0em;
   text-decoration: none;
   color: #111;
 }
@@ -91,13 +90,9 @@
 .header__menu {
   display: inline-block;
   cursor: pointer;
-  margin-right: 1.3em;
-}
-.header__menu-x {
-  margin-right: 1.55em;
-}
-.header__menu--hidden {
-  display: none;
+  margin-right: 1.3rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 @media (min-width: 1000px) {
@@ -136,7 +131,7 @@
     height: fit-content;
     z-index: 1;
   }
-  .header__nav-list {
+  .header__nav ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -425,45 +420,18 @@
 .about-us {
   padding: 2em 1.25em;
 }
-.about-us__informative-text {
+.about-us__info h2 {
   margin-bottom: 1.5em;
-  color: #777;
-  font-family: "Archivo", sans-serif;
-  font-weight: 700;
-  font-size: 0.8rem;
-  line-height: 1.1rem;
-  letter-spacing: 0.15rem;
 }
-.about-us__title {
+.about-us__info > p:nth-of-type(1) {
   margin-bottom: 0.2em;
-  font-family: "Old Standard TT", serif;
-  font-size: 3.5rem;
-  font-weight: 400;
-  line-height: 3.75rem;
-  letter-spacing: -0.1rem;
 }
-.about-us__text {
+.about-us__info > p:nth-of-type(2) {
   padding: 0em 0.5em;
   margin-bottom: 1.5em;
-  font-family: "Archivo", sans-serif;
-  font-weight: 400;
-  font-size: 0.85rem;
-  line-height: 1.5rem;
-  letter-spacing: 0rem;
-  color: #777;
 }
-.about-us__button {
+.about-us__info button {
   margin-bottom: 4em;
-  width: 15.8em;
-  height: 4.4em;
-  color: #fff;
-  font-family: "Archivo", sans-serif;
-  font-weight: 700;
-  font-size: 0.85rem;
-  line-height: 1rem;
-  letter-spacing: 0.18rem;
-  background-color: #bead8e;
-  border: 0em;
 }
 .about-us__features {
   margin: 0 auto;
@@ -472,7 +440,6 @@
 }
 .about-us__features-img {
   width: 100%;
-  /*width: 17.1em;*/
   height: 18.8em;
 }
 .about-us__features-feature {
@@ -2292,6 +2259,7 @@
   }
 }
 .button {
+  cursor: pointer;
   display: block;
   width: 15.8em;
   height: 4.4em;
@@ -2308,6 +2276,9 @@
   background-color: transparent;
   border: 0.15em solid rgba(255, 255, 255, 0.3294117647);
 }
+.button--big {
+  width: 17.5em;
+}
 
 .font__title {
   color: #777;
@@ -2319,6 +2290,9 @@
 }
 .font__title--dark {
   color: #fff;
+}
+.font__title--weight-700 {
+  font-weight: 700;
 }
 .font__subtitle {
   color: #111;
@@ -2355,6 +2329,12 @@
     font-size: 7.5rem;
     line-height: 8.1rem;
     letter-spacing: -0.2rem;
+  }
+  .font__subtitle--line-height-90 {
+    line-height: 80.7rem;
+  }
+  .font__subtitle--line-height-100 {
+    line-height: 81.25rem;
   }
 }
 .banner {
@@ -2459,6 +2439,10 @@ body {
 
 .--max-width {
   max-width: 74rem;
+}
+
+.--visible {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=styles.css.map */

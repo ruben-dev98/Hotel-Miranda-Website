@@ -27,10 +27,10 @@
     <div class="background__header">
         <span class="background__header-informative-text">We Make Your Feel Comfortable</span>
         <header class="header">
-            <img class="header__menu" src="assets/icon/menu.svg" alt="icono para desplegar el menu de la página">
-            <img class="header__menu header__menu-x header__menu--hidden" src="assets/icon/menu-x.svg"
-                alt="icono para cerrar el menu de la página">
-            <div class="header__logo">
+            <div class="header__menu">
+                <div></div>
+            </div>
+            <div id="nav" class="header__logo">
                 <a class="header__link" href="index.html">
                     <span class="header__logo-img">
                         <img src="assets/img/logo-H.svg" alt="logo con la letra H">
@@ -41,12 +41,12 @@
                     </h2>
                 </a>
             </div>
-            <nav class="header__nav">
-                <ul class="header__nav-list">
-                    <li class="header__nav-list-item"><a href="about.html">About Us</a></li>
-                    <li class="header__nav-list-item"><a href="rooms.html">Rooms</a></li>
-                    <li class="header__nav-list-item"><a href="offers.html">Offers</a></li>
-                    <li class="header__nav-list-item"><a href="contact.html">Contact</a></li>
+            <nav class="header__nav" hidden>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="header__icons">
@@ -75,24 +75,22 @@
                     <input class="checking__input" type="date" name="" id="">
                 </div>
             </div>
-            <button class="checking__button upper__case" type="submit">Check availability</button>
+            <button class="button button--big upper__case" type="submit">Check availability</button>
         </form>
     </section>
     <section class="about-us">
         <div class="about-us__background"></div>
         <div class="about-us__inner --max-width">
             <section class="about-us__info">
-                <p class="about-us__informative-text upper__case">About Us</p>
-                <div class="about-us__background-inner">
-                    <p class="about-us__title">Discover Our Underground.</p>
-                    <p class="about-us__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat.
-                    </p>
-                    <button class="about-us__button upper__case">Book Now</button>
-                </div>
+                <h2 class="font__title font__title--weight-700 upper__case">About Us</h2>
+                <p class="font__subtitle font__subtitle--height">Discover Our Underground.</p>
+                <p class="font__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat.
+                </p>
+                <button class="button upper__case">Book Now</button>
             </section>
             <section class="about-us__features">
                 <img class="about-us__features-img" src="assets/img/team.jpg" alt="">
@@ -146,11 +144,14 @@
             <!-- Additional required wrapper -->
             <div class="rooms__swiper-wrapper swiper-wrapper">
                 <!-- Slides -->
-                <div class="rooms__swiper-slide swiper-slide" style="background-image: url(assets/img/luxury-room.jpg);">
+                <div class="rooms__swiper-slide swiper-slide"
+                    style="background-image: url(assets/img/luxury-room.jpg);">
                 </div>
-                <div class="rooms__swiper-slide swiper-slide" style="background-image: url(assets/img/luxury-room-3.jpg);">
+                <div class="rooms__swiper-slide swiper-slide"
+                    style="background-image: url(assets/img/luxury-room-3.jpg);">
                 </div>
-                <div class="rooms__swiper-slide swiper-slide" style="background-image: url(assets/img/luxury-room-2.jpg);">
+                <div class="rooms__swiper-slide swiper-slide"
+                    style="background-image: url(assets/img/luxury-room-2.jpg);">
                 </div>
             </div>
             <!-- If we need navigation buttons -->
@@ -374,9 +375,11 @@
                 <!-- Slides -->
                 <div class="menu__swiper-slide swiper-slide" style="background-image: url(assets/img/cooked-food.jpg);">
                 </div>
-                <div class="menu__swiper-slide swiper-slide" style="background-image: url(assets/img/food-photography.jpg);">
+                <div class="menu__swiper-slide swiper-slide"
+                    style="background-image: url(assets/img/food-photography.jpg);">
                 </div>
-                <div class="menu__swiper-slide swiper-slide" style="background-image: url(assets/img/grilled-steak.jpg);">
+                <div class="menu__swiper-slide swiper-slide"
+                    style="background-image: url(assets/img/grilled-steak.jpg);">
                 </div>
             </div>
         </div>

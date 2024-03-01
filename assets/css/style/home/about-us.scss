@@ -1,48 +1,25 @@
 .about-us {
     padding: 2em 1.25em;
+    
+    &__info {
+        h2 {
+            margin-bottom: 1.5em;
+        }
 
-    &__informative-text {
-        margin-bottom: 1.5em;
-        color: $text-color-secondary;
-        font-family: $font-archivo;
-        font-weight: 700;
-        font-size: 0.8rem;
-        line-height: 1.1rem;
-        letter-spacing: 0.15rem;
-    }
+        > p {
+            &:nth-of-type(1) {
+                margin-bottom: 0.2em;
+            }
+    
+            &:nth-of-type(2) {
+                padding: 0em 0.5em;
+                margin-bottom: 1.5em;
+            }
+        }
 
-    &__title {
-        margin-bottom: 0.2em;
-        font-family: $font-standard;
-        font-size: 3.5rem;
-        font-weight: 400;
-        line-height: 3.75rem;
-        letter-spacing: -0.1rem;
-    }
-
-    &__text {
-        padding: 0em 0.5em;
-        margin-bottom: 1.5em;
-        font-family: $font-archivo;
-        font-weight: 400;
-        font-size: 0.85rem;
-        line-height: 1.5rem;
-        letter-spacing: 0rem;
-        color: $text-color-secondary;
-    }
-
-    &__button {
-        margin-bottom: 4em;
-        width: 15.8em;
-        height: 4.4em;
-        color: $color-light;
-        font-family: $font-archivo;
-        font-weight: 700;
-        font-size: 0.85rem;
-        line-height: 1rem;
-        letter-spacing: 0.18rem;
-        background-color: $color-secondary;
-        border: 0em;
+        button {
+            margin-bottom: 4em;
+        }
     }
 
     &__features {
@@ -52,7 +29,6 @@
 
         &-img {
             width: 100%;
-            /*width: 17.1em;*/
             height: 18.8em;
         }
 

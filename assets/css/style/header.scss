@@ -8,7 +8,6 @@
     padding: 1em 1em;
     max-width: 88.75rem;
     width: 100%;
-    background-size: contain;
     position: fixed;
     background-color: $color-light;
     box-shadow: 0em 0.25em 0.4em 0em #0000004a;
@@ -25,13 +24,12 @@
         height: 12.35em;
         z-index: -1;
 
-        &-list {
+        ul {
             padding: 2.75em 1.5em;
             list-style-type: none;
             padding-bottom: 0em;
 
-            &-item {
-                padding: 0.5em 0em;
+            li {
                 font-family: $font-archivo;
                 font-size: 1rem;
                 font-weight: 600;
@@ -39,6 +37,7 @@
                 text-decoration: none;
 
                 a {
+                    padding: 0.5em 0em;
                     text-decoration: none;
                     color: $color-main;
                 }
@@ -107,14 +106,9 @@
     &__menu {
         display: inline-block;
         cursor: pointer;
-        margin-right: 1.3em;
-        &-x {
-            margin-right: 1.55em;
-        }
-
-        &--hidden {
-            display: none;
-        }
+        margin-right: 1.3rem;
+        width: 1.5rem;
+        height: 1.5rem;
     }
 }
 
@@ -156,7 +150,7 @@
             height: fit-content;
             z-index: 1;
 
-            &-list {
+            ul {
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-start;
