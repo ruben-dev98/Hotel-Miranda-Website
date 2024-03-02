@@ -319,6 +319,7 @@
   margin-bottom: 0.2em;
 }
 .footer__contact-info-text p:nth-child(2) {
+  color: #777;
   font-family: "Roboto", sans-serif;
   font-size: 0.85rem;
   line-height: 1rem;
@@ -375,6 +376,7 @@
   }
   .footer__contact {
     margin-bottom: 0em;
+    width: 22%;
   }
   .footer__contact-title {
     color: #222;
@@ -386,27 +388,14 @@
   }
   .footer__contact-info section {
     padding: 1em 0em;
+    display: flex;
+    align-items: start;
   }
   .footer__contact-info-icon {
-    display: inline-block;
     margin-right: 1em;
   }
   .footer__contact-info-text {
-    display: inline-block;
-  }
-  .footer__contact-info-text p {
-    font-weight: 400;
-  }
-  .footer__contact-info-text p:nth-child(1) {
-    font-family: "Old Standard TT", serif;
-    font-size: 1.3rem;
-    line-height: 1.5rem;
-    margin-bottom: 0.2em;
-  }
-  .footer__contact-info-text p:nth-child(2) {
-    font-family: "Roboto", sans-serif;
-    font-size: 0.9rem;
-    line-height: 1rem;
+    width: 100%;
   }
   .footer__directives {
     width: 100%;
