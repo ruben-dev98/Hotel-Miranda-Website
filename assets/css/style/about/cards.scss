@@ -18,14 +18,14 @@
             margin-right: 0.5rem;
         }
 
-        &-svg {
+        svg, img {
             width: 3.5rem;
             height: 3.5rem;
             margin-bottom: 1em;
         }
 
-        &-text {
-            font-family: Archivo;
+        p {
+            font-family: $font-archivo;
             font-size: 0.75rem;
             font-weight: 700;
             line-height: 0.85rem;
@@ -33,9 +33,17 @@
             text-transform: uppercase;
         }
 
-        &--beige {
+        &:hover {
             background-color: $color-secondary;
             color: $color-light;
+
+            path {
+                fill: $color-light;
+            }
+
+            img {
+                filter: invert(1);
+            }
         }
     }
 }
