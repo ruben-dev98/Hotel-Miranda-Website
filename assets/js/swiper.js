@@ -31,6 +31,13 @@ const offers__swiper = new Swiper('.offers__swiper', {
     navigation: {
         nextEl: '.offers__swiper-button-next',
         prevEl: '.offers__swiper-button-prev',
+    },
+
+    breakpoints: {
+        1000: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        }
     }
 });
 

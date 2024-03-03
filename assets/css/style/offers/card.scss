@@ -2,6 +2,8 @@
     padding: 3em 1.25em;
 
     &__card {
+        width: 21rem;
+        position: relative;
         margin-bottom: 2em;
     }
 
@@ -99,12 +101,6 @@
         }
     }
 
-    &__content-img {
-        position: relative;
-        width: 100%;
-        max-width: 21rem;
-    }
-
     &__img {
         width: 100%;
         height: 10.1rem;
@@ -112,7 +108,7 @@
 
     &__prices {
         position: absolute;
-        bottom: 1rem;
+        top: 6rem;
         right: 1rem;
     }
 
@@ -136,5 +132,89 @@
 
     &__amenities {
         margin-bottom: 2em;
+    }
+}
+
+@media (min-width: 1000px) {
+    .offers {
+        padding: 3em 1.25em;
+    
+        &__card {
+            width: 100%;
+            margin: 0 auto;
+
+        }
+    
+        &__informative-text {
+        }
+    
+        &__inner {
+            margin: 0 auto;
+            width: 90%;
+            position: relative;
+            top: -2rem;
+            background-color: $color-light;
+            border-top: $color-secondary 2px solid;
+
+        }
+    
+        &__title {
+
+        }
+    
+        &__text {
+            
+        }
+    
+        &__price {
+    
+            span {
+                &:nth-child(1) {
+                }
+    
+                &:nth-child(2) {
+                }
+            }
+    
+            &--crossed {
+    
+                span {
+    
+                    &::before {
+
+                    }
+    
+                    &:nth-child(1) {
+                    }
+    
+                    &:nth-child(2) {
+    
+                        &::before {
+                        }
+                    }
+                }
+            }
+        }
+    
+        &__img {
+            height: 35.6rem;
+        }
+    
+        &__prices {
+            position: relative;
+            top: auto;
+            right: auto;
+        }
+    
+        &__button {
+    
+            a {
+                color: $color-light;
+                text-decoration: none;
+            }
+        }
+    
+        &__amenities {
+        }
     }
 }
