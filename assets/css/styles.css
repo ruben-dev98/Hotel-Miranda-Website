@@ -1661,6 +1661,8 @@
 }
 .room-details__amenities-title {
   font-family: "Old Standard TT", serif;
+  border-bottom: 0.1rem solid #f1f1f1;
+  padding: 1rem;
   font-size: 1.85rem;
   font-weight: 400;
   line-height: 1.85rem;
@@ -1715,6 +1717,10 @@
   line-height: 1rem;
   letter-spacing: 0.15rem;
   margin-bottom: 1em;
+}
+.room-details__details-img {
+  width: 200px;
+  height: 200px;
 }
 .room-details__details-title {
   font-family: "Old Standard TT", serif;
@@ -1773,18 +1779,8 @@
   height: 3.75rem;
   margin-bottom: 0.75rem;
 }
-.room-details__form-button {
-  display: block;
-  width: 15.8em;
-  height: 4.4em;
-  border: 0em;
-  color: #fff;
-  font-family: "Archivo", sans-serif;
-  font-size: 0.85em;
+.room-details__form button {
   font-weight: 400;
-  line-height: 1rem;
-  letter-spacing: 0.15rem;
-  background-color: #bead8e;
 }
 .room-details__text {
   color: #777;
@@ -1795,6 +1791,110 @@
   letter-spacing: 0rem;
 }
 
+@media (min-width: 1000px) {
+  .room-details__details {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-areas: "info form" "text text";
+    margin: 0 auto;
+    padding: 2.5em 1.25em;
+    margin-bottom: 2em;
+  }
+  .room-details__details-info {
+    grid-area: info;
+  }
+  .room-details__details-info .details-info__text {
+    padding: 2rem 2rem 0rem 2rem;
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    top: 4rem;
+  }
+  .room-details__details-img {
+    width: 770px;
+    height: 490px;
+  }
+  .room-details__details-informative-text {
+    color: #777;
+    font-family: "Archivo", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    line-height: 1rem;
+    letter-spacing: 0.15rem;
+    margin-bottom: 1em;
+  }
+  .room-details__details-title {
+    font-family: "Old Standard TT", serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+    letter-spacing: -0.1rem;
+    margin-bottom: 1em;
+  }
+  .room-details__details-price {
+    color: #bead8e;
+    font-family: "Archivo", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0rem;
+  }
+  .room-details__details-price span {
+    line-height: 2.65rem;
+  }
+  .room-details__details-price span:nth-child(1) {
+    font-size: 2rem;
+  }
+  .room-details__details-price span:nth-child(2) {
+    font-size: 2.5rem;
+  }
+  .room-details__details-price span:nth-child(3) {
+    font-size: 0.8rem;
+  }
+  .room-details__form {
+    grid-area: form;
+  }
+  .room-details__form-title {
+    font-family: "Archivo", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    letter-spacing: -0.05rem;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .room-details__form-control label {
+    display: block;
+    font-family: "Archivo", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    line-height: 1rem;
+    letter-spacing: 0rem;
+    margin-bottom: 0.75rem;
+  }
+  .room-details__form-control input {
+    padding: 0rem 1.75rem;
+    border: 0em;
+    display: block;
+    width: 100%;
+    background-color: #f8f8f8;
+    height: 3.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .room-details__form button {
+    width: 100%;
+  }
+  .room-details__text {
+    grid-area: text;
+    color: #777;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0rem;
+  }
+}
 .room-details__related-rooms {
   margin: 0 auto;
 }
@@ -1822,6 +1922,11 @@
   text-align: left;
 }
 
+@media (min-width: 1000px) {
+  .room-details__cancellation {
+    margin: 0em auto 6em auto;
+  }
+}
 .room-details__founder {
   padding: 3em 1.25em;
   text-align: center;

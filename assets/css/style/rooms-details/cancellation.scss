@@ -22,3 +22,11 @@
         text-align: left;
     }
 }
+
+@media (min-width: 1000px) {
+    .room-details__cancellation {
+        margin: 0em auto 6em auto;
+    }
+}
+
+

@@ -65,15 +65,21 @@
             <span>Home</span><span>|</span><span>Room Details</span>
         </div>
     </header>
-    <section class="room-details__details">
-        <p class="room-details__details-informative-text upper__case">Double Bed</p>
-        <p class="room-details__details-title">Luxury Double Bed</p>
-        <p class="room-details__details-price">
-            <span>$</span>
-            <span>345</span>
-            <span>/Night</span>
-        </p>
-        <img src="" alt="">
+    <section class="room-details__details --max-width">
+        <div class="room-details__details-info">
+            <div class="details-info__text">
+                <div>
+                    <p class="room-details__details-informative-text upper__case">Double Bed</p>
+                    <p class="room-details__details-title">Luxury Double Bed</p>
+                </div>
+                <p class="room-details__details-price">
+                <span>$</span>
+                <span>345</span>
+                <span>/Night</span>
+                </p>
+            </div>
+            <img class="room-details__details-img" src="assets/img/luxury-room.jpg" alt="">
+        </div>
         <form class="room-details__form">
             <div class="room-details__form-title">
                 <span>Check Availability</span>
@@ -102,7 +108,7 @@
                 <label for=""></label>
                 <input type="text">
             </div>-->
-            <button class="room-details__form-button">Check Availability</button>
+            <button class="button upper__case">Check Availability</button>
         </form>
         <p class="room-details__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -200,7 +206,7 @@
             </p>
         </div>
     </section>
-    <section class="room-details__cancellation">
+    <section class="room-details__cancellation --max-width">
         <p class="room-details__cancellation-title">Cancellation</p>
         <p class="room-details__cancellation-text">
             Phasellus volutpat neque a tellus venenatis,
