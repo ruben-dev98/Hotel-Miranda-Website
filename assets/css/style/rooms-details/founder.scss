@@ -58,3 +58,17 @@
         letter-spacing: 0rem;
     }
 }
+
+
+
+@media (min-width: 1000px) {
+    .room-details__founder {
+        margin: 0 auto 4em 0 auto;
+
+        &-content {
+            padding: 3em 1.25em;
+            width: 370px;
+            box-shadow: 0px 14px 24px 0px #BEAD8E45;
+        }
+    }
+}
