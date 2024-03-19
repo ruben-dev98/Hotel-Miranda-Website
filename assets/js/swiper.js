@@ -125,7 +125,7 @@ const about__swiper = new Swiper('.about__swiper', {
 
 const rooms__list__swiper = new Swiper('.rooms-list__swiper', {
     // Optional parameters
-    slidesPerView: 1,
+    slidesPerView: 6,
     direction: 'horizontal',
     loop: false,
 
@@ -135,11 +135,11 @@ const rooms__list__swiper = new Swiper('.rooms-list__swiper', {
 
     breakpoints: {
         1000: {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 20,
 
             grid: {
-                rows: 4,
+                rows: 5,
                 fill: 'row'
             }
         }
