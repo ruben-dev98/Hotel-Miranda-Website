@@ -135,7 +135,13 @@
     &__amenities {
         margin-bottom: 2em;
 
+        
+
         &-list {
+            -webkit-columns: 1;
+            -moz-columns: 1;
+            columns: 1;
+
             &:nth-of-type(1) {
                 margin-right: 1.5em;
             }
@@ -181,10 +187,6 @@
             top: -2rem;
             background-color: $color-light;
             border-top: $color-secondary 0.4rem solid;
-        }
-    
-        &__title {
-
         }
     
         &__text {
@@ -243,6 +245,12 @@
             justify-content: space-between;
             grid-area: amenities;
             width: 100%;
+
+            &-list {
+                -webkit-columns: 1;
+                -moz-columns: 1;
+                columns: 1;
+            }
         }
     }
 }

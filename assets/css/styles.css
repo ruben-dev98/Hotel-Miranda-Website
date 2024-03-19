@@ -2107,6 +2107,11 @@
 .offers__amenities {
   margin-bottom: 2em;
 }
+.offers__amenities-list {
+  -webkit-columns: 1;
+  -moz-columns: 1;
+  columns: 1;
+}
 .offers__amenities-list:nth-of-type(1) {
   margin-right: 1.5em;
 }
@@ -2171,6 +2176,11 @@
     justify-content: space-between;
     grid-area: amenities;
     width: 100%;
+  }
+  .offers__amenities-list {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
   }
 }
 .offers__popular-rooms {
