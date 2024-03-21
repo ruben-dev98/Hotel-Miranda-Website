@@ -127,15 +127,21 @@
         
         &-item {
             width: 100%;
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-areas: 'img content';
+            
             
             &-img {
+                grid-area: img;
                 margin: 0 0;
                 width: 29.4rem;
                 height: 19.1rem;
             }
-    
+
+            &-content {
+                grid-area: content;
+            }
+
             &-menu {
                 top: 0px;
                 width: 18.5rem;

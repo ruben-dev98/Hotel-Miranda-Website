@@ -35,6 +35,9 @@
   line-height: 1.2rem;
   text-decoration: none;
 }
+.header__nav ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
 .header__nav ul li a {
   padding: 0.5em 0em;
   text-decoration: none;
@@ -2588,13 +2591,17 @@
   }
   .rooms__list-item {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-areas: "img content";
   }
   .rooms__list-item-img {
+    grid-area: img;
     margin: 0 0;
     width: 29.4rem;
     height: 19.1rem;
+  }
+  .rooms__list-item-content {
+    grid-area: content;
   }
   .rooms__list-item-menu {
     top: 0px;

@@ -36,6 +36,10 @@
                 font-weight: 600;
                 line-height: 1.2rem;
                 text-decoration: none;
+                
+                &:not(:last-child) {
+                    margin-bottom: 1rem;
+                }
 
                 a {
                     padding: 0.5em 0em;
