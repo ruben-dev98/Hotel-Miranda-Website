@@ -136,7 +136,7 @@ const rooms__list__swiper = new Swiper('.rooms-list__swiper', {
     breakpoints: {
         1000: {
             slidesPerView: 3,
-            spaceBetween: 20,
+            spaceBetween: 10,
 
             grid: {
                 rows: 5,
