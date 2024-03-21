@@ -54,6 +54,16 @@
             margin-bottom: 1em;
 
             &--banner {
+                font-size: 4.5rem;
+                line-height: 4.5rem;
+                letter-spacing: -0.2rem;
+
+                br {
+                    display: none;
+                }
+            }
+
+            &--banner-home {
                 font-size: 7.5rem;
                 line-height: 8.1rem;
                 letter-spacing: -0.2rem;

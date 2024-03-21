@@ -2584,7 +2584,7 @@
 @media (min-width: 1000px) {
   .rooms__list {
     margin: 0 auto;
-    padding: 6.5rem 0rem;
+    padding: 6.5rem 1.25rem;
   }
   .rooms__list-item {
     width: 100%;
@@ -2592,6 +2592,7 @@
     justify-content: space-between;
   }
   .rooms__list-item-img {
+    margin: 0 0;
     width: 29.4rem;
     height: 19.1rem;
   }
@@ -2759,6 +2760,14 @@
     margin-bottom: 1em;
   }
   .font__subtitle--banner {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    letter-spacing: -0.2rem;
+  }
+  .font__subtitle--banner br {
+    display: none;
+  }
+  .font__subtitle--banner-home {
     font-size: 7.5rem;
     line-height: 8.1rem;
     letter-spacing: -0.2rem;
