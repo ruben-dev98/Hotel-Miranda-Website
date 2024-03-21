@@ -2485,6 +2485,13 @@
   padding: 2.5em 1.25em;
   position: relative;
 }
+.rooms__list .rooms-list__swiper {
+  width: 1170px;
+  height: auto;
+}
+.rooms__list .rooms-list__swiper-slide {
+  width: 100%;
+}
 .rooms__list-item {
   margin-bottom: 3em;
 }
@@ -2576,32 +2583,20 @@
   background-color: #bead8e;
 }
 
-.rooms-list__swiper {
-  width: 100%;
-  height: auto;
-}
-.rooms-list__swiper-slide {
-  width: 100%;
-}
-
 @media (min-width: 1000px) {
   .rooms__list {
     margin: 0 auto;
-    padding: 6.5rem 1.25rem;
+    padding: 6.5rem 0rem;
   }
   .rooms__list-item {
     width: 100%;
-    display: grid;
-    grid-template-areas: "img content";
+    display: flex;
+    justify-content: space-between;
   }
   .rooms__list-item-img {
-    grid-area: img;
     margin: 0 0;
     width: 29.4rem;
     height: 19.1rem;
-  }
-  .rooms__list-item-content {
-    grid-area: content;
   }
   .rooms__list-item-menu {
     top: 0px;

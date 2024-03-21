@@ -2,6 +2,15 @@
     padding: 2.5em 1.25em;
     position: relative;
 
+    .rooms-list__swiper {
+        width: 1170px;
+        height: auto;
+    
+        &-slide {
+            width: 100%;
+        }
+    }
+
     &-item {
         margin-bottom: 3em;
         &-img {
@@ -111,35 +120,22 @@
     }
 }
 
-.rooms-list__swiper {
-    width: 100%;
-    height: auto;
 
-    &-slide {
-        width: 100%;
-    }
-}
 
 @media (min-width: 1000px) {
     .rooms__list {
         margin: 0 auto;
-        padding: 6.5rem 1.25rem;
+        padding: 6.5rem 0rem;
         
         &-item {
             width: 100%;
-            display: grid;
-            grid-template-areas: 'img content';
-            
+            display: flex;
+            justify-content: space-between;
             
             &-img {
-                grid-area: img;
                 margin: 0 0;
                 width: 29.4rem;
                 height: 19.1rem;
-            }
-
-            &-content {
-                grid-area: content;
             }
 
             &-menu {
