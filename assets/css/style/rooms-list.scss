@@ -1,4 +1,4 @@
-.rooms__grid {
+.rooms__list {
     padding: 2.5em 1.25em;
     position: relative;
 
@@ -111,24 +111,35 @@
     }
 }
 
-.rooms-grid__swiper {
+.rooms-list__swiper {
     width: 100%;
     height: auto;
+
+    &-slide {
+        width: 100%;
+    }
 }
 
 @media (min-width: 1000px) {
-    
-    .rooms__grid {
+    .rooms__list {
         margin: 0 auto;
         padding: 6.5rem 0rem;
         &-item {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            
             &-img {
-                width: 23.1rem;
-                height: 15rem;
+                width: 29.4rem;
+                height: 19.1rem;
             }
     
             &-menu {
+                top: 0px;
                 width: 18.5rem;
+            }
+            &-details {
+                text-align: left;
             }
         }
 

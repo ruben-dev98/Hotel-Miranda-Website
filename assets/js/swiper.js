@@ -123,7 +123,7 @@ const about__swiper = new Swiper('.about__swiper', {
     }
 });
 
-const rooms__list__swiper = new Swiper('.rooms-list__swiper', {
+const rooms__grid__swiper = new Swiper('.rooms-grid__swiper', {
     // Optional parameters
     slidesPerView: 6,
     direction: 'horizontal',
@@ -144,4 +144,15 @@ const rooms__list__swiper = new Swiper('.rooms-list__swiper', {
             }
         }
     }
+});
+
+const rooms__list__swiper = new Swiper('.rooms-list__swiper', {
+    // Optional parameters
+    slidesPerView: 6,
+    direction: 'horizontal',
+    loop: false
+
+    /*pagination: {
+        el: '.rooms-list__swiper-pagination',
+    },*/
 });
