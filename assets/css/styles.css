@@ -1903,6 +1903,7 @@
   }
   .room-details__form {
     grid-area: form;
+    padding: 6em 1.5em 1.5em 1.5em;
   }
   .room-details__form-title {
     font-family: "Archivo", sans-serif;
