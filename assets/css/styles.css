@@ -150,6 +150,9 @@
     padding: 0em 0em;
     padding-bottom: 0em;
   }
+  .header__nav ul li {
+    margin-bottom: 1rem;
+  }
   .header__logo {
     display: inline-block;
     width: 30%;
@@ -2455,6 +2458,7 @@
     vertical-align: sub;
   }
   .contact__info .contact__card-text {
+    width: 80%;
     vertical-align: middle;
   }
   .contact__info .contact__card-number {
@@ -2888,6 +2892,17 @@ body {
 
 .--visible {
   display: inline-block;
+}
+
+.position-fixed {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  to {
+    position: fixed;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

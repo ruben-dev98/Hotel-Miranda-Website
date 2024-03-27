@@ -45,3 +45,14 @@ body {
 .--visible {
     display: inline-block;
 }
+
+.position-fixed {
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    to {
+        position: fixed; 
+        margin: 0 auto;
+    }
+}
