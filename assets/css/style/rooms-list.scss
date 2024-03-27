@@ -3,12 +3,8 @@
     position: relative;
 
     .rooms-list__swiper {
-        width: 1170px;
+        width: 100%;
         height: auto;
-    
-        &-slide {
-            width: 100%;
-        }
     }
 
     &-item {

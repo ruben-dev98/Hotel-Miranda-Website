@@ -2491,11 +2491,8 @@
   position: relative;
 }
 .rooms__list .rooms-list__swiper {
-  width: 1170px;
-  height: auto;
-}
-.rooms__list .rooms-list__swiper-slide {
   width: 100%;
+  height: auto;
 }
 .rooms__list-item {
   margin-bottom: 3em;

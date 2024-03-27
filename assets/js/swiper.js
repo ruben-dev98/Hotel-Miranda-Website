@@ -52,7 +52,7 @@ const menus__swiper = new Swiper('.menu__swiper', {
     },
 
     breakpoints: {
-        1000 : {
+        1000: {
             slidesPerView: 3,
             spaceBetween: 20
         }
@@ -125,30 +125,43 @@ const about__swiper = new Swiper('.about__swiper', {
 
 const rooms__grid__swiper = new Swiper('.rooms-grid__swiper', {
     // Optional parameters
-    slidesPerView: 6,
+    slidesPerColumn: 2,
+    grid: {
+        rows: 6,
+        fill: 'row'
+    },
     direction: 'horizontal',
     loop: false,
 
-    /*pagination: {
-        el: '.rooms-list__swiper-pagination',
-    },*/
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        /*Return bullets as numbers*/
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+    },
 
     breakpoints: {
-        1000: {
-            slidesPerView: 3,
-            spaceBetween: 10,
+    1000: {
+        slidesPerView: 3,
+        spaceBetween: 10,
 
-            grid: {
-                rows: 5,
-                fill: 'row'
-            }
+        grid: {
+            rows: 3,
+            fill: 'row'
         }
     }
+}
 });
 
 const rooms__list__swiper = new Swiper('.rooms-list__swiper', {
     // Optional parameters
-    slidesPerView: 6,
+    slidesPerColumn: 2,
+    grid: {
+        rows: 6,
+        fill: 'row'
+    },
     direction: 'horizontal',
     loop: false
 
