@@ -123,6 +123,12 @@
         margin: 0 auto;
         padding: 6.5rem 0rem;
         
+        &-content {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
         &-item {
             width: 100%;
             display: flex;
@@ -139,7 +145,30 @@
                 width: 18.5rem;
             }
             &-details {
+                width: 45%;
+                top: 0px;
                 text-align: left;
+
+                &-text {
+                    width: 100%;
+                }
+    
+                &-price {
+                    text-align: left;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    span {
+                        
+                        &:nth-child(1) {
+                            font-size: 2.5rem;
+                            font-weight: 700;
+                            line-height: 2.7rem;
+                        }
+                    }
+                }
             }
         }
 
@@ -159,6 +188,7 @@
                 justify-content: space-around;
                 align-items: center;
             }
+
             &-item {
                 width: 2.5rem;
                 height: 2.5rem;

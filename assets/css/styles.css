@@ -1516,7 +1516,7 @@
   fill: #fff;
 }
 .about__cards .about__card:hover img {
-  filter: invert(1);
+  filter: brightness(100);
 }
 
 @media (min-width: 1000px) {
@@ -2593,6 +2593,11 @@
     margin: 0 auto;
     padding: 6.5rem 0rem;
   }
+  .rooms__list-content {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
   .rooms__list-item {
     width: 100%;
     display: flex;
@@ -2608,7 +2613,24 @@
     width: 18.5rem;
   }
   .rooms__list-item-details {
+    width: 45%;
+    top: 0px;
     text-align: left;
+  }
+  .rooms__list-item-details-text {
+    width: 100%;
+  }
+  .rooms__list-item-details-price {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rooms__list-item-details-price span:nth-child(1) {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.7rem;
   }
   .rooms__list-pagination {
     margin-bottom: 2em;
