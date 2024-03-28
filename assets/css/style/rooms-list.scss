@@ -127,12 +127,14 @@
             display: flex;
             justify-content: start;
             align-items: center;
+            gap: 32px;
         }
 
         &-item {
             width: 100%;
             display: flex;
-            justify-content: space-between;
+            justify-content: start;
+            gap: 2.5rem;
             
             &-img {
                 margin: 0 0;
@@ -141,19 +143,26 @@
             }
 
             &-menu {
+                margin: 0 0;
                 top: 0px;
                 width: 18.5rem;
+                margin-bottom: 2rem;
             }
             &-details {
-                width: 45%;
+                margin: 0 0;
                 top: 0px;
                 text-align: left;
+
+                &-title {
+                    margin-bottom: 1rem;
+                }
 
                 &-text {
                     width: 100%;
                 }
     
                 &-price {
+                    margin-top: -36px;
                     text-align: left;
                     display: flex;
                     flex-direction: column;
@@ -166,6 +175,7 @@
                             font-size: 2.5rem;
                             font-weight: 700;
                             line-height: 2.7rem;
+                            margin-bottom: 48px;
                         }
                     }
                 }

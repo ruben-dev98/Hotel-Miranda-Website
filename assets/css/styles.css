@@ -2597,11 +2597,13 @@
     display: flex;
     justify-content: start;
     align-items: center;
+    gap: 32px;
   }
   .rooms__list-item {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    gap: 2.5rem;
   }
   .rooms__list-item-img {
     margin: 0 0;
@@ -2609,18 +2611,24 @@
     height: 19.1rem;
   }
   .rooms__list-item-menu {
+    margin: 0 0;
     top: 0px;
     width: 18.5rem;
+    margin-bottom: 2rem;
   }
   .rooms__list-item-details {
-    width: 45%;
+    margin: 0 0;
     top: 0px;
     text-align: left;
+  }
+  .rooms__list-item-details-title {
+    margin-bottom: 1rem;
   }
   .rooms__list-item-details-text {
     width: 100%;
   }
   .rooms__list-item-details-price {
+    margin-top: -36px;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -2631,6 +2639,7 @@
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 2.7rem;
+    margin-bottom: 48px;
   }
   .rooms__list-pagination {
     margin-bottom: 2em;
